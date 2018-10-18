@@ -1,0 +1,3 @@
+/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/edit_cache.dir
+/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/rebuild_cache.dir
+/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir
