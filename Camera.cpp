@@ -17,7 +17,7 @@ void Camera::ApplyPerspectiveProjection () const{
 	GeometricTransform::ApplyPerspectiveProjection(mAngleOuvertureY, mAspect, mZ_proche, mZ_eloigne);
 }
 
-void Camera::n() const{
+void Camera::ApplyCameraCoordinates() const{
 
 	GeometricTransform::LookAt(mPosition, mPointDeVisee, mVecteurVertical);
 }

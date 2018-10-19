@@ -33,9 +33,9 @@ class AbstractCamera {
 
 		void LookAt(double position[3], double pointDeVisee[3], double vecteurVertical[3]);
 		
-		virtual void ApplyPerspectiveProjection() const;
+		virtual void ApplyPerspectiveProjection() const = 0;
 		
-		virtual void ApplyCameraCoordinates() const;
+		virtual void ApplyCameraCoordinates() const = 0;
 
 		/*
 		void Redimensionnement(int w, int h);
