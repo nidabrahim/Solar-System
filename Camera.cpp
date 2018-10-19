@@ -2,7 +2,7 @@
 #include "Camera.h"
 #include "GeometricTransform.h"
 
-Camera::Camera(double angleOuvertureY = 50, double aspect, double z_proche = 1, double z_eloigne = 500 ,
+Camera::Camera(double angleOuvertureY, double aspect, double z_proche, double z_eloigne,
 				double positionX, double positionY, double positionZ, 
 				double pointDeViseeX, double pointDeViseeY, double pointDeViseeZ, 
 				double vecteurVerticalX, double vecteurVerticalY, double vecteurVerticalZ):
