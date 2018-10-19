@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#include "Modele.hpp"
-#include "FramesData.hpp"
-#include "GeometricTransform.hpp"
+#include "Modele.h"
+#include "FramesData.h"
+#include "GeometricTransform.h"
 
 
 Modele::Modele(u_int32_t largeurFenetre, u_int32_t hauteurFenetre) :

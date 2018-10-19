@@ -7,7 +7,7 @@
 *                                                                              * 
 \******************************************************************************/ 
 
-#include "MouseData.hpp"
+#include "MouseData.h"
 
 // Initialisation des données de classe
 int MouseData::mousex = 0;

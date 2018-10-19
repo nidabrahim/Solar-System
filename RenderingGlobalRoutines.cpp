@@ -1,8 +1,8 @@
 #include <GLES3/gl3.h>
 #include <GL/glut.h>
 
-#include "RenderingGlobalRoutines.hpp"
-#include "Modele.hpp"
+#include "RenderingGlobalRoutines.h"
+#include "Modele.h"
 
 
 void RenderingGlobalRoutines::Init(){

@@ -10,8 +10,8 @@
 #ifndef HEADER_MAINAPPLICATION_H
 #define HEADER_MAINAPPLICATION_H
 
-#include "WrapperSDL.hpp"
-#include "Modele.hpp"
+#include "WrapperSDL.h"
+#include "Modele.h"
 /**
  * CLASSE TOUTES LES DONNÉES DE L'APPLICATION
  * RÉALISE LES INITIALISATIONS

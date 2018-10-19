@@ -10,7 +10,7 @@
 #include <SDL2/SDL_opengl.h>
 #include <GLES3/gl3.h>
 
-#include "WrapperSDL.hpp"
+#include "WrapperSDL.h"
 
 WrapperSDL::WindowManager::WindowManager(int largeurFenetreInit, int hauteurFenetreInit,
                                          const char* windowTitle)

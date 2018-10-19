@@ -1,4 +1,4 @@
-# Install script for directory: /home/youssef/ISIMA/Infographie/tp1
+# Install script for directory: /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/youssef/ISIMA/Infographie/tp1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

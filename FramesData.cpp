@@ -7,8 +7,8 @@
 *                                                                              * 
 \******************************************************************************/ 
 
-#include "FramesData.hpp"
-#include "WrapperSDL.hpp"
+#include "FramesData.h"
+#include "WrapperSDL.h"
 
 // Initialisation des données de classe
 uint FramesData::mNbSeconds = 0;

@@ -6,151 +6,153 @@
 
 #IncludeRegexTransform: 
 
-/home/youssef/ISIMA/Infographie/tp1/Camera.cpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Camera.cpp
 cstring
 -
-Camera.hpp
-/home/youssef/ISIMA/Infographie/tp1/Camera.hpp
-GeometricTransform.hpp
-/home/youssef/ISIMA/Infographie/tp1/GeometricTransform.hpp
+Camera.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Camera.h
+GeometricTransform.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.h
 
-/home/youssef/ISIMA/Infographie/tp1/Camera.hpp
-abstractCamera.hpp
-/home/youssef/ISIMA/Infographie/tp1/abstractCamera.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Camera.h
+abstractCamera.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/abstractCamera.h
 
-/home/youssef/ISIMA/Infographie/tp1/DisplayManager.cpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/DisplayManager.cpp
 GLES3/gl3.h
 -
 GL/glut.h
 -
-DisplayManager.hpp
-/home/youssef/ISIMA/Infographie/tp1/DisplayManager.hpp
-Modele.hpp
-/home/youssef/ISIMA/Infographie/tp1/Modele.hpp
-FramesData.hpp
-/home/youssef/ISIMA/Infographie/tp1/FramesData.hpp
-RenderingGlobalRoutines.hpp
-/home/youssef/ISIMA/Infographie/tp1/RenderingGlobalRoutines.hpp
-GeometricTransform.hpp
-/home/youssef/ISIMA/Infographie/tp1/GeometricTransform.hpp
+DisplayManager.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/DisplayManager.h
+Modele.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.h
+FramesData.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.h
+RenderingGlobalRoutines.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/RenderingGlobalRoutines.h
+GeometricTransform.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.h
 
-/home/youssef/ISIMA/Infographie/tp1/DisplayManager.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/DisplayManager.h
 GLES3/gl3.h
 -
 GL/glut.h
 -
 
-/home/youssef/ISIMA/Infographie/tp1/EventController.cpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/EventController.cpp
 cstdlib
 -
 cstdio
 -
-MouseData.hpp
-/home/youssef/ISIMA/Infographie/tp1/MouseData.hpp
-WrapperSDL.hpp
-/home/youssef/ISIMA/Infographie/tp1/WrapperSDL.hpp
-Modele.hpp
-/home/youssef/ISIMA/Infographie/tp1/Modele.hpp
+MouseData.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MouseData.h
+WrapperSDL.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.h
+Modele.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.h
 
-/home/youssef/ISIMA/Infographie/tp1/FramesData.cpp
-FramesData.hpp
-/home/youssef/ISIMA/Infographie/tp1/FramesData.hpp
-WrapperSDL.hpp
-/home/youssef/ISIMA/Infographie/tp1/WrapperSDL.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.cpp
+FramesData.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.h
+WrapperSDL.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.h
 
-/home/youssef/ISIMA/Infographie/tp1/FramesData.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.h
 cstdlib
 -
 
-/home/youssef/ISIMA/Infographie/tp1/GeometricTransform.cpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.cpp
 GLES3/gl3.h
 -
 GL/glut.h
 -
-GeometricTransform.hpp
-/home/youssef/ISIMA/Infographie/tp1/GeometricTransform.hpp
+GeometricTransform.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.h
 
-/home/youssef/ISIMA/Infographie/tp1/GeometricTransform.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.h
 cstdlib
 -
 
-/home/youssef/ISIMA/Infographie/tp1/MainApplication.cpp
-MainApplication.hpp
-/home/youssef/ISIMA/Infographie/tp1/MainApplication.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MainApplication.cpp
+MainApplication.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MainApplication.h
 
-/home/youssef/ISIMA/Infographie/tp1/MainApplication.hpp
-WrapperSDL.hpp
-/home/youssef/ISIMA/Infographie/tp1/WrapperSDL.hpp
-Modele.hpp
-/home/youssef/ISIMA/Infographie/tp1/Modele.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MainApplication.h
+WrapperSDL.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.h
+Modele.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.h
 
-/home/youssef/ISIMA/Infographie/tp1/Modele.cpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.cpp
 stdio.h
 -
-Modele.hpp
-/home/youssef/ISIMA/Infographie/tp1/Modele.hpp
-FramesData.hpp
-/home/youssef/ISIMA/Infographie/tp1/FramesData.hpp
-GeometricTransform.hpp
-/home/youssef/ISIMA/Infographie/tp1/GeometricTransform.hpp
+Modele.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.h
+FramesData.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.h
+GeometricTransform.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.h
 
-/home/youssef/ISIMA/Infographie/tp1/Modele.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.h
 cstdlib
 -
-DisplayManager.hpp
-/home/youssef/ISIMA/Infographie/tp1/DisplayManager.hpp
-Camera.hpp
-/home/youssef/ISIMA/Infographie/tp1/Camera.hpp
+DisplayManager.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/DisplayManager.h
+Camera.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Camera.h
 
-/home/youssef/ISIMA/Infographie/tp1/MouseData.cpp
-MouseData.hpp
-/home/youssef/ISIMA/Infographie/tp1/MouseData.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MouseData.cpp
+MouseData.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MouseData.h
 
-/home/youssef/ISIMA/Infographie/tp1/MouseData.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MouseData.h
 
-/home/youssef/ISIMA/Infographie/tp1/RenderingGlobalRoutines.cpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/RenderingGlobalRoutines.cpp
 GLES3/gl3.h
 -
 GL/glut.h
 -
-RenderingGlobalRoutines.hpp
-/home/youssef/ISIMA/Infographie/tp1/RenderingGlobalRoutines.hpp
-Modele.hpp
-/home/youssef/ISIMA/Infographie/tp1/Modele.hpp
+RenderingGlobalRoutines.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/RenderingGlobalRoutines.h
+Modele.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.h
 
-/home/youssef/ISIMA/Infographie/tp1/RenderingGlobalRoutines.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/RenderingGlobalRoutines.h
 
-/home/youssef/ISIMA/Infographie/tp1/WindowManager.cpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WindowManager.cpp
 SDL2/SDL_opengl.h
 -
 GLES3/gl3.h
 -
-WrapperSDL.hpp
-/home/youssef/ISIMA/Infographie/tp1/WrapperSDL.hpp
+WrapperSDL.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.h
 
-/home/youssef/ISIMA/Infographie/tp1/WrapperSDL.cpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.cpp
 GLES3/gl3.h
 -
 GL/glut.h
 -
-WrapperSDL.hpp
-/home/youssef/ISIMA/Infographie/tp1/WrapperSDL.hpp
+WrapperSDL.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.h
 
-/home/youssef/ISIMA/Infographie/tp1/WrapperSDL.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.h
 SDL2/SDL.h
 -
-Modele.hpp
-/home/youssef/ISIMA/Infographie/tp1/Modele.hpp
+Modele.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.h
 
-/home/youssef/ISIMA/Infographie/tp1/abstractCamera.cpp
-abstractCamera.hpp
-/home/youssef/ISIMA/Infographie/tp1/abstractCamera.hpp
-GeometricTransform.hpp
-/home/youssef/ISIMA/Infographie/tp1/GeometricTransform.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/abstractCamera.cpp
+cstring
+-
+abstractCamera.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/abstractCamera.h
+GeometricTransform.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.h
 
-/home/youssef/ISIMA/Infographie/tp1/abstractCamera.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/abstractCamera.h
 
-/home/youssef/ISIMA/Infographie/tp1/main.cpp
-MainApplication.hpp
-/home/youssef/ISIMA/Infographie/tp1/MainApplication.hpp
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/main.cpp
+MainApplication.h
+/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MainApplication.h
 

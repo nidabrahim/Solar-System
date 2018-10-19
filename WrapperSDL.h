@@ -12,7 +12,7 @@
 
 #include <SDL2/SDL.h>
 
-#include "Modele.hpp"
+#include "Modele.h"
 /**
  * Classe Wrapper pour SDL et assurant les fonctionnalités de la GUI
  */

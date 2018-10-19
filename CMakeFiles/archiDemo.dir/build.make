@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/youssef/ISIMA/Infographie/tp1
+CMAKE_SOURCE_DIR = /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/youssef/ISIMA/Infographie/tp1
+CMAKE_BINARY_DIR = /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/archiDemo.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/archiDemo.dir/flags.make
 
 CMakeFiles/archiDemo.dir/main.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/archiDemo.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/main.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/archiDemo.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/main.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/main.cpp
 
 CMakeFiles/archiDemo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/main.cpp > CMakeFiles/archiDemo.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/main.cpp > CMakeFiles/archiDemo.dir/main.cpp.i
 
 CMakeFiles/archiDemo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/main.cpp -o CMakeFiles/archiDemo.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/main.cpp -o CMakeFiles/archiDemo.dir/main.cpp.s
 
 CMakeFiles/archiDemo.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/archiDemo.dir/main.cpp.o.provides.build: CMakeFiles/archiDemo.dir/mai
 
 CMakeFiles/archiDemo.dir/DisplayManager.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/DisplayManager.cpp.o: DisplayManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/archiDemo.dir/DisplayManager.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/DisplayManager.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/DisplayManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/archiDemo.dir/DisplayManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/DisplayManager.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/DisplayManager.cpp
 
 CMakeFiles/archiDemo.dir/DisplayManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/DisplayManager.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/DisplayManager.cpp > CMakeFiles/archiDemo.dir/DisplayManager.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/DisplayManager.cpp > CMakeFiles/archiDemo.dir/DisplayManager.cpp.i
 
 CMakeFiles/archiDemo.dir/DisplayManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/DisplayManager.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/DisplayManager.cpp -o CMakeFiles/archiDemo.dir/DisplayManager.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/DisplayManager.cpp -o CMakeFiles/archiDemo.dir/DisplayManager.cpp.s
 
 CMakeFiles/archiDemo.dir/DisplayManager.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/archiDemo.dir/DisplayManager.cpp.o.provides.build: CMakeFiles/archiDe
 
 CMakeFiles/archiDemo.dir/EventController.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/EventController.cpp.o: EventController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/archiDemo.dir/EventController.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/EventController.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/EventController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/archiDemo.dir/EventController.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/EventController.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/EventController.cpp
 
 CMakeFiles/archiDemo.dir/EventController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/EventController.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/EventController.cpp > CMakeFiles/archiDemo.dir/EventController.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/EventController.cpp > CMakeFiles/archiDemo.dir/EventController.cpp.i
 
 CMakeFiles/archiDemo.dir/EventController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/EventController.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/EventController.cpp -o CMakeFiles/archiDemo.dir/EventController.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/EventController.cpp -o CMakeFiles/archiDemo.dir/EventController.cpp.s
 
 CMakeFiles/archiDemo.dir/EventController.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/archiDemo.dir/EventController.cpp.o.provides.build: CMakeFiles/archiD
 
 CMakeFiles/archiDemo.dir/FramesData.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/FramesData.cpp.o: FramesData.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/archiDemo.dir/FramesData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/FramesData.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/FramesData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/archiDemo.dir/FramesData.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/FramesData.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.cpp
 
 CMakeFiles/archiDemo.dir/FramesData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/FramesData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/FramesData.cpp > CMakeFiles/archiDemo.dir/FramesData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.cpp > CMakeFiles/archiDemo.dir/FramesData.cpp.i
 
 CMakeFiles/archiDemo.dir/FramesData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/FramesData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/FramesData.cpp -o CMakeFiles/archiDemo.dir/FramesData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.cpp -o CMakeFiles/archiDemo.dir/FramesData.cpp.s
 
 CMakeFiles/archiDemo.dir/FramesData.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/archiDemo.dir/FramesData.cpp.o.provides.build: CMakeFiles/archiDemo.d
 
 CMakeFiles/archiDemo.dir/Modele.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/Modele.cpp.o: Modele.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/archiDemo.dir/Modele.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/Modele.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/Modele.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/archiDemo.dir/Modele.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/Modele.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.cpp
 
 CMakeFiles/archiDemo.dir/Modele.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/Modele.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/Modele.cpp > CMakeFiles/archiDemo.dir/Modele.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.cpp > CMakeFiles/archiDemo.dir/Modele.cpp.i
 
 CMakeFiles/archiDemo.dir/Modele.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/Modele.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/Modele.cpp -o CMakeFiles/archiDemo.dir/Modele.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.cpp -o CMakeFiles/archiDemo.dir/Modele.cpp.s
 
 CMakeFiles/archiDemo.dir/Modele.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/archiDemo.dir/Modele.cpp.o.provides.build: CMakeFiles/archiDemo.dir/M
 
 CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o: WrapperSDL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/WrapperSDL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.cpp
 
 CMakeFiles/archiDemo.dir/WrapperSDL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/WrapperSDL.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/WrapperSDL.cpp > CMakeFiles/archiDemo.dir/WrapperSDL.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.cpp > CMakeFiles/archiDemo.dir/WrapperSDL.cpp.i
 
 CMakeFiles/archiDemo.dir/WrapperSDL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/WrapperSDL.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/WrapperSDL.cpp -o CMakeFiles/archiDemo.dir/WrapperSDL.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.cpp -o CMakeFiles/archiDemo.dir/WrapperSDL.cpp.s
 
 CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o.provides.build: CMakeFiles/archiDemo.d
 
 CMakeFiles/archiDemo.dir/MouseData.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/MouseData.cpp.o: MouseData.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/archiDemo.dir/MouseData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/MouseData.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/MouseData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/archiDemo.dir/MouseData.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/MouseData.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MouseData.cpp
 
 CMakeFiles/archiDemo.dir/MouseData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/MouseData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/MouseData.cpp > CMakeFiles/archiDemo.dir/MouseData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MouseData.cpp > CMakeFiles/archiDemo.dir/MouseData.cpp.i
 
 CMakeFiles/archiDemo.dir/MouseData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/MouseData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/MouseData.cpp -o CMakeFiles/archiDemo.dir/MouseData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MouseData.cpp -o CMakeFiles/archiDemo.dir/MouseData.cpp.s
 
 CMakeFiles/archiDemo.dir/MouseData.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/archiDemo.dir/MouseData.cpp.o.provides.build: CMakeFiles/archiDemo.di
 
 CMakeFiles/archiDemo.dir/MainApplication.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/MainApplication.cpp.o: MainApplication.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/archiDemo.dir/MainApplication.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/MainApplication.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/MainApplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/archiDemo.dir/MainApplication.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/MainApplication.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MainApplication.cpp
 
 CMakeFiles/archiDemo.dir/MainApplication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/MainApplication.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/MainApplication.cpp > CMakeFiles/archiDemo.dir/MainApplication.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MainApplication.cpp > CMakeFiles/archiDemo.dir/MainApplication.cpp.i
 
 CMakeFiles/archiDemo.dir/MainApplication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/MainApplication.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/MainApplication.cpp -o CMakeFiles/archiDemo.dir/MainApplication.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MainApplication.cpp -o CMakeFiles/archiDemo.dir/MainApplication.cpp.s
 
 CMakeFiles/archiDemo.dir/MainApplication.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/archiDemo.dir/MainApplication.cpp.o.provides.build: CMakeFiles/archiD
 
 CMakeFiles/archiDemo.dir/WindowManager.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/WindowManager.cpp.o: WindowManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/archiDemo.dir/WindowManager.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/WindowManager.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/WindowManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/archiDemo.dir/WindowManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/WindowManager.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WindowManager.cpp
 
 CMakeFiles/archiDemo.dir/WindowManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/WindowManager.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/WindowManager.cpp > CMakeFiles/archiDemo.dir/WindowManager.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WindowManager.cpp > CMakeFiles/archiDemo.dir/WindowManager.cpp.i
 
 CMakeFiles/archiDemo.dir/WindowManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/WindowManager.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/WindowManager.cpp -o CMakeFiles/archiDemo.dir/WindowManager.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WindowManager.cpp -o CMakeFiles/archiDemo.dir/WindowManager.cpp.s
 
 CMakeFiles/archiDemo.dir/WindowManager.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/archiDemo.dir/WindowManager.cpp.o.provides.build: CMakeFiles/archiDem
 
 CMakeFiles/archiDemo.dir/abstractCamera.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/abstractCamera.cpp.o: abstractCamera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/archiDemo.dir/abstractCamera.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/abstractCamera.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/abstractCamera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/archiDemo.dir/abstractCamera.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/abstractCamera.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/abstractCamera.cpp
 
 CMakeFiles/archiDemo.dir/abstractCamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/abstractCamera.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/abstractCamera.cpp > CMakeFiles/archiDemo.dir/abstractCamera.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/abstractCamera.cpp > CMakeFiles/archiDemo.dir/abstractCamera.cpp.i
 
 CMakeFiles/archiDemo.dir/abstractCamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/abstractCamera.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/abstractCamera.cpp -o CMakeFiles/archiDemo.dir/abstractCamera.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/abstractCamera.cpp -o CMakeFiles/archiDemo.dir/abstractCamera.cpp.s
 
 CMakeFiles/archiDemo.dir/abstractCamera.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/archiDemo.dir/abstractCamera.cpp.o.provides.build: CMakeFiles/archiDe
 
 CMakeFiles/archiDemo.dir/Camera.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/Camera.cpp.o: Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/archiDemo.dir/Camera.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/Camera.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/archiDemo.dir/Camera.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/Camera.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Camera.cpp
 
 CMakeFiles/archiDemo.dir/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/Camera.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/Camera.cpp > CMakeFiles/archiDemo.dir/Camera.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Camera.cpp > CMakeFiles/archiDemo.dir/Camera.cpp.i
 
 CMakeFiles/archiDemo.dir/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/Camera.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/Camera.cpp -o CMakeFiles/archiDemo.dir/Camera.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Camera.cpp -o CMakeFiles/archiDemo.dir/Camera.cpp.s
 
 CMakeFiles/archiDemo.dir/Camera.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/archiDemo.dir/Camera.cpp.o.provides.build: CMakeFiles/archiDemo.dir/C
 
 CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o: GeometricTransform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/GeometricTransform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.cpp
 
 CMakeFiles/archiDemo.dir/GeometricTransform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/GeometricTransform.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/GeometricTransform.cpp > CMakeFiles/archiDemo.dir/GeometricTransform.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.cpp > CMakeFiles/archiDemo.dir/GeometricTransform.cpp.i
 
 CMakeFiles/archiDemo.dir/GeometricTransform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/GeometricTransform.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/GeometricTransform.cpp -o CMakeFiles/archiDemo.dir/GeometricTransform.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.cpp -o CMakeFiles/archiDemo.dir/GeometricTransform.cpp.s
 
 CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o.provides.build: CMakeFiles/arc
 
 CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o: CMakeFiles/archiDemo.dir/flags.make
 CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o: RenderingGlobalRoutines.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o -c /home/youssef/ISIMA/Infographie/tp1/RenderingGlobalRoutines.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o -c /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/RenderingGlobalRoutines.cpp
 
 CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/youssef/ISIMA/Infographie/tp1/RenderingGlobalRoutines.cpp > CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/RenderingGlobalRoutines.cpp > CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.i
 
 CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/youssef/ISIMA/Infographie/tp1/RenderingGlobalRoutines.cpp -o CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/RenderingGlobalRoutines.cpp -o CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.s
 
 CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o.requires:
 
@@ -403,7 +403,7 @@ archiDemo: CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o
 archiDemo: CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o
 archiDemo: CMakeFiles/archiDemo.dir/build.make
 archiDemo: CMakeFiles/archiDemo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/youssef/ISIMA/Infographie/tp1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable archiDemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable archiDemo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/archiDemo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -432,6 +432,6 @@ CMakeFiles/archiDemo.dir/clean:
 .PHONY : CMakeFiles/archiDemo.dir/clean
 
 CMakeFiles/archiDemo.dir/depend:
-	cd /home/youssef/ISIMA/Infographie/tp1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youssef/ISIMA/Infographie/tp1 /home/youssef/ISIMA/Infographie/tp1 /home/youssef/ISIMA/Infographie/tp1 /home/youssef/ISIMA/Infographie/tp1 /home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs /home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/archiDemo.dir/depend
 

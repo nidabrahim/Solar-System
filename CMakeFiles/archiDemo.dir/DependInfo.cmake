@@ -4,19 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/youssef/ISIMA/Infographie/tp1/Camera.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/Camera.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/DisplayManager.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/DisplayManager.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/EventController.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/EventController.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/FramesData.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/FramesData.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/GeometricTransform.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/MainApplication.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/MainApplication.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/Modele.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/Modele.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/MouseData.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/MouseData.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/RenderingGlobalRoutines.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/WindowManager.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/WindowManager.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/WrapperSDL.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/abstractCamera.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/abstractCamera.cpp.o"
-  "/home/youssef/ISIMA/Infographie/tp1/main.cpp" "/home/youssef/ISIMA/Infographie/tp1/CMakeFiles/archiDemo.dir/main.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Camera.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/Camera.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/DisplayManager.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/DisplayManager.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/EventController.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/EventController.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/FramesData.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/FramesData.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/GeometricTransform.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/GeometricTransform.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MainApplication.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/MainApplication.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/Modele.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/Modele.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/MouseData.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/MouseData.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/RenderingGlobalRoutines.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/RenderingGlobalRoutines.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WindowManager.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/WindowManager.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/WrapperSDL.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/WrapperSDL.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/abstractCamera.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/abstractCamera.cpp.o"
+  "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/main.cpp" "/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -10,7 +10,7 @@
 #include <GLES3/gl3.h>
 #include <GL/glut.h>
 
-#include "WrapperSDL.hpp"
+#include "WrapperSDL.h"
 
 WrapperSDL::WrapperSDL(u_int32_t largeurFenetreInit, u_int32_t hauteurFenetreInit,
                        const char* windowTitle, int argc, char**argv):

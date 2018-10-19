@@ -7,7 +7,7 @@
 *                                                                              * 
 \******************************************************************************/ 
 
-#include "MainApplication.hpp"
+#include "MainApplication.h"
 
 MainApplication::MainApplication(int largeurFenetreInit, int hauteurFenetreInit,
                                  const char *windowTitle, int argc,

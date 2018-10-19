@@ -10,9 +10,9 @@
 #include <cstdlib>
 #include <cstdio>
 
-#include "MouseData.hpp"
-#include "WrapperSDL.hpp"
-#include "Modele.hpp"
+#include "MouseData.h"
+#include "WrapperSDL.h"
+#include "Modele.h"
 
 // Initialisation des données de classe :
 SDL_TimerID WrapperSDL::EventController::mTimerId;

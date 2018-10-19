@@ -1,11 +1,11 @@
 #include <GLES3/gl3.h>
 #include <GL/glut.h>
 
-#include "DisplayManager.hpp"
-#include "Modele.hpp"
-#include "FramesData.hpp"
-#include "RenderingGlobalRoutines.hpp"
-#include "GeometricTransform.hpp"
+#include "DisplayManager.h"
+#include "Modele.h"
+#include "FramesData.h"
+#include "RenderingGlobalRoutines.h"
+#include "GeometricTransform.h"
 
 DisplayManager::DisplayManager():mWindowChanged( true )
 {

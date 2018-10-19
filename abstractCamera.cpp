@@ -1,5 +1,6 @@
-#include "abstractCamera.hpp"
-#include "GeometricTransform.hpp"
+#include <cstring>
+#include "abstractCamera.h"
+#include "GeometricTransform.h"
 
 
 AbstractCamera::AbstractCamera(double angleOuvertureY, double aspect, double z_proche, double z_eloigne,

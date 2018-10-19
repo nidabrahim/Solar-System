@@ -10,7 +10,7 @@ add_executable (archiDemo main.cpp DisplayManager.cpp EventController.cpp Frames
 
 target_link_libraries (archiDemo LINK_PUBLIC SDL2 GL GLU  SDL2_ttf glut)
 
-set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -pedantic \
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -pedantic \
     -pedantic-errors -Wextra -Wcast-align \
     -Wcast-qual  -Wchar-subscripts  -Wcomment -Wconversion \
     -Wdisabled-optimization \

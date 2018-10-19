@@ -2,8 +2,8 @@
 #define HEADER_MODELE_H
 
 #include <cstdlib>
-#include "DisplayManager.hpp"
-#include "Camera.hpp"
+#include "DisplayManager.h"
+#include "Camera.h"
 
 class Modele {
 	
