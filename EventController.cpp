@@ -9,10 +9,15 @@
 
 #include <cstdlib>
 #include <cstdio>
-
+#include <list>
+#include <algorithm>
 #include "MouseData.h"
 #include "WrapperSDL.h"
 #include "Modele.h"
+
+#define VITESSEKEY 10
+#define VITESSEMOU 100
+#define VITESSEROT 5
 
 // Initialisation des données de classe :
 SDL_TimerID WrapperSDL::EventController::mTimerId;
@@ -34,6 +39,116 @@ void WrapperSDL::EventController::DoEventsLoop(SDL_Window *p_window, Modele *p_m
       terminer = Handle_SDL_Event(&evenement, p_window, p_modele);
     }
   }
+}
+
+bool managePressedKeys(std::list<int> keys, Modele *p_ParamsAffichage){
+	bool res = std::find(keys.begin(), keys.end(), SDLK_q) != keys.end();
+	if (res){
+		exit(0);
+	}
+
+	if(std::find(keys.begin(), keys.end(), SDLK_LSHIFT) != keys.end() ||
+		std::find(keys.begin(), keys.end(), SDLK_RSHIFT) != keys.end()){
+			// MAJ PRESSED
+		if(std::find(keys.begin(), keys.end(), SDLK_x) != keys.end()){
+			p_ParamsAffichage->getCamera().GetPosition()[0] += VITESSEKEY;
+		}
+		if(std::find(keys.begin(), keys.end(), SDLK_y) != keys.end()){
+			p_ParamsAffichage->getCamera().GetPosition()[1] += VITESSEKEY;
+		}
+		if(std::find(keys.begin(), keys.end(), SDLK_z) != keys.end()){
+			p_ParamsAffichage->getCamera().GetPosition()[2] += VITESSEKEY;
+		}
+		if(std::find(keys.begin(), keys.end(), SDLK_a) != keys.end()){
+			p_ParamsAffichage->getCamera().UpdateAngle(p_ParamsAffichage->getCamera().GetAngleOuvertureY() + VITESSEKEY);
+		}
+
+/*
+		if(std::find(keys.begin(), keys.end(), SDLK_a) != keys.end()){
+			p_ParamsAffichage->mCamera.SetAzimuth(p_ParamsAffichage->mCamera.GetAzimuth() + VITESSEROT);
+		}
+
+		if(std::find(keys.begin(), keys.end(), SDLK_e) != keys.end()){
+			p_ParamsAffichage->mCamera.SetElevation(p_ParamsAffichage->mCamera.GetElevation() + VITESSEROT);
+		}
+
+		if(std::find(keys.begin(), keys.end(), SDLK_i) != keys.end()){
+			p_ParamsAffichage->mLight.SetIntensities(p_ParamsAffichage->mLight.mIntensity+0.1f);
+			p_ParamsAffichage->mLight.ApplyLightIntensities();
+		}
+
+		if(std::find(keys.begin(), keys.end(), SDLK_b) != keys.end()){
+			p_ParamsAffichage->mModele.changeBrillance(p_ParamsAffichage->mModele.mBrillance + 8.0f);
+		}
+
+		if(std::find(keys.begin(), keys.end(), SDLK_o) != keys.end()){
+			p_ParamsAffichage->mModele.changeRefAmbiante(p_ParamsAffichage->mModele.mReflexionAmbiante + 0.1f);
+		}
+*/
+	}else{
+/*
+		if(std::find(keys.begin(), keys.end(), SDLK_a) != keys.end()){
+			p_ParamsAffichage->mCamera.SetAzimuth(p_ParamsAffichage->mCamera.GetAzimuth() - VITESSEROT);
+		}
+
+		if(std::find(keys.begin(), keys.end(), SDLK_e) != keys.end()){
+			p_ParamsAffichage->mCamera.SetElevation(p_ParamsAffichage->mCamera.GetElevation() - VITESSEROT);
+		}
+*/
+		if(std::find(keys.begin(), keys.end(), SDLK_x) != keys.end()){
+			p_ParamsAffichage->getCamera().GetPosition()[0] -= VITESSEKEY;
+		}
+		if(std::find(keys.begin(), keys.end(), SDLK_y) != keys.end()){
+			p_ParamsAffichage->getCamera().GetPosition()[1] -= VITESSEKEY;
+		}
+		if(std::find(keys.begin(), keys.end(), SDLK_z) != keys.end()){
+			p_ParamsAffichage->getCamera().GetPosition()[2] -= VITESSEKEY;
+		}
+		if(std::find(keys.begin(), keys.end(), SDLK_a) != keys.end()){
+			p_ParamsAffichage->getCamera().UpdateAngle(p_ParamsAffichage->getCamera().GetAngleOuvertureY() - VITESSEKEY);
+		}
+
+/*
+
+		if(std::find(keys.begin(), keys.end(), SDLK_i) != keys.end()){
+			p_ParamsAffichage->mLight.SetIntensities(p_ParamsAffichage->mLight.mIntensity-0.1f);
+			p_ParamsAffichage->mLight.ApplyLightIntensities();
+		}
+
+		if(std::find(keys.begin(), keys.end(), SDLK_b) != keys.end()){
+			p_ParamsAffichage->mModele.changeBrillance(p_ParamsAffichage->mModele.mBrillance - 8.0f);
+		}
+
+		if(std::find(keys.begin(), keys.end(), SDLK_o) != keys.end()){
+			p_ParamsAffichage->mModele.changeRefAmbiante(p_ParamsAffichage->mModele.mReflexionAmbiante - 0.1f);
+		}
+*/
+	}
+
+	if(std::find(keys.begin(), keys.end(), SDLK_UP) != keys.end()){
+		p_ParamsAffichage->getCamera().GetPosition()[1] += VITESSEKEY;
+	}
+	if(std::find(keys.begin(), keys.end(), SDLK_DOWN) != keys.end()){
+		p_ParamsAffichage->getCamera().GetPosition()[1] -= VITESSEKEY;
+	}
+
+	if(std::find(keys.begin(), keys.end(), SDLK_RIGHT) != keys.end()){
+		p_ParamsAffichage->getCamera().GetPointDeVisee()[1] -= VITESSEKEY;
+	}
+
+	if(std::find(keys.begin(), keys.end(), SDLK_LEFT) != keys.end()){
+		p_ParamsAffichage->getCamera().GetPointDeVisee()[1] += VITESSEKEY;
+	}
+
+	if(std::find(keys.begin(), keys.end(), SDLK_e) != keys.end()){
+		p_ParamsAffichage->getCamera().Zoom(true);
+	}
+
+	if(std::find(keys.begin(), keys.end(), SDLK_r) != keys.end()){
+		p_ParamsAffichage->getCamera().Zoom(false);
+	}
+
+	return res;
 }
 
 Uint32 WrapperSDL::EventController::CreateTimerRefreshFrame(Uint32 interval, void *p_modele) {
@@ -62,8 +177,12 @@ Uint32 WrapperSDL::EventController::CreateTimerRefreshFrame(Uint32 interval, voi
  * @param p_ParamsAffichage instance de la classe Vue
  * @return true si l'événement est SDL_QUIT (fermeture de la fenêtre)
  */
-bool WrapperSDL::EventController::Handle_SDL_Event(const SDL_Event *p_evenement,
-                                                   SDL_Window *p_window, Modele *p_modele) {
+bool WrapperSDL::EventController::Handle_SDL_Event(const SDL_Event *p_evenement,SDL_Window *p_window, Modele *p_modele) {
+	
+	static std::list<int> keys;
+	std::list<int>::iterator toRemove;
+	bool res = false;
+													   
   switch (p_evenement->type) { // suivant le type d'événement
     //////////////////////////////////////////////////////
     // Événements utilisateur via la souris
@@ -127,7 +246,44 @@ bool WrapperSDL::EventController::Handle_SDL_Event(const SDL_Event *p_evenement,
       // Application des changements sur le modèle de projection 3D->2D
       p_modele->Redimensionnement(w, h);
       break;
-      //////////////////////////////////////////////////////
+      
+      // Evenement clavier
+      case SDL_KEYDOWN:
+		keys.push_back(p_evenement->key.keysym.sym);
+		keys.unique();
+		res = managePressedKeys(keys, p_modele);
+		printf("La touche %s a été enfoncée\n",SDL_GetKeyName(p_evenement->key.keysym.sym));
+		switch(p_evenement->key.keysym.sym) {
+			case SDLK_LEFT : /* touche flèche à gauche */
+			printf("La touche LEFT a été enfoncée\n");
+				/*niveauDeGris −= 0.05f;
+				if(niveauDeGris < 0.0f)
+					niveauDeGris = 0.0f;*/
+			break ;
+			
+			case SDLK_RIGHT : /* touche f l è c h e à d r o i t e */
+			printf("La touche RIGHT a été enfoncée\n");
+				/*niveauDeGris += 0.05 f ;
+				i f ( niveauDeGris > 1.0 f )
+					niveauDeGris = 1.0 f ;*/
+			break ;
+			
+			case SDLK_q : /* touche ’ q ’ , on q u i t t e */
+				 
+			break ;
+			default :
+ 			break ;
+		}
+		break;
+		
+	case SDL_KEYUP:
+	   	toRemove = std::find(keys.begin(), keys.end(), p_evenement->key.keysym.sym);
+    	if(toRemove != keys.end()){
+    		keys.erase(toRemove);
+    	}
+		break;
+    
+		////////////////////////////////////////////////////////
       // Fermeture de l'application
     case SDL_QUIT: // fermeture de la fenêtre
       return true;
@@ -135,5 +291,5 @@ bool WrapperSDL::EventController::Handle_SDL_Event(const SDL_Event *p_evenement,
     default:
       fprintf(stderr, "Événement non géré\n");
   }
-  return false;
+  return res;
 }

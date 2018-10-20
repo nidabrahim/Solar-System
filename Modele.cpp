@@ -12,7 +12,8 @@ Modele::Modele(u_int32_t largeurFenetre, u_int32_t hauteurFenetre) :
 		mLargeurFenetre(largeurFenetre),
         mHauteurFenetre(hauteurFenetre),
         mDisplayManager(),
-		mCamera(10.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 10.0, 7.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
+		mCamera(50.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 10.0, 7.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
+		//mCamera(50.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 0.0, 0.0, 50.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0)
 {
   FramesData::Init(); // Initialisation du compteur de frames
 }
@@ -27,6 +28,10 @@ u_int32_t Modele::getLargeurFenetre() const {
 
 u_int32_t Modele::getHauteurFenetre() const {
   return mHauteurFenetre;
+}
+
+ Camera& Modele::getCamera() {
+   return mCamera;
 }
 
 const Camera &Modele::getCamera() const {

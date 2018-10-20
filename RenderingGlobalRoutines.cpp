@@ -20,5 +20,5 @@ void RenderingGlobalRoutines::InitView(){
 
 void RenderingGlobalRoutines::DrawModel(const Modele& /* modele */ ){
 	// Dessin de l a mondialement c é l è b r e th é i è r e GLUT
-	glutWireTeapot(1);
+	glutWireTeapot(5);
 }

@@ -40,8 +40,9 @@ class AbstractCamera {
 		/*
 		void Redimensionnement(int w, int h);
 		void ChangementAngle(double angleOuvertureY);
-		void Zoumage(bool forward);
-		*/
+		* */
+		void Zoom(bool forward);
+		
 		  
 
 		/**

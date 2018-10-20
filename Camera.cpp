@@ -22,4 +22,9 @@ void Camera::ApplyCameraCoordinates() const{
 	GeometricTransform::LookAt(mPosition, mPointDeVisee, mVecteurVertical);
 }
 
+void Camera::UpdateAngle(double angleOuvertureY){
+	
+	this->mAngleOuvertureY = angleOuvertureY;
+	this->ApplyPerspectiveProjection();
+}
 

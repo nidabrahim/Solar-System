@@ -18,6 +18,8 @@ class Camera : public AbstractCamera {
 		virtual void ApplyPerspectiveProjection() const;
 		
 		virtual void ApplyCameraCoordinates() const;
+		
+		void UpdateAngle(double angleOuvertureY);
   
 };
 

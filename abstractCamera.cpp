@@ -64,8 +64,8 @@ void AbstractCamera::ChangementAngle(double angleOuvertureY){
 	this->mAngleOuverture = angleOuvertureY;
 	this->ApplyPerspectiveProjection();
 }
-
-void AbstractCamera::Zoumage(bool forward) {
+*/
+void AbstractCamera::Zoom(bool forward) {
 	int i;
 	if(forward) {
 		for(i=0;i<3;i++) {
@@ -76,7 +76,7 @@ void AbstractCamera::Zoumage(bool forward) {
 			this->mPosition[i] = ((this->mPosition[i] - this->mPointDeVisee[i]) / 1.1) + this->mPointDeVisee[i];
 		}
 	}
-}*/
+}
 
 /**
  * GETTERS

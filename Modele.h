@@ -28,6 +28,8 @@ class Modele {
 		
 		u_int32_t getHauteurFenetre() const;
 		
+		Camera& getCamera();
+		
 		const Camera &getCamera() const;
 		
 		void ApplyModelTransform() const;
