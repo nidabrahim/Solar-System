@@ -1,11 +1,3 @@
-/******************************************************************************\
-*     Copyright (C) 2017 by Rémy Malgouyres                                    * 
-*     http://malgouyres.org                                                    * 
-*     File: MouseData.cpp                                                      * 
-*                                                                              * 
-* The program is distributed under the terms of the GNU General Public License * 
-*                                                                              * 
-\******************************************************************************/ 
 
 #include "MouseData.h"
 

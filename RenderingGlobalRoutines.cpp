@@ -12,7 +12,7 @@ void RenderingGlobalRoutines::Init(){
 	
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glColor3f(0.0, 0.0, 0.0);
-	// On a c t i v e l ’ é limination des p a r t i e s cach é es
+	// On active l’élimination des parties cachées
 	glEnable(GL_DEPTH_TEST);
 }
 
@@ -22,7 +22,7 @@ void RenderingGlobalRoutines::InitView(){
 }
 
 void RenderingGlobalRoutines::DrawModel( Modele * /* modele */ ){
-	// Dessin de l a mondialement c é l è b r e th é i è r e GLUT
+
 	glutWireTeapot(5);
 }
 

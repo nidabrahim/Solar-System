@@ -9,8 +9,8 @@
 
 DisplayManager::DisplayManager():mWindowChanged( true )
 {
-	FramesData::Init(); // I n i t i a l i s a t i o n du compteur de frames
-	RenderingGlobalRoutines::Init(); // I n i t i a l i s a t i o n du fond et mode d ’ a f f i c h a g e
+	FramesData::Init(); // Initialisation du compteur de frames
+	RenderingGlobalRoutines::Init(); // Initialisation du fond et mode d’affichage
 }
 
 void DisplayManager::setWindowChanged() {
@@ -18,12 +18,12 @@ void DisplayManager::setWindowChanged() {
 }
 
 void DisplayManager::Affichage( const Modele &modele ) {
- // Si l e s dimensions de l a fen ê t r e ont chang é ( ou à l ’ i n i t i a l i s a t i o n )
+ // Si les dimensions de la fenêtre ont changé ( ou à l’initialisation )
  if(mWindowChanged) {
 	Redimensionnement(modele); 
 	mWindowChanged = false ;
  }
- // On e f f a c e l e s b u f f e r s ( é cran et profondeur )
+ // On efface les buffers ( é cran et profondeur )
 	RenderingGlobalRoutines::InitView();
  // On se place dans l e repère du monde
 	Camera::ClearModelView();
@@ -31,7 +31,7 @@ void DisplayManager::Affichage( const Modele &modele ) {
 	modele.getCamera().ApplyCameraCoordinates ( );
  // On applique l a transformation du modèle
 	modele.ApplyModelTransform ( );
- // Dessin d ’ une th é i è r e
+ // Dessin d’une théière
 	//RenderingGlobalRoutines::DrawModel(modele);
 	modele.render();
 }

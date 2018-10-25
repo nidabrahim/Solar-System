@@ -1,11 +1,4 @@
-/******************************************************************************\
-*     Copyright (C) 2017 by Rémy Malgouyres                                    * 
-*     http://malgouyres.org                                                    * 
-*     File: WindowManager.cpp                                                  * 
-*                                                                              * 
-* The program is distributed under the terms of the GNU General Public License * 
-*                                                                              * 
-\******************************************************************************/ 
+
 
 #include <SDL2/SDL_opengl.h>
 #include <GLES3/gl3.h>

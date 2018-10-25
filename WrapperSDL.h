@@ -1,11 +1,4 @@
-/******************************************************************************\
-*     Copyright (C) 2017 by Rémy Malgouyres                                    * 
-*     http://malgouyres.org                                                    * 
-*     File: WrapperSDL.h                                                       * 
-*                                                                              * 
-* The program is distributed under the terms of the GNU General Public License * 
-*                                                                              * 
-\******************************************************************************/ 
+
 
 #ifndef HEADER_WRAPPER_SDL_H
 #define HEADER_WRAPPER_SDL_H

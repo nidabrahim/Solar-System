@@ -8,7 +8,5 @@ Theiere::~Theiere(){}
 		
 void Theiere::render(){
 	
- 	//glutSolidTeapot(this->mSize);
- 	//glutWireTeapot(this->mSize);
  	RenderingGlobalRoutines::DrawModel(nullptr);
 }

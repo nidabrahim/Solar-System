@@ -1,11 +1,4 @@
-/******************************************************************************\
-*     Copyright (C) 2017 by Rémy Malgouyres                                    * 
-*     http://malgouyres.org                                                    * 
-*     File: FramesData.h                                                       * 
-*                                                                              * 
-* The program is distributed under the terms of the GNU General Public License * 
-*                                                                              * 
-\******************************************************************************/ 
+
 
 #ifndef HEADER_FRAME_DATA_H
 #define HEADER_FRAME_DATA_H

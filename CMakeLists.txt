@@ -1,10 +1,4 @@
-################################################################################
-#     Copyright (C) 2017 by Rémy Malgouyres                                    # 
-#     http://malgouyres.org                                                    # 
-#                                                                              # 
-# The program is distributed under the terms of the GNU General Public License # 
-#                                                                              # 
-################################################################################ 
+
 
 add_executable (archiDemo main.cpp DisplayManager.cpp EventController.cpp FramesData.cpp  Modele.cpp WrapperSDL.cpp MouseData.cpp MainApplication.cpp WindowManager.cpp abstractCamera.cpp Camera.cpp GeometricTransform.cpp RenderingGlobalRoutines.cpp)
 

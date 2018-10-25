@@ -1,11 +1,3 @@
-/******************************************************************************\
-*     Copyright (C) 2017 by Rémy Malgouyres                                    * 
-*     http://malgouyres.org                                                    * 
-*     File: WrapperSDL.cpp                                                     * 
-*                                                                              * 
-* The program is distributed under the terms of the GNU General Public License * 
-*                                                                              * 
-\******************************************************************************/ 
 
 #include <GLES3/gl3.h>
 #include <GL/glut.h>

@@ -11,10 +11,10 @@ class Modele ;
 
 struct RenderingGlobalRoutines {
  
- /** I n i t i a l i s e l e s paramètres de rendu de l a scène */
+ /** Initialiseles paramètres de rendu de la scène */
  static void Init();
 
- /** Ré i n i t i a l i s e l a vue ( e f f a c e l ’ é cran ) avant r a f f r a î chissement */
+ /** Réinitialise la vue ( efface l’écran ) avant raffraîchissement */
  static void InitView();
 
  /** Dessin du modèle avec OpenGL */
