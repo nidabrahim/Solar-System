@@ -2,8 +2,11 @@
 #define HEADER_MODELE_H
 
 #include <cstdlib>
+#include <vector>
 #include "DisplayManager.h"
 #include "Camera.h"
+#include "AbstractScene.h"
+
 
 class Modele {
 	
@@ -17,6 +20,7 @@ class Modele {
 		/** Gestionnaire de la vue (affichage) */
 		DisplayManager mDisplayManager;
 		Camera mCamera;
+		std::vector<AbstractScene*> mScenes;
 
 	public:
 
@@ -31,6 +35,8 @@ class Modele {
 		Camera& getCamera();
 		
 		const Camera &getCamera() const;
+		
+		void render() const;
 		
 		void ApplyModelTransform() const;
 

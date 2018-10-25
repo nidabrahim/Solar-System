@@ -32,7 +32,8 @@ void DisplayManager::Affichage( const Modele &modele ) {
  // On applique l a transformation du modèle
 	modele.ApplyModelTransform ( );
  // Dessin d ’ une th é i è r e
-	RenderingGlobalRoutines::DrawModel(modele);
+	//RenderingGlobalRoutines::DrawModel(modele);
+	modele.render();
 }
 
 void DisplayManager::Redimensionnement(const Modele& modele){

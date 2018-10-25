@@ -3,6 +3,9 @@
 
 #include "RenderingGlobalRoutines.h"
 #include "Modele.h"
+#include "GeometricTransform.h"
+#include <cmath>
+#include <stdio.h>
 
 
 void RenderingGlobalRoutines::Init(){
@@ -18,7 +21,37 @@ void RenderingGlobalRoutines::InitView(){
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT) ;
 }
 
-void RenderingGlobalRoutines::DrawModel(const Modele& /* modele */ ){
+void RenderingGlobalRoutines::DrawModel( Modele * /* modele */ ){
 	// Dessin de l a mondialement c é l è b r e th é i è r e GLUT
 	glutWireTeapot(5);
+}
+
+void RenderingGlobalRoutines::DrawSolarSystem(SystemeSolaire & scene){ 
+	
+	glColor4f (1.0, 1.0, 0, 1);
+	glPushMatrix();
+	glutSolidSphere(scene.GetRayon(), 70, 70);
+	
+	glRotatef((GLfloat)scene.GetAngleRotationSun(), 0.0, 1.0, 0.0);
+	glTranslatef((GLfloat)-scene.GetRayon()*3, 0.0, 0.0);
+	glPushMatrix();
+	
+	glPushMatrix();
+	glRotatef((GLfloat) scene.GetAngleRotationSelf(), 0.0, 1.0, 0.0);
+	glColor3f (0, 0, 1);
+	glutWireSphere(scene.GetRayon()/2, 70, 70);
+	glPopMatrix();
+		
+	glPushMatrix();
+	glRotatef((GLfloat)scene.GetAngleRotationMoon(), 0.0, 1.0, 0.0);
+	glTranslatef((GLfloat)-scene.GetRayon(), 0.0, 0.0);
+	//glColor4f (0.4, 0.5, 0.6, 1);                       
+    glutWireSphere(scene.GetRayon()/6, 10, 8);             
+    glPopMatrix();
+    
+    scene.SetAngleRotationMoon( fmod((scene.GetAngleRotationMoon() + scene.GetVitesseRotation()*20),360.0) );
+	scene.SetAngleRotationSelf( fmod((scene.GetAngleRotationSelf() + scene.GetVitesseRotation()*4),360.0) );
+	scene.SetAngleRotationSun( fmod((scene.GetAngleRotationSun() + scene.GetVitesseRotation()),360.0) );
+	glPopMatrix();
+
 }

@@ -3,19 +3,25 @@
 #include "Modele.h"
 #include "FramesData.h"
 #include "GeometricTransform.h"
+#include "Theiere.h"
+#include "SystemeSolaire.h"
 
 
 Modele::Modele(u_int32_t largeurFenetre, u_int32_t hauteurFenetre) :
 		mAngleRotation(0.0),
-		mVitesseRotation(0.3),
+		mVitesseRotation(0.0),
 		mNiveauGris(0.0f),
 		mLargeurFenetre(largeurFenetre),
         mHauteurFenetre(hauteurFenetre),
         mDisplayManager(),
-		mCamera(50.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 10.0, 7.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
-		//mCamera(50.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 0.0, 0.0, 50.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0)
+		mCamera(50.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 10.0, 7.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0),
+		//mCamera(50.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 0.0, 0.0, 50.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
+		mScenes()
+		
 {
   FramesData::Init(); // Initialisation du compteur de frames
+  //this->mScenes.push_back(new Theiere());
+  this->mScenes.push_back(new SystemeSolaire());
 }
 
 float Modele::getNiveauGris() const {
@@ -32,6 +38,11 @@ u_int32_t Modele::getHauteurFenetre() const {
 
  Camera& Modele::getCamera() {
    return mCamera;
+}
+
+void Modele::render() const{
+
+	mScenes[0]->render();
 }
 
 const Camera &Modele::getCamera() const {

@@ -1,7 +1,7 @@
 #ifndef HEADER_RENDERING_INIT_H
 #define HEADER_RENDERING_INIT_H
 
-
+#include "SystemeSolaire.h"
 
 class Modele ;
 
@@ -18,7 +18,9 @@ struct RenderingGlobalRoutines {
  static void InitView();
 
  /** Dessin du modèle avec OpenGL */
- static void DrawModel(const Modele& modele);
+ static void DrawModel( Modele* modele = nullptr);
+ 
+ static void DrawSolarSystem(SystemeSolaire & scene);
  
 };
 
