@@ -1,3 +1,0 @@
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/edit_cache.dir
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/rebuild_cache.dir
-/home/LOCAL.ISIMA.FR/yonidabrah/Documents/INFOGRAPHIE/opengl-labs/CMakeFiles/archiDemo.dir
