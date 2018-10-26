@@ -8,5 +8,5 @@ Theiere::~Theiere(){}
 		
 void Theiere::render(){
 	
- 	RenderingGlobalRoutines::DrawModel(nullptr);
+ 	RenderingGlobalRoutines::DrawTheiere(nullptr);
 }

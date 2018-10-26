@@ -21,7 +21,7 @@ void RenderingGlobalRoutines::InitView(){
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT) ;
 }
 
-void RenderingGlobalRoutines::DrawModel( Modele * /* modele */ ){
+void RenderingGlobalRoutines::DrawTheiere( Modele * /* modele */ ){
 
 	glutWireTeapot(5);
 }
@@ -52,6 +52,8 @@ void RenderingGlobalRoutines::DrawSolarSystem(SystemeSolaire & scene){
     scene.SetAngleRotationMoon( fmod((scene.GetAngleRotationMoon() + scene.GetVitesseRotation()*20),360.0) );
 	scene.SetAngleRotationSelf( fmod((scene.GetAngleRotationSelf() + scene.GetVitesseRotation()*4),360.0) );
 	scene.SetAngleRotationSun( fmod((scene.GetAngleRotationSun() + scene.GetVitesseRotation()),360.0) );
+	glPopMatrix();
+	
 	glPopMatrix();
 
 }

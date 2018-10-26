@@ -42,7 +42,7 @@ bool managePressedKeys(std::list<int> keys, Modele *p_ParamsAffichage){
 
 	if(std::find(keys.begin(), keys.end(), SDLK_LSHIFT) != keys.end() ||
 		std::find(keys.begin(), keys.end(), SDLK_RSHIFT) != keys.end()){
-			// MAJ PRESSED
+
 		if(std::find(keys.begin(), keys.end(), SDLK_x) != keys.end()){
 			p_ParamsAffichage->getCamera().GetPosition()[0] += VITESSEKEY;
 		}
@@ -56,38 +56,8 @@ bool managePressedKeys(std::list<int> keys, Modele *p_ParamsAffichage){
 			p_ParamsAffichage->getCamera().UpdateAngle(p_ParamsAffichage->getCamera().GetAngleOuvertureY() + VITESSEKEY);
 		}
 
-/*
-		if(std::find(keys.begin(), keys.end(), SDLK_a) != keys.end()){
-			p_ParamsAffichage->mCamera.SetAzimuth(p_ParamsAffichage->mCamera.GetAzimuth() + VITESSEROT);
-		}
-
-		if(std::find(keys.begin(), keys.end(), SDLK_e) != keys.end()){
-			p_ParamsAffichage->mCamera.SetElevation(p_ParamsAffichage->mCamera.GetElevation() + VITESSEROT);
-		}
-
-		if(std::find(keys.begin(), keys.end(), SDLK_i) != keys.end()){
-			p_ParamsAffichage->mLight.SetIntensities(p_ParamsAffichage->mLight.mIntensity+0.1f);
-			p_ParamsAffichage->mLight.ApplyLightIntensities();
-		}
-
-		if(std::find(keys.begin(), keys.end(), SDLK_b) != keys.end()){
-			p_ParamsAffichage->mModele.changeBrillance(p_ParamsAffichage->mModele.mBrillance + 8.0f);
-		}
-
-		if(std::find(keys.begin(), keys.end(), SDLK_o) != keys.end()){
-			p_ParamsAffichage->mModele.changeRefAmbiante(p_ParamsAffichage->mModele.mReflexionAmbiante + 0.1f);
-		}
-*/
 	}else{
-/*
-		if(std::find(keys.begin(), keys.end(), SDLK_a) != keys.end()){
-			p_ParamsAffichage->mCamera.SetAzimuth(p_ParamsAffichage->mCamera.GetAzimuth() - VITESSEROT);
-		}
 
-		if(std::find(keys.begin(), keys.end(), SDLK_e) != keys.end()){
-			p_ParamsAffichage->mCamera.SetElevation(p_ParamsAffichage->mCamera.GetElevation() - VITESSEROT);
-		}
-*/
 		if(std::find(keys.begin(), keys.end(), SDLK_x) != keys.end()){
 			p_ParamsAffichage->getCamera().GetPosition()[0] -= VITESSEKEY;
 		}
@@ -101,21 +71,6 @@ bool managePressedKeys(std::list<int> keys, Modele *p_ParamsAffichage){
 			p_ParamsAffichage->getCamera().UpdateAngle(p_ParamsAffichage->getCamera().GetAngleOuvertureY() - VITESSEKEY);
 		}
 
-/*
-
-		if(std::find(keys.begin(), keys.end(), SDLK_i) != keys.end()){
-			p_ParamsAffichage->mLight.SetIntensities(p_ParamsAffichage->mLight.mIntensity-0.1f);
-			p_ParamsAffichage->mLight.ApplyLightIntensities();
-		}
-
-		if(std::find(keys.begin(), keys.end(), SDLK_b) != keys.end()){
-			p_ParamsAffichage->mModele.changeBrillance(p_ParamsAffichage->mModele.mBrillance - 8.0f);
-		}
-
-		if(std::find(keys.begin(), keys.end(), SDLK_o) != keys.end()){
-			p_ParamsAffichage->mModele.changeRefAmbiante(p_ParamsAffichage->mModele.mReflexionAmbiante - 0.1f);
-		}
-*/
 	}
 
 	if(std::find(keys.begin(), keys.end(), SDLK_UP) != keys.end()){
@@ -249,19 +204,13 @@ bool WrapperSDL::EventController::Handle_SDL_Event(const SDL_Event *p_evenement,
 		switch(p_evenement->key.keysym.sym) {
 			case SDLK_LEFT : /* touche flèche à gauche */
 			printf("La touche LEFT a été enfoncée\n");
-				/*niveauDeGris −= 0.05f;
-				if(niveauDeGris < 0.0f)
-					niveauDeGris = 0.0f;*/
 			break ;
 			
-			case SDLK_RIGHT : /* touche f l è c h e à d r o i t e */
+			case SDLK_RIGHT : /* touche flèche à droite */
 			printf("La touche RIGHT a été enfoncée\n");
-				/*niveauDeGris += 0.05 f ;
-				i f ( niveauDeGris > 1.0 f )
-					niveauDeGris = 1.0 f ;*/
 			break ;
 			
-			case SDLK_q : /* touche ’ q ’ , on q u i t t e */
+			case SDLK_q : /* touche ’ q ’ , on quitte */
 				 
 			break ;
 			default :

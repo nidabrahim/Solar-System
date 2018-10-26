@@ -17,9 +17,10 @@ struct RenderingGlobalRoutines {
  /** Réinitialise la vue ( efface l’écran ) avant raffraîchissement */
  static void InitView();
 
- /** Dessin du modèle avec OpenGL */
- static void DrawModel( Modele* modele = nullptr);
+ /** Dessin du modèle Theiere avec OpenGL */
+ static void DrawTheiere( Modele* modele = nullptr);
  
+ /** Dessin d'un modèle Systeme solaire avec OpenGL */
  static void DrawSolarSystem(SystemeSolaire & scene);
  
 };
