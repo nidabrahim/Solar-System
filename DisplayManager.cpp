@@ -23,13 +23,23 @@ void DisplayManager::Affichage( const Modele &modele ) {
 	Redimensionnement(modele); 
 	mWindowChanged = false ;
  }
- // On efface les buffers ( é cran et profondeur )
+ // On efface les buffers ( écran et profondeur )
 	RenderingGlobalRoutines::InitView();
- // On se place dans l e repère du monde
+ // On se place dans le repère du monde
 	Camera::ClearModelView();
- // On appliquechangement de repère de l a camé ra dans l e ModelView
+ // On applique changement de repère de la caméra dans le ModelView
 	modele.getCamera().ApplyCameraCoordinates ( );
- // On applique l a transformation du modèle
+	
+	// Positionnement des caméras qui sont dans le repère du monde
+	modele.mScenes[0]->getLightSources().ApplyLightPositions(LightSourceData::TypeRepere::MONDE);
+	
+	// On applique les intensités des sources et on active les sources
+	modele.mScenes[0]->getLightSources().ApplyLightIntensities();
+	
+	//Définition des propiétés matérielles
+	RenderingGlobalRoutines::ApplyMaterial(modele.mScenes[0]->getDefaultMaterial());
+	
+ // On applique la transformation du modèle
 	modele.ApplyModelTransform ( );
  // Dessin d’une théière
 	//RenderingGlobalRoutines::DrawModel(modele);

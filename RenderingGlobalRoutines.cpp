@@ -14,11 +14,34 @@ void RenderingGlobalRoutines::Init(){
 	glColor3f(0.0, 0.0, 0.0);
 	// On active l’élimination des parties cachées
 	glEnable(GL_DEPTH_TEST);
+	// On active l'éclairage
+	glEnable(GL_LIGHTING);
 }
 
 void RenderingGlobalRoutines::InitView(){
 	
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT) ;
+}
+
+static void RenderingGlobalRoutines::ApplyPointLightPosition(int32_t lightId, const float position[4]){
+	glLightfv(lightId, GL_POSITION, position);
+}
+ 
+static void RenderingGlobalRoutines::ApplyPointLightIntensity(int32_t lightId, const float diffuseIntensity[4], const float specularIntensity[4]){
+	glLightfv(lightId, GL_DIFFUSE, diffuseIntensity);
+	glLightfv(lightId, GL_SPECULAR, specularIntensity);
+	glEnable(lightId);
+}
+ 
+static void RenderingGlobalRoutines::DisablePointLight(int32_t lightId){
+	glDisable (lightId);
+}
+ 
+static void RenderingGlobalRoutines::ApplyMaterial(Material material){
+	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, material.getAmbient());
+	glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, material.getDiffuse());
+	glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, material.getSpecular());
+	glMaterialf(GL_FRONT_AND_BACK, GL_SHININESS, material.getShininess());
 }
 
 void RenderingGlobalRoutines::DrawTheiere( Modele * /* modele */ ){

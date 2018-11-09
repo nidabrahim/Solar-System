@@ -16,6 +16,14 @@ struct RenderingGlobalRoutines {
 
  /** Réinitialise la vue ( efface l’écran ) avant raffraîchissement */
  static void InitView();
+ 
+ static void ApplyPointLightPosition(int32_t lightId, const float position[4]);
+ 
+ static void ApplyPointLightIntensity(int32_t lightId, const float diffuseIntensity[4], const float specularIntensity[4]);
+ 
+ static void DisablePointLight(int32_t lightId);
+ 
+ static void ApplyMaterial(Material material);
 
  /** Dessin du modèle Theiere avec OpenGL */
  static void DrawTheiere( Modele* modele = nullptr);
