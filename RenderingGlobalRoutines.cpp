@@ -80,3 +80,72 @@ void RenderingGlobalRoutines::DrawSolarSystem(SystemeSolaire & scene){
 	glPopMatrix();
 
 }
+
+void RenderingGlobalRoutines::DrawRoue(Voiture & scene){
+	 
+	glPushMatrix();
+		GeometricTransform::Rotate(0, 1, 0, 90);
+		GeometricTransform::Rotate(0, 0, 1, scene.mStep * scene.mVitesseRoue);
+		gluCylinder(gluNewQuadric(),
+		 	5,	//base,
+		 	5,  	//top,
+		 	0.5, 	//height,
+		 	12, 	//slices,
+		 	12  	//stacks
+		 );
+	glPopMatrix();	 
+}
+ 
+void RenderingGlobalRoutines::DrawEssieu(double longueur){
+	glPushMatrix();
+		GeometricTransform::Translate(-longueur/2, 0, 0);
+		GeometricTransform::Rotate(0, 1, 0, 90);
+		gluCylinder(gluNewQuadric(),
+		 	0.5,		//base,
+		 	0.5,  	//top,
+		 	longueur, 	//height,
+		 	8, 	//slices,
+		 	8  	//stacks
+		 );
+	glPopMatrix();
+
+	// Roue gauche
+	glPushMatrix();
+		GeometricTransform::Translate(longueur/2, 0, 0);
+		DrawRoue();
+	glPopMatrix();
+
+	// Roue droite
+	glPushMatrix();
+		GeometricTransform::Translate(-longueur/2, 0, 0);
+		DrawRoue();
+	glPopMatrix();
+}
+ 
+void RenderingGlobalRoutines::DrawCorps(Voiture & scene){
+
+	// Gros bloc
+	glPushMatrix();
+		GeometricTransform::Scale(1,1,3);
+		glutWireCube(10);
+	glPopMatrix();
+
+	// Petit bloc
+	glPushMatrix();
+		GeometricTransform::Translate(0, 8, -3);
+		GeometricTransform::Scale(1,1,2);
+		glutWireCube(8);
+	glPopMatrix();
+
+	// Essieu arriere
+	glPushMatrix();
+		GeometricTransform::Translate(0, -5, -12);
+		DrawEssieu(12);
+	glPopMatrix();
+
+	// Essieu avant
+	glPushMatrix();
+		GeometricTransform::Translate(0, -5, 12);
+		DrawEssieu(12);
+	glPopMatrix();
+}

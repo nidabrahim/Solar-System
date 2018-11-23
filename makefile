@@ -27,13 +27,16 @@ all: run
 run: main.cpp DisplayManager.cpp EventController.cpp FramesData.cpp  Modele.cpp\
          WrapperSDL.cpp MouseData.cpp MainApplication.cpp WindowManager.cpp\
          abstractCamera.cpp Camera.cpp GeometricTransform.cpp RenderingGlobalRoutines.cpp AbstractScene.cpp Theiere.cpp SystemeSolaire.cpp\
-	 DisplayManager.h FramesData.h  Modele.h\
+         LightSourceData.cpp Material.cpp PointLightSource.cpp Voiture.cpp\
+		 DisplayManager.h FramesData.h  Modele.h\
          WrapperSDL.h MouseData.h MainApplication.h\
          abstractCamera.h Camera.h GeometricTransform.h RenderingGlobalRoutines.h AbstractScene.h Theiere.h SystemeSolaire.h\
+         LightSourceData.h Material.h Voiture.h\
 
 	g++ $(CXXFLAGS) main.cpp DisplayManager.cpp EventController.cpp FramesData.cpp  Modele.cpp\
          WrapperSDL.cpp MouseData.cpp MainApplication.cpp WindowManager.cpp\
          abstractCamera.cpp Camera.cpp GeometricTransform.cpp RenderingGlobalRoutines.cpp AbstractScene.cpp Theiere.cpp SystemeSolaire.cpp\
+         LightSourceData.cpp Material.cpp PointLightSource.cpp Voiture.cpp\
 				 -o run -lSDL2 -lGL -lGLU  -lSDL2_ttf -lglut
 clean:
 	rm -f run

@@ -2,6 +2,7 @@
 #define HEADER_RENDERING_INIT_H
 
 #include "SystemeSolaire.h"
+#include "Voiture.h"
 
 class Modele ;
 
@@ -30,6 +31,16 @@ struct RenderingGlobalRoutines {
  
  /** Dessin d'un modèle Systeme solaire avec OpenGL */
  static void DrawSolarSystem(SystemeSolaire & scene);
+ 
+  /** Dessin d'un modèle ed roue avec OpenGL */
+ static void DrawRoue(Voiture & scene);
+ 
+   /** Dessin d'un modèle d'essieu avec OpenGL */
+ static void DrawEssieu(double longueur);
+ 
+   /** Dessin d'un modèle de corps de voiture avec OpenGL */
+ static void DrawCorps(Voiture & scene);
+ 
  
 };
 
