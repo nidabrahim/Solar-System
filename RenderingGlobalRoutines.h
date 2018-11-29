@@ -3,6 +3,7 @@
 
 #include "SystemeSolaire.h"
 #include "Voiture.h"
+#include <cstdint> 
 
 class Modele ;
 

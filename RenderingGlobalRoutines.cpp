@@ -8,6 +8,7 @@
 #include <stdio.h>
 
 
+
 void RenderingGlobalRoutines::Init(){
 	
 	glClearColor(1.0, 1.0, 1.0, 1.0);

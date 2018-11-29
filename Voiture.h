@@ -20,4 +20,5 @@ class Voiture : public AbstractScene {
 		void drawCorps();
 		void render();
 };
+
 #endif
