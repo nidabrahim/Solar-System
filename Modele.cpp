@@ -6,6 +6,8 @@
 #include "Theiere.h"
 #include "SystemeSolaire.h"
 
+const char* textureFilePath="/fichiersTextures/femme.bmp";
+
 
 Modele::Modele(u_int32_t largeurFenetre, u_int32_t hauteurFenetre) :
 		mAngleRotation(0.0),
@@ -16,12 +18,12 @@ Modele::Modele(u_int32_t largeurFenetre, u_int32_t hauteurFenetre) :
         mDisplayManager(),
 		mCamera(50.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 10.0, 7.0, 6.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0),
 		//mCamera(50.0, mLargeurFenetre/(double)mHauteurFenetre, 0.01, 10000.0, 0.0, 0.0, 50.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
-		mScenes()
-		
+		mScenes(),
+		mTexture(textureFilePath)
 {
-  FramesData::Init(); // Initialisation du compteur de frames
-  //this->mScenes.push_back(new Theiere());
-  this->mScenes.push_back(new SystemeSolaire());
+  FramesData::Init();
+  this->mScenes.push_back(new Theiere());
+  //this->mScenes.push_back(new SystemeSolaire());
 }
 
 float Modele::getNiveauGris() const {
@@ -47,6 +49,10 @@ void Modele::render() const{
 
 const Camera &Modele::getCamera() const {
    return mCamera;
+}
+
+const TextureManagerSDL &Modele::getTexture() const {
+	return mTexture;
 }
 
 void Modele::ApplyModelTransform() const {

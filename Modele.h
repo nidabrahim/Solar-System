@@ -6,6 +6,7 @@
 #include "DisplayManager.h"
 #include "Camera.h"
 #include "AbstractScene.h"
+#include "texture/TextureManagerSDL.h"
 
 
 class Modele {
@@ -17,10 +18,10 @@ class Modele {
 		float mNiveauGris;
 		u_int32_t mLargeurFenetre;
 		u_int32_t mHauteurFenetre;
-		/** Gestionnaire de la vue (affichage) */
 		DisplayManager mDisplayManager;
 		Camera mCamera;
 		std::vector<AbstractScene*> mScenes;
+		TextureManagerSDL mTexture;
 
 	public:
 
@@ -39,6 +40,8 @@ class Modele {
 		void render() const;
 		
 		void ApplyModelTransform() const;
+		
+		const TextureManagerSDL &getTexture() const;
 
 		/** Mise à jour du modèle invoquée à chaque événement timer */
 		void Update();

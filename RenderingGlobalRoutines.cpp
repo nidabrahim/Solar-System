@@ -21,9 +21,20 @@ void RenderingGlobalRoutines::InitView(){
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT) ;
 }
 
-void RenderingGlobalRoutines::DrawTheiere( Modele * /* modele */ ){
-
+void RenderingGlobalRoutines::DrawTheiere( Modele *  modele ){
+/*
 	glutWireTeapot(5);
+*/
+	
+	glEnable(GL_TEXTURE_2D);
+	modele->getTexture().SelectTexture2D();
+	glBegin(GL_QUADS);
+		glTexCoord2f(0.0,0.0);  glVertex3f(-3.0,-2.0 ,0.0);
+		glTexCoord2f(1.0,0.0);  glVertex3f(3.0,-2.0,0.0);
+		glTexCoord2f(1.0,1.0);  glVertex3f(3.0,2.0,0.0);
+		glTexCoord2f(0.0,1.0);  glVertex3f(-3.0 ,2.0 ,0.0);
+	glEnd();
+	
 }
 
 void RenderingGlobalRoutines::DrawSolarSystem(SystemeSolaire & scene){ 
@@ -44,8 +55,7 @@ void RenderingGlobalRoutines::DrawSolarSystem(SystemeSolaire & scene){
 		
 	glPushMatrix();
 	glRotatef((GLfloat)scene.GetAngleRotationMoon(), 0.0, 1.0, 0.0);
-	glTranslatef((GLfloat)-scene.GetRayon(), 0.0, 0.0);
-	//glColor4f (0.4, 0.5, 0.6, 1);                       
+	glTranslatef((GLfloat)-scene.GetRayon(), 0.0, 0.0);                       
     glutWireSphere(scene.GetRayon()/6, 10, 8);             
     glPopMatrix();
     
