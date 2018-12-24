@@ -1,0 +1,107 @@
+\hypertarget{classLightSourceData}{}\section{Light\+Source\+Data Class Reference}
+\label{classLightSourceData}\index{LightSourceData@{LightSourceData}}
+
+
+{\ttfamily \#include $<$Light\+Source\+Data.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLightSourceData_1_1PointLightSource}{Point\+Light\+Source}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}{Type\+Repere}} \{ {\bfseries M\+O\+N\+DE} = 0, 
+{\bfseries C\+A\+M\+E\+RA} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLightSourceData_a0862cd4423045f379a724594f5a7f7f2}{Light\+Source\+Data}} ()
+\item 
+\mbox{\hyperlink{classLightSourceData_a6b7b1d0213c0aa6eccf9a521794aca9f}{$\sim$\+Light\+Source\+Data}} ()=default
+\item 
+bool \mbox{\hyperlink{classLightSourceData_a29ba01a39c4a04d379bc3b437faae198}{Add\+Source}} (\mbox{\hyperlink{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}{Light\+Source\+Data\+::\+Type\+Repere}} type\+Repere, int light\+Id, float light\+PositionX, float light\+PositionY, float light\+PositionZ, float diffuse\+IntensityR, float diffuse\+IntensityG, float diffuse\+IntensityB, float specular\+IntensityR, float specular\+IntensityG, float specular\+IntensityB)
+\item 
+bool \mbox{\hyperlink{classLightSourceData_a586f688bed495b5e65c44a7abb3a4aa5}{Delete\+Source}} (int light\+Id)
+\item 
+void \mbox{\hyperlink{classLightSourceData_a2a6123eb077ef75ade0448bf3273d9e3}{Apply\+Light\+Positions}} (\mbox{\hyperlink{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}{Light\+Source\+Data\+::\+Type\+Repere}} type\+Repere) const
+\item 
+void \mbox{\hyperlink{classLightSourceData_af5a955ec2f37cf81c74b370586afe3a8}{Apply\+Light\+Intensities}} () const
+\item 
+void \mbox{\hyperlink{classLightSourceData_a2601aa99b5f29d10f9e89afb5a4cd300}{Disable\+Light\+Sources}} (\mbox{\hyperlink{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}{Light\+Source\+Data\+::\+Type\+Repere}} type\+Repere)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Représentation d\textquotesingle{}une source lumineuse et son comportement 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}\label{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}} 
+\index{LightSourceData@{LightSourceData}!TypeRepere@{TypeRepere}}
+\index{TypeRepere@{TypeRepere}!LightSourceData@{LightSourceData}}
+\subsubsection{\texorpdfstring{TypeRepere}{TypeRepere}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}{Light\+Source\+Data\+::\+Type\+Repere}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Types de repères supportés (repères du monde et de la caméra) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLightSourceData_a0862cd4423045f379a724594f5a7f7f2}\label{classLightSourceData_a0862cd4423045f379a724594f5a7f7f2}} 
+\index{LightSourceData@{LightSourceData}!LightSourceData@{LightSourceData}}
+\index{LightSourceData@{LightSourceData}!LightSourceData@{LightSourceData}}
+\subsubsection{\texorpdfstring{LightSourceData()}{LightSourceData()}}
+{\footnotesize\ttfamily Light\+Source\+Data\+::\+Light\+Source\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructeur par défaut (ne crée aucune source lumineuse) \mbox{\Hypertarget{classLightSourceData_a6b7b1d0213c0aa6eccf9a521794aca9f}\label{classLightSourceData_a6b7b1d0213c0aa6eccf9a521794aca9f}} 
+\index{LightSourceData@{LightSourceData}!````~LightSourceData@{$\sim$LightSourceData}}
+\index{````~LightSourceData@{$\sim$LightSourceData}!LightSourceData@{LightSourceData}}
+\subsubsection{\texorpdfstring{$\sim$LightSourceData()}{~LightSourceData()}}
+{\footnotesize\ttfamily Light\+Source\+Data\+::$\sim$\+Light\+Source\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructeur 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLightSourceData_a29ba01a39c4a04d379bc3b437faae198}\label{classLightSourceData_a29ba01a39c4a04d379bc3b437faae198}} 
+\index{LightSourceData@{LightSourceData}!AddSource@{AddSource}}
+\index{AddSource@{AddSource}!LightSourceData@{LightSourceData}}
+\subsubsection{\texorpdfstring{AddSource()}{AddSource()}}
+{\footnotesize\ttfamily bool Light\+Source\+Data\+::\+Add\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}{Light\+Source\+Data\+::\+Type\+Repere}}}]{type\+Repere,  }\item[{int}]{light\+Id,  }\item[{float}]{light\+PositionX,  }\item[{float}]{light\+PositionY,  }\item[{float}]{light\+PositionZ,  }\item[{float}]{diffuse\+IntensityR,  }\item[{float}]{diffuse\+IntensityG,  }\item[{float}]{diffuse\+IntensityB,  }\item[{float}]{specular\+IntensityR,  }\item[{float}]{specular\+IntensityG,  }\item[{float}]{specular\+IntensityB }\end{DoxyParamCaption})}
+
+Ajoute une source lumineuse dans un certain repère \begin{DoxyReturn}{Returns}
+true en case de succès, false en cas d\textquotesingle{}ID light\+Id déjà pris 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLightSourceData_af5a955ec2f37cf81c74b370586afe3a8}\label{classLightSourceData_af5a955ec2f37cf81c74b370586afe3a8}} 
+\index{LightSourceData@{LightSourceData}!ApplyLightIntensities@{ApplyLightIntensities}}
+\index{ApplyLightIntensities@{ApplyLightIntensities}!LightSourceData@{LightSourceData}}
+\subsubsection{\texorpdfstring{ApplyLightIntensities()}{ApplyLightIntensities()}}
+{\footnotesize\ttfamily void Light\+Source\+Data\+::\+Apply\+Light\+Intensities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Applique les intensités de toutes les sources de la scène \mbox{\Hypertarget{classLightSourceData_a2a6123eb077ef75ade0448bf3273d9e3}\label{classLightSourceData_a2a6123eb077ef75ade0448bf3273d9e3}} 
+\index{LightSourceData@{LightSourceData}!ApplyLightPositions@{ApplyLightPositions}}
+\index{ApplyLightPositions@{ApplyLightPositions}!LightSourceData@{LightSourceData}}
+\subsubsection{\texorpdfstring{ApplyLightPositions()}{ApplyLightPositions()}}
+{\footnotesize\ttfamily void Light\+Source\+Data\+::\+Apply\+Light\+Positions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}{Light\+Source\+Data\+::\+Type\+Repere}}}]{type\+Repere }\end{DoxyParamCaption}) const}
+
+Positionner les sources qui se trouvent dans un certain repère \mbox{\Hypertarget{classLightSourceData_a586f688bed495b5e65c44a7abb3a4aa5}\label{classLightSourceData_a586f688bed495b5e65c44a7abb3a4aa5}} 
+\index{LightSourceData@{LightSourceData}!DeleteSource@{DeleteSource}}
+\index{DeleteSource@{DeleteSource}!LightSourceData@{LightSourceData}}
+\subsubsection{\texorpdfstring{DeleteSource()}{DeleteSource()}}
+{\footnotesize\ttfamily bool Light\+Source\+Data\+::\+Delete\+Source (\begin{DoxyParamCaption}\item[{int}]{light\+Id }\end{DoxyParamCaption})}
+
+Supprime une source lumineuse dans un certain repère La méthode est un peu lourde pour garder des tableaux contigus. \begin{DoxyReturn}{Returns}
+true en case de succès, false en case d\textquotesingle{}ID inexistant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLightSourceData_a2601aa99b5f29d10f9e89afb5a4cd300}\label{classLightSourceData_a2601aa99b5f29d10f9e89afb5a4cd300}} 
+\index{LightSourceData@{LightSourceData}!DisableLightSources@{DisableLightSources}}
+\index{DisableLightSources@{DisableLightSources}!LightSourceData@{LightSourceData}}
+\subsubsection{\texorpdfstring{DisableLightSources()}{DisableLightSources()}}
+{\footnotesize\ttfamily void Light\+Source\+Data\+::\+Disable\+Light\+Sources (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLightSourceData_abdbcb37900b8147487551a3afcdd90f5}{Light\+Source\+Data\+::\+Type\+Repere}}}]{type\+Repere }\end{DoxyParamCaption})}
+
+Applique les intensités de toutes les sources de la scène 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Light\+Source\+Data.\+h\item 
+Light\+Source\+Data.\+cpp\end{DoxyCompactItemize}

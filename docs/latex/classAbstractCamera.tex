@@ -1,0 +1,108 @@
+\hypertarget{classAbstractCamera}{}\section{Abstract\+Camera Class Reference}
+\label{classAbstractCamera}\index{AbstractCamera@{AbstractCamera}}
+Inheritance diagram for Abstract\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAbstractCamera}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_afb84db4f342d80345294ab940f5ecb7e}\label{classAbstractCamera_afb84db4f342d80345294ab940f5ecb7e}} 
+{\bfseries Abstract\+Camera} (double angle\+OuvertureY=50, double aspect=0, double z\+\_\+proche=1, double z\+\_\+eloigne=500, double positionX=0, double positionY=0, double positionZ=0, double point\+De\+ViseeX=0, double point\+De\+ViseeY=0, double point\+De\+ViseeZ=0, double vecteur\+VerticalX=0, double vecteur\+VerticalY=0, double vecteur\+VerticalZ=0)
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a744f0a7bf3bbb7e75de755a14e0651cc}\label{classAbstractCamera_a744f0a7bf3bbb7e75de755a14e0651cc}} 
+void {\bfseries Set\+Projection} (double angle\+OuvertureY, double aspect, double z\+\_\+proche, double z\+\_\+eloigne)
+\item 
+\mbox{\Hypertarget{classAbstractCamera_ace3869e4ccf186413fe30c555a2af0bb}\label{classAbstractCamera_ace3869e4ccf186413fe30c555a2af0bb}} 
+void {\bfseries Update\+Aspect} (double aspect)
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a00c2423128b3c6ae57b651e1230b9d61}\label{classAbstractCamera_a00c2423128b3c6ae57b651e1230b9d61}} 
+void {\bfseries Look\+At} (double position\mbox{[}3\mbox{]}, double point\+De\+Visee\mbox{[}3\mbox{]}, double vecteur\+Vertical\mbox{[}3\mbox{]})
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a7b55cf6aea08ad6b0a6a3cf7e985fd6b}\label{classAbstractCamera_a7b55cf6aea08ad6b0a6a3cf7e985fd6b}} 
+virtual void {\bfseries Apply\+Perspective\+Projection} () const =0
+\item 
+\mbox{\Hypertarget{classAbstractCamera_af4fd2e135457dca8d43eb5dfc15f959c}\label{classAbstractCamera_af4fd2e135457dca8d43eb5dfc15f959c}} 
+virtual void {\bfseries Apply\+Camera\+Coordinates} () const =0
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a4bd911919d627cb31042ad9342e5b03d}\label{classAbstractCamera_a4bd911919d627cb31042ad9342e5b03d}} 
+void {\bfseries Zoom} (bool forward)
+\item 
+double \mbox{\hyperlink{classAbstractCamera_abdff3ca2922e09f59d3f1c026d78420d}{Get\+Angle\+OuvertureY}} ()
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a59cd96f58f9bf36a8835f28c4b83f71d}\label{classAbstractCamera_a59cd96f58f9bf36a8835f28c4b83f71d}} 
+double $\ast$ {\bfseries Get\+Position} ()
+\item 
+\mbox{\Hypertarget{classAbstractCamera_ab6f6eda4aac279027791a864243d1a49}\label{classAbstractCamera_ab6f6eda4aac279027791a864243d1a49}} 
+double $\ast$ {\bfseries Get\+Point\+De\+Visee} ()
+\item 
+\mbox{\Hypertarget{classAbstractCamera_aa539cecd54862bfa856c36167e6589c9}\label{classAbstractCamera_aa539cecd54862bfa856c36167e6589c9}} 
+double $\ast$ {\bfseries Get\+Vecteur\+Vertical} ()
+\item 
+void \mbox{\hyperlink{classAbstractCamera_a9da46dd6e5a6dc3c5095419fa6a540b7}{Set\+Angle\+OuvertureY}} (double ao)
+\item 
+\mbox{\Hypertarget{classAbstractCamera_abce3fc447411ab866d33c80e3a787425}\label{classAbstractCamera_abce3fc447411ab866d33c80e3a787425}} 
+void {\bfseries Set\+Postion} (double px, double py, double pz)
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a89faebec35e419763e06f55f188a80fd}\label{classAbstractCamera_a89faebec35e419763e06f55f188a80fd}} 
+void {\bfseries Set\+Point\+De\+Visee} (double vx, double vy, double vz)
+\item 
+\mbox{\Hypertarget{classAbstractCamera_abb1825c3e2f45d01909f6b891e5b7d04}\label{classAbstractCamera_abb1825c3e2f45d01909f6b891e5b7d04}} 
+void {\bfseries Set\+Vecteur\+Vertical} (double vertx, double verty, double vertz)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_acdc09772d265207659ac34e2a6d1fe4c}\label{classAbstractCamera_acdc09772d265207659ac34e2a6d1fe4c}} 
+static void {\bfseries Clear\+Model\+View} ()
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a0abb148e5ab4628730517c50d9d6fa2c}\label{classAbstractCamera_a0abb148e5ab4628730517c50d9d6fa2c}} 
+static void {\bfseries Clear\+Projection} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a2352ec0e1fdb0ab22345263c49f3ed3a}\label{classAbstractCamera_a2352ec0e1fdb0ab22345263c49f3ed3a}} 
+double {\bfseries m\+Angle\+OuvertureY}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a84ea352c679449eeef49d92274bfc9e0}\label{classAbstractCamera_a84ea352c679449eeef49d92274bfc9e0}} 
+double {\bfseries m\+Aspect}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a408e219c2aed42b6aa4f9198c252d10a}\label{classAbstractCamera_a408e219c2aed42b6aa4f9198c252d10a}} 
+double {\bfseries m\+Z\+\_\+proche}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a8e076553a55c8e2f19948bdf4ea01be1}\label{classAbstractCamera_a8e076553a55c8e2f19948bdf4ea01be1}} 
+double {\bfseries m\+Z\+\_\+eloigne}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_aacd5e7f2d881e719f254a1d6e2904b91}\label{classAbstractCamera_aacd5e7f2d881e719f254a1d6e2904b91}} 
+double {\bfseries m\+Position} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_af09c5a5da7cc666845003abfd91e2b46}\label{classAbstractCamera_af09c5a5da7cc666845003abfd91e2b46}} 
+double {\bfseries m\+Point\+De\+Visee} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{classAbstractCamera_a04f9fd97a52940ec990af6fece9aeeb0}\label{classAbstractCamera_a04f9fd97a52940ec990af6fece9aeeb0}} 
+double {\bfseries m\+Vecteur\+Vertical} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAbstractCamera_abdff3ca2922e09f59d3f1c026d78420d}\label{classAbstractCamera_abdff3ca2922e09f59d3f1c026d78420d}} 
+\index{AbstractCamera@{AbstractCamera}!GetAngleOuvertureY@{GetAngleOuvertureY}}
+\index{GetAngleOuvertureY@{GetAngleOuvertureY}!AbstractCamera@{AbstractCamera}}
+\subsubsection{\texorpdfstring{GetAngleOuvertureY()}{GetAngleOuvertureY()}}
+{\footnotesize\ttfamily double Abstract\+Camera\+::\+Get\+Angle\+OuvertureY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+G\+E\+T\+T\+E\+RS \mbox{\Hypertarget{classAbstractCamera_a9da46dd6e5a6dc3c5095419fa6a540b7}\label{classAbstractCamera_a9da46dd6e5a6dc3c5095419fa6a540b7}} 
+\index{AbstractCamera@{AbstractCamera}!SetAngleOuvertureY@{SetAngleOuvertureY}}
+\index{SetAngleOuvertureY@{SetAngleOuvertureY}!AbstractCamera@{AbstractCamera}}
+\subsubsection{\texorpdfstring{SetAngleOuvertureY()}{SetAngleOuvertureY()}}
+{\footnotesize\ttfamily void Abstract\+Camera\+::\+Set\+Angle\+OuvertureY (\begin{DoxyParamCaption}\item[{double}]{ae }\end{DoxyParamCaption})}
+
+S\+E\+T\+T\+E\+RS 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+abstract\+Camera.\+h\item 
+abstract\+Camera.\+cpp\end{DoxyCompactItemize}

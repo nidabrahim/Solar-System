@@ -1,0 +1,66 @@
+\hypertarget{classDisplayManager}{}\section{Display\+Manager Class Reference}
+\label{classDisplayManager}\index{DisplayManager@{DisplayManager}}
+
+
+{\ttfamily \#include $<$Display\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDisplayManager_aaa4cbf192d2e50fde0064472243558e9}\label{classDisplayManager_aaa4cbf192d2e50fde0064472243558e9}} 
+\mbox{\hyperlink{classDisplayManager_aaa4cbf192d2e50fde0064472243558e9}{Display\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur prenant la géométrie de la fenêtre Initialise les données spécifiques à l\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDisplayManager_aeb02e2085482d02cf042b4ed9266f65d}{set\+Window\+Changed}} ()
+\item 
+void \mbox{\hyperlink{classDisplayManager_ac0243afb77d3ff3d20f7504fc91c66df}{Affichage}} (const \mbox{\hyperlink{classModele}{Modele}} \&modele)
+\begin{DoxyCompactList}\small\item\em Méthode d\textquotesingle{}affichage des données du modèle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDisplayManager_a6043a48cbb0d711752adbef4797fcb21}{Redimensionnement}} (const \mbox{\hyperlink{classModele}{Modele}} \&modele)
+\begin{DoxyCompactList}\small\item\em Réglage du cadrage pour la vue Doit être rappelée si la taille de la vue change (S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+E\+V\+E\+NT) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+L\+A\+S\+SE DE G\+E\+S\+T\+I\+ON DE L\textquotesingle{}A\+F\+F\+I\+C\+H\+A\+GE (accède au modèle et affiche les données) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDisplayManager_ac0243afb77d3ff3d20f7504fc91c66df}\label{classDisplayManager_ac0243afb77d3ff3d20f7504fc91c66df}} 
+\index{DisplayManager@{DisplayManager}!Affichage@{Affichage}}
+\index{Affichage@{Affichage}!DisplayManager@{DisplayManager}}
+\subsubsection{\texorpdfstring{Affichage()}{Affichage()}}
+{\footnotesize\ttfamily void Display\+Manager\+::\+Affichage (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classModele}{Modele}} \&}]{modele }\end{DoxyParamCaption})}
+
+
+
+Méthode d\textquotesingle{}affichage des données du modèle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modele} & Modèle contenant les données à afficher \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDisplayManager_a6043a48cbb0d711752adbef4797fcb21}\label{classDisplayManager_a6043a48cbb0d711752adbef4797fcb21}} 
+\index{DisplayManager@{DisplayManager}!Redimensionnement@{Redimensionnement}}
+\index{Redimensionnement@{Redimensionnement}!DisplayManager@{DisplayManager}}
+\subsubsection{\texorpdfstring{Redimensionnement()}{Redimensionnement()}}
+{\footnotesize\ttfamily void Display\+Manager\+::\+Redimensionnement (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classModele}{Modele}} \&}]{modele }\end{DoxyParamCaption})}
+
+
+
+Réglage du cadrage pour la vue Doit être rappelée si la taille de la vue change (S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+E\+V\+E\+NT) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modele} & Modèle de données contenant les informations sur le viewport (cadre 2D de la vue) et la projection (orthogonale, perspective, etc.) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDisplayManager_aeb02e2085482d02cf042b4ed9266f65d}\label{classDisplayManager_aeb02e2085482d02cf042b4ed9266f65d}} 
+\index{DisplayManager@{DisplayManager}!setWindowChanged@{setWindowChanged}}
+\index{setWindowChanged@{setWindowChanged}!DisplayManager@{DisplayManager}}
+\subsubsection{\texorpdfstring{setWindowChanged()}{setWindowChanged()}}
+{\footnotesize\ttfamily void Display\+Manager\+::set\+Window\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Notifie la vue que la perspective doit être reconstruite avant affichage 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Display\+Manager.\+h\item 
+Display\+Manager.\+cpp\end{DoxyCompactItemize}

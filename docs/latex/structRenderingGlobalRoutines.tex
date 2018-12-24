@@ -1,0 +1,89 @@
+\hypertarget{structRenderingGlobalRoutines}{}\section{Rendering\+Global\+Routines Struct Reference}
+\label{structRenderingGlobalRoutines}\index{RenderingGlobalRoutines@{RenderingGlobalRoutines}}
+
+
+{\ttfamily \#include $<$Rendering\+Global\+Routines.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{structRenderingGlobalRoutines_adb0a8e5310950bc9675342df59998fc5}{Init}} ()
+\item 
+static void \mbox{\hyperlink{structRenderingGlobalRoutines_a4e853aeabd168692f76824ae8c0f9624}{Init\+View}} ()
+\item 
+\mbox{\Hypertarget{structRenderingGlobalRoutines_a1fcdcc1259c08882bfd8d625aa1f406c}\label{structRenderingGlobalRoutines_a1fcdcc1259c08882bfd8d625aa1f406c}} 
+static void {\bfseries Apply\+Point\+Light\+Position} (int32\+\_\+t light\+Id, const float position\mbox{[}4\mbox{]})
+\item 
+\mbox{\Hypertarget{structRenderingGlobalRoutines_a6bfb5bd0e4675d314ed36e2f278c469d}\label{structRenderingGlobalRoutines_a6bfb5bd0e4675d314ed36e2f278c469d}} 
+static void {\bfseries Apply\+Point\+Light\+Intensity} (int32\+\_\+t light\+Id, const float diffuse\+Intensity\mbox{[}4\mbox{]}, const float specular\+Intensity\mbox{[}4\mbox{]})
+\item 
+\mbox{\Hypertarget{structRenderingGlobalRoutines_ad6a73eed8524b59f448379bec56ccd00}\label{structRenderingGlobalRoutines_ad6a73eed8524b59f448379bec56ccd00}} 
+static void {\bfseries Disable\+Point\+Light} (int32\+\_\+t light\+Id)
+\item 
+\mbox{\Hypertarget{structRenderingGlobalRoutines_abea8490192e0c378c78893f2fd18a5ea}\label{structRenderingGlobalRoutines_abea8490192e0c378c78893f2fd18a5ea}} 
+static void {\bfseries Apply\+Material} (\mbox{\hyperlink{classMaterial}{Material}} material)
+\item 
+static void \mbox{\hyperlink{structRenderingGlobalRoutines_a13f7fddc36582fe3bbba36c61f75153a}{Draw\+Theiere}} (\mbox{\hyperlink{classModele}{Modele}} $\ast$modele=nullptr)
+\item 
+static void \mbox{\hyperlink{structRenderingGlobalRoutines_a66996f7d19dd141a86439768657acb61}{Draw\+Solar\+System}} (\mbox{\hyperlink{classSystemeSolaire}{Systeme\+Solaire}} \&scene)
+\item 
+static void \mbox{\hyperlink{structRenderingGlobalRoutines_af7a121c7b024c10c68ca70946a17af77}{Draw\+Roue}} (\mbox{\hyperlink{classVoiture}{Voiture}} \&scene)
+\item 
+static void \mbox{\hyperlink{structRenderingGlobalRoutines_a429d26c5576b3b94bd77ad9bd3f00793}{Draw\+Essieu}} (double longueur)
+\item 
+static void \mbox{\hyperlink{structRenderingGlobalRoutines_a0b3445581f9e91e72c9a6c013e066ddd}{Draw\+Corps}} (\mbox{\hyperlink{classVoiture}{Voiture}} \&scene)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+MÉ\+T\+H\+O\+D\+ES C\+O\+N\+C\+E\+R\+N\+A\+NT L\+ES M\+O\+DÈ\+L\+ES DE R\+E\+N\+DU 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structRenderingGlobalRoutines_a0b3445581f9e91e72c9a6c013e066ddd}\label{structRenderingGlobalRoutines_a0b3445581f9e91e72c9a6c013e066ddd}} 
+\index{RenderingGlobalRoutines@{RenderingGlobalRoutines}!DrawCorps@{DrawCorps}}
+\index{DrawCorps@{DrawCorps}!RenderingGlobalRoutines@{RenderingGlobalRoutines}}
+\subsubsection{\texorpdfstring{DrawCorps()}{DrawCorps()}}
+{\footnotesize\ttfamily void Rendering\+Global\+Routines\+::\+Draw\+Corps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVoiture}{Voiture}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dessin d\textquotesingle{}un modèle de corps de voiture avec Open\+GL \mbox{\Hypertarget{structRenderingGlobalRoutines_a429d26c5576b3b94bd77ad9bd3f00793}\label{structRenderingGlobalRoutines_a429d26c5576b3b94bd77ad9bd3f00793}} 
+\index{RenderingGlobalRoutines@{RenderingGlobalRoutines}!DrawEssieu@{DrawEssieu}}
+\index{DrawEssieu@{DrawEssieu}!RenderingGlobalRoutines@{RenderingGlobalRoutines}}
+\subsubsection{\texorpdfstring{DrawEssieu()}{DrawEssieu()}}
+{\footnotesize\ttfamily void Rendering\+Global\+Routines\+::\+Draw\+Essieu (\begin{DoxyParamCaption}\item[{double}]{longueur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dessin d\textquotesingle{}un modèle d\textquotesingle{}essieu avec Open\+GL \mbox{\Hypertarget{structRenderingGlobalRoutines_af7a121c7b024c10c68ca70946a17af77}\label{structRenderingGlobalRoutines_af7a121c7b024c10c68ca70946a17af77}} 
+\index{RenderingGlobalRoutines@{RenderingGlobalRoutines}!DrawRoue@{DrawRoue}}
+\index{DrawRoue@{DrawRoue}!RenderingGlobalRoutines@{RenderingGlobalRoutines}}
+\subsubsection{\texorpdfstring{DrawRoue()}{DrawRoue()}}
+{\footnotesize\ttfamily void Rendering\+Global\+Routines\+::\+Draw\+Roue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVoiture}{Voiture}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dessin d\textquotesingle{}un modèle ed roue avec Open\+GL \mbox{\Hypertarget{structRenderingGlobalRoutines_a66996f7d19dd141a86439768657acb61}\label{structRenderingGlobalRoutines_a66996f7d19dd141a86439768657acb61}} 
+\index{RenderingGlobalRoutines@{RenderingGlobalRoutines}!DrawSolarSystem@{DrawSolarSystem}}
+\index{DrawSolarSystem@{DrawSolarSystem}!RenderingGlobalRoutines@{RenderingGlobalRoutines}}
+\subsubsection{\texorpdfstring{DrawSolarSystem()}{DrawSolarSystem()}}
+{\footnotesize\ttfamily void Rendering\+Global\+Routines\+::\+Draw\+Solar\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystemeSolaire}{Systeme\+Solaire}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dessin d\textquotesingle{}un modèle Systeme solaire avec Open\+GL \mbox{\Hypertarget{structRenderingGlobalRoutines_a13f7fddc36582fe3bbba36c61f75153a}\label{structRenderingGlobalRoutines_a13f7fddc36582fe3bbba36c61f75153a}} 
+\index{RenderingGlobalRoutines@{RenderingGlobalRoutines}!DrawTheiere@{DrawTheiere}}
+\index{DrawTheiere@{DrawTheiere}!RenderingGlobalRoutines@{RenderingGlobalRoutines}}
+\subsubsection{\texorpdfstring{DrawTheiere()}{DrawTheiere()}}
+{\footnotesize\ttfamily void Rendering\+Global\+Routines\+::\+Draw\+Theiere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classModele}{Modele}} $\ast$}]{modele = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dessin du modèle \mbox{\hyperlink{classTheiere}{Theiere}} avec Open\+GL \mbox{\Hypertarget{structRenderingGlobalRoutines_adb0a8e5310950bc9675342df59998fc5}\label{structRenderingGlobalRoutines_adb0a8e5310950bc9675342df59998fc5}} 
+\index{RenderingGlobalRoutines@{RenderingGlobalRoutines}!Init@{Init}}
+\index{Init@{Init}!RenderingGlobalRoutines@{RenderingGlobalRoutines}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Rendering\+Global\+Routines\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialiseles paramètres de rendu de la scène \mbox{\Hypertarget{structRenderingGlobalRoutines_a4e853aeabd168692f76824ae8c0f9624}\label{structRenderingGlobalRoutines_a4e853aeabd168692f76824ae8c0f9624}} 
+\index{RenderingGlobalRoutines@{RenderingGlobalRoutines}!InitView@{InitView}}
+\index{InitView@{InitView}!RenderingGlobalRoutines@{RenderingGlobalRoutines}}
+\subsubsection{\texorpdfstring{InitView()}{InitView()}}
+{\footnotesize\ttfamily void Rendering\+Global\+Routines\+::\+Init\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Réinitialise la vue ( efface l’écran ) avant raffraîchissement 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Rendering\+Global\+Routines.\+h\item 
+Rendering\+Global\+Routines.\+cpp\end{DoxyCompactItemize}

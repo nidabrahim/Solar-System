@@ -25,15 +25,18 @@ void RenderingGlobalRoutines::DrawTheiere( Modele *  modele ){
 /*
 	glutWireTeapot(5);
 */
-	
-	glEnable(GL_TEXTURE_2D);
-	modele->getTexture().SelectTexture2D();
-	glBegin(GL_QUADS);
-		glTexCoord2f(0.0,0.0);  glVertex3f(-3.0,-2.0 ,0.0);
-		glTexCoord2f(1.0,0.0);  glVertex3f(3.0,-2.0,0.0);
-		glTexCoord2f(1.0,1.0);  glVertex3f(3.0,2.0,0.0);
-		glTexCoord2f(0.0,1.0);  glVertex3f(-3.0 ,2.0 ,0.0);
-	glEnd();
+	glPushMatrix();
+        glEnable(GL_TEXTURE_2D);
+        glBegin(GL_QUADS);
+        fprintf(stderr,"Before SelectTexture2D\n");
+        modele->getTexture().SelectTexture2D();
+        fprintf(stderr,"After SelectTexture2D\n");
+            glTexCoord2f(0.0,0.0);  glVertex3f(-3.0,-2.0 ,0.0);
+            glTexCoord2f(1.0,0.0);  glVertex3f(3.0,-2.0,0.0);
+            glTexCoord2f(1.0,1.0);  glVertex3f(3.0,2.0,0.0);
+            glTexCoord2f(0.0,1.0);  glVertex3f(-3.0 ,2.0 ,0.0);
+        glEnd();
+    glPopMatrix();
 	
 }
 

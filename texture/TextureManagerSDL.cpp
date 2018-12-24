@@ -19,12 +19,17 @@ TextureManagerSDL::~TextureManagerSDL(){
 
 void TextureManagerSDL::SelectTexture2D() const
 {
-	glBindTexture (GL_TEXTURE_2D,  mTexId) ;
+    fprintf(stderr,"Debut SelectTexture2D\n");
+	glBindTexture(GL_TEXTURE_2D,mTexId);
+    fprintf(stderr,"Fin SelectTexture2D\n");
 }
 
 void TextureManagerSDL::CreeBufferFormPicture( const  char* pathToBMP){
+    // Chargement de l’Image au format BMP
 	SDL_Surface* surface = CreeSurface (pathToBMP);
+    // Création d’un buffer maison à partir de la surface SDL
 	mBuffer = PixelsBuffer(surface->w,surface->h,surface->format->BytesPerPixel,(uint8_t*) surface->pixels);
+    // Libération de la surface
 	SDL_FreeSurface(surface);
 }
 

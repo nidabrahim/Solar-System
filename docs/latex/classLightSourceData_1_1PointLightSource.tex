@@ -1,0 +1,68 @@
+\hypertarget{classLightSourceData_1_1PointLightSource}{}\section{Light\+Source\+Data\+::Point\+Light\+Source Class Reference}
+\label{classLightSourceData_1_1PointLightSource}\index{LightSourceData::PointLightSource@{LightSourceData::PointLightSource}}
+
+
+{\ttfamily \#include $<$Light\+Source\+Data.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLightSourceData_1_1PointLightSource_a0d2c4297a703d32f03ba696572aebed4}\label{classLightSourceData_1_1PointLightSource_a0d2c4297a703d32f03ba696572aebed4}} 
+int {\bfseries get\+Light\+Id} () const
+\item 
+\mbox{\Hypertarget{classLightSourceData_1_1PointLightSource_ac490a0e2a2d43008a8384d0d695c41ce}\label{classLightSourceData_1_1PointLightSource_ac490a0e2a2d43008a8384d0d695c41ce}} 
+const float $\ast$ {\bfseries get\+Light\+Position} () const
+\item 
+\mbox{\Hypertarget{classLightSourceData_1_1PointLightSource_a78116b2a3140d09b00e3274880384fad}\label{classLightSourceData_1_1PointLightSource_a78116b2a3140d09b00e3274880384fad}} 
+const float $\ast$ {\bfseries get\+Diffuse\+Intensity} () const
+\item 
+\mbox{\Hypertarget{classLightSourceData_1_1PointLightSource_af9ead483eac788227dff6d238c8e272b}\label{classLightSourceData_1_1PointLightSource_af9ead483eac788227dff6d238c8e272b}} 
+const float $\ast$ {\bfseries get\+Specular\+Intensity} () const
+\item 
+\mbox{\hyperlink{classLightSourceData_1_1PointLightSource_a1906b6949e0f33893ee3e5e00ebca9f5}{Point\+Light\+Source}} (int light\+Id, float light\+PositionX, float light\+PositionY, float light\+PositionZ, float diffuse\+IntensityR, float diffuse\+IntensityG, float diffuse\+IntensityB, float specular\+IntensityR, float specular\+IntensityG, float specular\+IntensityB)
+\item 
+void \mbox{\hyperlink{classLightSourceData_1_1PointLightSource_a68330385482fc307c08f9ceab24eea90}{Apply\+Position}} () const
+\item 
+void \mbox{\hyperlink{classLightSourceData_1_1PointLightSource_a6472e0a17c2d31f5eb5a98bf313f0938}{Apply\+Intensity}} () const
+\item 
+void \mbox{\hyperlink{classLightSourceData_1_1PointLightSource_ac350b9eb76b71d6498c12ba3bbb73981}{Disable}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe représentant une source lumineuse 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLightSourceData_1_1PointLightSource_a1906b6949e0f33893ee3e5e00ebca9f5}\label{classLightSourceData_1_1PointLightSource_a1906b6949e0f33893ee3e5e00ebca9f5}} 
+\index{LightSourceData::PointLightSource@{LightSourceData::PointLightSource}!PointLightSource@{PointLightSource}}
+\index{PointLightSource@{PointLightSource}!LightSourceData::PointLightSource@{LightSourceData::PointLightSource}}
+\subsubsection{\texorpdfstring{PointLightSource()}{PointLightSource()}}
+{\footnotesize\ttfamily Light\+Source\+Data\+::\+Point\+Light\+Source\+::\+Point\+Light\+Source (\begin{DoxyParamCaption}\item[{int}]{light\+Id,  }\item[{float}]{light\+PositionX,  }\item[{float}]{light\+PositionY,  }\item[{float}]{light\+PositionZ,  }\item[{float}]{diffuse\+IntensityR,  }\item[{float}]{diffuse\+IntensityG,  }\item[{float}]{diffuse\+IntensityB,  }\item[{float}]{specular\+IntensityR,  }\item[{float}]{specular\+IntensityG,  }\item[{float}]{specular\+IntensityB }\end{DoxyParamCaption})}
+
+Constructeur initialisant toutes les propriétés de la source 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLightSourceData_1_1PointLightSource_a6472e0a17c2d31f5eb5a98bf313f0938}\label{classLightSourceData_1_1PointLightSource_a6472e0a17c2d31f5eb5a98bf313f0938}} 
+\index{LightSourceData::PointLightSource@{LightSourceData::PointLightSource}!ApplyIntensity@{ApplyIntensity}}
+\index{ApplyIntensity@{ApplyIntensity}!LightSourceData::PointLightSource@{LightSourceData::PointLightSource}}
+\subsubsection{\texorpdfstring{ApplyIntensity()}{ApplyIntensity()}}
+{\footnotesize\ttfamily void Light\+Source\+Data\+::\+Point\+Light\+Source\+::\+Apply\+Intensity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Applique l\textquotesingle{}intensité de la source et active la source \mbox{\Hypertarget{classLightSourceData_1_1PointLightSource_a68330385482fc307c08f9ceab24eea90}\label{classLightSourceData_1_1PointLightSource_a68330385482fc307c08f9ceab24eea90}} 
+\index{LightSourceData::PointLightSource@{LightSourceData::PointLightSource}!ApplyPosition@{ApplyPosition}}
+\index{ApplyPosition@{ApplyPosition}!LightSourceData::PointLightSource@{LightSourceData::PointLightSource}}
+\subsubsection{\texorpdfstring{ApplyPosition()}{ApplyPosition()}}
+{\footnotesize\ttfamily void Light\+Source\+Data\+::\+Point\+Light\+Source\+::\+Apply\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Positionner la source dans le repère courant \mbox{\Hypertarget{classLightSourceData_1_1PointLightSource_ac350b9eb76b71d6498c12ba3bbb73981}\label{classLightSourceData_1_1PointLightSource_ac350b9eb76b71d6498c12ba3bbb73981}} 
+\index{LightSourceData::PointLightSource@{LightSourceData::PointLightSource}!Disable@{Disable}}
+\index{Disable@{Disable}!LightSourceData::PointLightSource@{LightSourceData::PointLightSource}}
+\subsubsection{\texorpdfstring{Disable()}{Disable()}}
+{\footnotesize\ttfamily void Light\+Source\+Data\+::\+Point\+Light\+Source\+::\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Désactive la source 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Light\+Source\+Data.\+h\item 
+Point\+Light\+Source.\+cpp\end{DoxyCompactItemize}
