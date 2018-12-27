@@ -21,12 +21,14 @@ void RenderingGlobalRoutines::InitView(){
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT) ;
 }
 
-void RenderingGlobalRoutines::DrawTheiere( Modele *  modele ){
+void RenderingGlobalRoutines::DrawTheiere( Modele * modele ){
 /*
 	glutWireTeapot(5);
 */
+glEnable(GL_TEXTURE_2D);
 	glPushMatrix();
-        glEnable(GL_TEXTURE_2D);
+        glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+        
         glBegin(GL_QUADS);
         fprintf(stderr,"Before SelectTexture2D\n");
         modele->getTexture().SelectTexture2D();
@@ -36,7 +38,9 @@ void RenderingGlobalRoutines::DrawTheiere( Modele *  modele ){
             glTexCoord2f(1.0,1.0);  glVertex3f(3.0,2.0,0.0);
             glTexCoord2f(0.0,1.0);  glVertex3f(-3.0 ,2.0 ,0.0);
         glEnd();
+
     glPopMatrix();
+glDisable(GL_TEXTURE_2D);
 	
 }
 

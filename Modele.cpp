@@ -6,7 +6,7 @@
 #include "Theiere.h"
 #include "SystemeSolaire.h"
 
-const char* textureFilePath="jp.bmp";
+const char* textureFilePath="files/jp.bmp";
 
 
 Modele::Modele(u_int32_t largeurFenetre, u_int32_t hauteurFenetre) :

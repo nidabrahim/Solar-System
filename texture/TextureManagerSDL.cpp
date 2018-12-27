@@ -20,7 +20,7 @@ TextureManagerSDL::~TextureManagerSDL(){
 void TextureManagerSDL::SelectTexture2D() const
 {
     fprintf(stderr,"Debut SelectTexture2D\n");
-	glBindTexture(GL_TEXTURE_2D,mTexId);
+	glBindTexture (GL_TEXTURE_2D,mTexId);
     fprintf(stderr,"Fin SelectTexture2D\n");
 }
 
@@ -51,7 +51,9 @@ void TextureManagerSDL::CreeTexture2D(){
 	}
 	
 	glTexImage2D (GL_TEXTURE_2D,0,mode,mBuffer.GetWidth(),mBuffer.GetHeight(),0,mode,GL_UNSIGNED_BYTE,mBuffer.GetRawData());
+     fprintf(stderr,"nn : %d \n",mTexId);
 	glBindTexture (GL_TEXTURE_2D,mTexId);
+   
 }
 
 SDL_Surface* TextureManagerSDL::CreeSurface (const char* pathToBMP){
