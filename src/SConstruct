@@ -24,7 +24,7 @@ file_list = [
 	'engine/texture_object.cpp',
 	'geometry/sphere.cpp',
 	'geometry/cube.cpp',
-	Glob("objects/*.cpp")
+	Glob("models/*.cpp")
 ]
 
 include_dirs = [

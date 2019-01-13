@@ -9,10 +9,10 @@
 class SolarSystem;
 
 #include "engine/Engine.hpp"
-#include "objects/earth.hpp"
-#include "objects/sun.hpp"
-#include "objects/moon.hpp"
-#include "objects/skybox.hpp"
+#include "models/earth.hpp"
+#include "models/sun.hpp"
+#include "models/moon.hpp"
+#include "models/skybox.hpp"
 
 
 class SolarSystem {
