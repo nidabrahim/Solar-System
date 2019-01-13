@@ -6,12 +6,12 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/noise.hpp>
 
+#define BUFFER_OFFSET(bytes) ((GLubyte*) NULL + (bytes))
 
-Sun::Sun(SolarSystem *sys) : 
-	Sphere(3),
-	solar_system(sys)
+
+Sun::Sun(SolarSystem *sys) : Sphere(3),solar_system(sys)
 {
-	shader = new Shader("shaders/sun.vert", "shaders/sun.frag", "shaders/sun.geom");
+	shader = new Shader("shaders/sun.vert", "shaders/sun.frag");
 
 	shader_vars.model_matrix = glGetUniformLocation(shader->program, "model_matrix");
 	shader_vars.texture      = glGetUniformLocation(shader->program, "texture0");
@@ -21,8 +21,6 @@ Sun::Sun(SolarSystem *sys) :
 
 	texture = create1DTexture("textures/sun/sun_colors.png");
 }
-
-#define BUFFER_OFFSET(bytes) ((GLubyte*) NULL + (bytes))
 
 void Sun::draw(GLuint time) {
 	glUseProgram(shader->program);

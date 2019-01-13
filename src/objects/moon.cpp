@@ -1,13 +1,10 @@
 #include "moon.hpp"
 #include "../engine/shader.hpp"
 
-
 #include <glm/gtc/matrix_transform.hpp>
 
 
-Moon::Moon(SolarSystem *sys) : 
-	Sphere(3),
-	solar_system(sys)
+Moon::Moon(SolarSystem *sys) : Sphere(3),solar_system(sys)
 {
 	shader = new Shader("shaders/moon.vert", "shaders/moon.frag");
 
@@ -18,7 +15,6 @@ Moon::Moon(SolarSystem *sys) :
 	loadTexture();
 }
 
-// TODO the moon shouldn't rotate
 void Moon::draw(GLuint time) {
 	glUseProgram(shader->program);
 
@@ -31,11 +27,10 @@ void Moon::draw(GLuint time) {
 	mat4 scale = glm::scale(mat4(1), vec3(0.2));
 	mat4 translate_moon = glm::translate(mat4(1), vec3(-2, 0, 0));
 	mat4 translate_earth = solar_system->objects.earth->position;
-	mat4 rotate_earth = glm::rotate(mat4(1), 0.01f * time, vec3(0, 1, 0));
+	mat4 rotate_earth = glm::rotate(mat4(1), 0.001f * time, vec3(0, 1, 0));
 
 	position = translate_earth * rotate_earth * translate_moon;
 	mat4 transformation = position * scale;
-
 
 	glUniformMatrix4fv(shader_vars.model_matrix, 1, GL_FALSE, &transformation[0][0]);
 

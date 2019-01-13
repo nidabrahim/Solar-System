@@ -8,9 +8,7 @@
 
 using namespace glm;
 
-Earth::Earth(SolarSystem *system) :
-	Sphere(4),
-	solar_system(system)
+Earth::Earth(SolarSystem *system) :Sphere(4),solar_system(system)
 {
 	shader = new Shader("shaders/earth.vert", "shaders/earth.frag");
 
@@ -28,24 +26,23 @@ void Earth::compute(GLuint time) {
 
 	mat4 earth_rotation = glm::rotate(
 		mat4(1),
-		0.05f * time,
+		0.005f * time,
 		vec3(0, 1, 0)
 	);
 
 	mat4 axis_tilt = glm::rotate(
 		mat4(1),
 		23.44f,
-		vec3(0, 0, 1)
+		vec3(0, 1, 0)
 	);
 
 	mat4 sun_rotation = glm::rotate(
 		mat4(1),
-		0.005f * time,
+		0.0005f * time,
 		vec3(0, 1, 0)
 	);
 
 	mat4 scale = glm::scale(mat4(1), vec3(0.5));
-	// using the sun here is actually bullshit since the light isn't adjusted to that
 	mat4 translate = glm::translate(mat4(1), vec3(-10, 0, 0)) * solar_system->objects.sun->position;
 	position = sun_rotation * translate;
 	transformation = position * earth_rotation * axis_tilt * scale;
@@ -55,7 +52,6 @@ void Earth::draw(GLuint time) {
 	glUseProgram(shader->program);
 
 	assignVariables();
-
 
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_CUBE_MAP, texture_day);

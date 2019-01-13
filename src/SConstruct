@@ -1,0 +1,70 @@
+import os, os.path
+
+Import('main_path')
+
+libs = [
+	'boost_system',
+	'GL',
+	'SDL2',
+	'GLU',
+	'GLEW',
+	'SDL2_image',
+	'glut',
+	'glfw'
+]
+
+file_list = [
+	Glob('*.cpp'),
+	'engine/camera.cpp',
+	'engine/Engine.cpp',
+	'engine/EventHandler.cpp',
+	'engine/shader.cpp',
+	'engine/glmUtils.cpp',
+	'engine/shader_object.cpp',
+	'engine/texture_object.cpp',
+	'geometry/sphere.cpp',
+	'geometry/cube.cpp',
+	Glob("objects/*.cpp")
+]
+
+include_dirs = [
+	'.',
+	os.path.join(main_path, 'lib/')
+]
+
+lib_dirs = [
+	os.path.join(main_path, 'lib/SDL2_image/.libs/')
+]
+
+flags = [
+	'-std=c++0x',
+	'-Wall'
+]
+
+defines = [
+]
+
+# this is a little hack to use the path variable of
+# the user. I do this so the gcc wrapper colorgcc is used.
+environ = {
+	'PATH' : os.environ['PATH'],
+	'TERM' : os.environ['TERM'],
+	'HOME' : os.environ['HOME']
+}
+
+
+if ARGUMENTS.get('debug', 0):
+	flags.extend(['-g'])
+else:
+	flags.extend(['-O3'])
+
+
+env = Environment(
+	ENV = environ,
+	CCFLAGS = flags,
+	CPPPATH = include_dirs,
+	CPPDEFINES = defines,
+	LIBPATH = lib_dirs
+
+)
+env.Program('solarsystem', file_list, LIBS=libs)

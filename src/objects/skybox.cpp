@@ -2,7 +2,6 @@
 
 #include "../engine/shader.hpp"
 
-
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
@@ -23,7 +22,6 @@ SkyBox::SkyBox() {
 		"textures/stars/stars_yNeg.png",
 		"textures/stars/stars_zPos.png",
 		"textures/stars/stars_zNeg.png"
-
 	);
 }
 

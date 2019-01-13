@@ -1,6 +1,5 @@
-#ifndef MOON_T2DFQ1YK
-
-#define MOON_T2DFQ1YK
+#ifndef MOON_HPP
+#define MOON_HPP
 
 class Moon;
 
@@ -11,28 +10,24 @@ class Moon;
 #include "../engine/shader.hpp"
 
 class Moon : public Sphere, public ShaderObject, public TextureObject {
-	public:
-		Moon(SolarSystem*);
-		~Moon();
-
-		void draw(GLuint time);
-
-		mat4 position;
 
 	protected:
 		Shader *shader;
-
-		void loadTexture();
-
 		GLuint texture;
-
 		SolarSystem *solar_system;
-
 		struct {
 			GLuint model_matrix;
 			GLuint texture0;
 		} shader_vars;
+		void loadTexture();
+
+	public:
+		mat4 position;
+
+		Moon(SolarSystem*);
+		~Moon();
+		void draw(GLuint time);
 };
 
 
-#endif /* end of include guard: MOON_T2DFQ1YK */
+#endif

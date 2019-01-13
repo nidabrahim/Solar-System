@@ -58,10 +58,10 @@ void main() {
 		// night
 		surf_color = mix(tex_day, tex_night + tex_night, abs(cos_angle));
 
-		/*
+		
 		float intensity = clamp(cos_angle, 0, 1);
 		diffuse = intensity * surf_color;
-		*/
+		
 	}
 
 	vec4 reflected = normalize(reflect(light_direction, normal));
@@ -70,6 +70,5 @@ void main() {
 
 	vec4 ambient = 0.15 * surf_color;;
 
-	//out_color = vec4((diffuse + ambient + specular).xyz, 1.0);
 	out_color = vec4((diffuse + ambient + specular).xyz, 1.0);
 }
