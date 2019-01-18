@@ -43,7 +43,52 @@ Pour lancer le projet, exécuter sur votre console ces deux commandes :
 
 ## Architecture de code
 
+```bash
+├── includes
+│   ├── shaders
+│   │   ├── earth.frag
+│   │   ├── earth.vert
+│   │   ├── moon.frag
+│   │   ├── moon.vert
+│   │   ├── skybox.frag
+│   │   ├── skybox.vert
+│   │   ├── sun.frag
+│   │   └── sun.vert
+│   └── textures
+│       ├── earth
+│       │   ├── morning
+│       │   │   ├── earth_xn.png
+│       │   │   ├── earth_xp.png
+│       │   │   ├── earth_yn.png
+│       │   │   ├── earth_yp.png
+│       │   │   ├── earth_zn.png
+│       │   │   └── earth_zp.png
+│       │   └── night
+│       │       ├── earth_xn.png
+│       │       ├── earth_xp.png
+│       │       ├── earth_yn.png
+│       │       ├── earth_yp.png
+│       │       ├── earth_zn.png
+│       │       └── earth_zp.png
+│       ├── moon
+│       │   ├── moon_xn.png
+│       │   ├── moon_xp.png
+│       │   ├── moon_yn.png
+│       │   ├── moon_yp.png
+│       │   ├── moon_zn.png
+│       │   └── moon_zp.png
+│       ├── skybox
+│       │   ├── skybox_xn.png
+│       │   ├── skybox_xp.png
+│       │   ├── skybox_yn.png
+│       │   ├── skybox_yp.png
+│       │   ├── skybox_zn.png
+│       │   └── skybox_zp.png
+│       └── sun
+│           └── sun_colors.png
 
+
+```
 
 
 
