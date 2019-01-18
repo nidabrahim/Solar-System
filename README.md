@@ -4,6 +4,15 @@ Création d’un rendu graphique OpenGL
 
 
 
+## Table of contents
+* [Dépendances](#dépendances)
+* [Prérequis](#prérequis)
+* [Installation](#installation)
+* [Architecture de code](#architecture-de-code)
+* [Réalisations](#réalisations)
+
+
+
 ## Dépendances
 
 * boost
