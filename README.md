@@ -4,7 +4,7 @@ Création d’un rendu graphique OpenGL
 
 
 
-## Table of contents
+## Table des matières
 * [Dépendances](#dépendances)
 * [Prérequis](#prérequis)
 * [Installation](#installation)
