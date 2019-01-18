@@ -1,5 +1,6 @@
 #include "earth.hpp"
 #include "engine/shader.hpp"
+#include "../solar_system_globals.hpp"
 
 #include <iostream>
 #include <SDL2/SDL.h>
@@ -10,7 +11,7 @@ using namespace glm;
 
 Earth::Earth(SolarSystem *system) :Sphere(4),solar_system(system)
 {
-	shader = new Shader("shaders/earth.vert", "shaders/earth.frag");
+	shader = new Shader(EARTH_SHADER_VERT_FILENAME, EARTH_SHADER_FRAG_FILENAME);
 
 	shader_vars.model_matrix   = glGetUniformLocation(shader->program, "model_matrix");
 	shader_vars.texture_day    = glGetUniformLocation(shader->program, "texture_day");
@@ -68,21 +69,21 @@ void Earth::draw(GLuint time) {
 
 void Earth::loadTexture() {
 	texture_day = createCubeTexture(
-		"textures/world/world_xPos.png",
-		"textures/world/world_xNeg.png",
-		"textures/world/world_yPos.png",
-		"textures/world/world_yNeg.png",
-		"textures/world/world_zPos.png",
-		"textures/world/world_zNeg.png"
+		EARTH_TEXTURES_MORNING_XP_FILENAME,
+		EARTH_TEXTURES_MORNING_XN_FILENAME,
+		EARTH_TEXTURES_MORNING_YP_FILENAME,
+		EARTH_TEXTURES_MORNING_YN_FILENAME,
+		EARTH_TEXTURES_MORNING_ZP_FILENAME,
+		EARTH_TEXTURES_MORNING_ZN_FILENAME
 	);
 
 	texture_night = createCubeTexture(
-		"textures/world_night/world_night_xPos.png",
-		"textures/world_night/world_night_xNeg.png",
-		"textures/world_night/world_night_yPos.png",
-		"textures/world_night/world_night_yNeg.png",
-		"textures/world_night/world_night_zPos.png",
-		"textures/world_night/world_night_zNeg.png"
+		EARTH_TEXTURES_NIGHT_XP_FILENAME,
+		EARTH_TEXTURES_NIGHT_XN_FILENAME,
+		EARTH_TEXTURES_NIGHT_YP_FILENAME,
+		EARTH_TEXTURES_NIGHT_YN_FILENAME,
+		EARTH_TEXTURES_NIGHT_ZP_FILENAME,
+		EARTH_TEXTURES_NIGHT_ZN_FILENAME
 
 	);
 }

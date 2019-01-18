@@ -1,6 +1,7 @@
 #include "skybox.hpp"
 
 #include "../engine/shader.hpp"
+#include "../solar_system_globals.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -9,19 +10,19 @@ using namespace glm;
 
 SkyBox::SkyBox() {
 	
-	shader = new Shader("shaders/skybox.vert", "shaders/skybox.frag"); 
+	shader = new Shader(SKYBOX_SHADER_VERT_FILENAME, SKYBOX_SHADER_FRAG_FILENAME); 
 	shader_vars.model_matrix = glGetUniformLocation(shader->program, "model_matrix");
 	shader_vars.texture0     = glGetUniformLocation(shader->program, "texture0");
 
 	initialiseVariables(shader->program);
 
 	texture = createCubeTexture(
-		"textures/stars/stars_xPos.png",
-		"textures/stars/stars_xNeg.png",
-		"textures/stars/stars_yPos.png",
-		"textures/stars/stars_yNeg.png",
-		"textures/stars/stars_zPos.png",
-		"textures/stars/stars_zNeg.png"
+		SKYBOX_TEXTURES_XP_FILENAME,
+		SKYBOX_TEXTURES_XN_FILENAME,
+		SKYBOX_TEXTURES_YP_FILENAME,
+		SKYBOX_TEXTURES_YN_FILENAME,
+		SKYBOX_TEXTURES_ZP_FILENAME,
+		SKYBOX_TEXTURES_ZN_FILENAME
 	);
 }
 

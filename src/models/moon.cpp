@@ -1,12 +1,13 @@
 #include "moon.hpp"
 #include "../engine/shader.hpp"
+#include "../solar_system_globals.hpp"
 
 #include <glm/gtc/matrix_transform.hpp>
 
 
 Moon::Moon(SolarSystem *sys) : Sphere(3),solar_system(sys)
 {
-	shader = new Shader("shaders/moon.vert", "shaders/moon.frag");
+	shader = new Shader(MOON_SHADER_VERT_FILENAME, MOON_SHADER_FRAG_FILENAME);
 
 	shader_vars.model_matrix = glGetUniformLocation(shader->program, "model_matrix");
 	shader_vars.texture0     = glGetUniformLocation(shader->program, "texture0");
@@ -39,12 +40,12 @@ void Moon::draw(GLuint time) {
 
 void Moon::loadTexture() {
 	texture = createCubeTexture(
-		"textures/moon/moon_xPos.png",
-		"textures/moon/moon_xNeg.png",
-		"textures/moon/moon_yPos.png",
-		"textures/moon/moon_yNeg.png",
-		"textures/moon/moon_zPos.png",
-		"textures/moon/moon_zNeg.png"
+		MOON_TEXTURES_XP_FILENAME,
+		MOON_TEXTURES_XN_FILENAME,
+		MOON_TEXTURES_YP_FILENAME,
+		MOON_TEXTURES_YN_FILENAME,
+		MOON_TEXTURES_ZP_FILENAME,
+		MOON_TEXTURES_ZN_FILENAME
 	);
 }
 

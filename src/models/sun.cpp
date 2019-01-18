@@ -1,6 +1,7 @@
 #include "sun.hpp"
 #include "../engine/shader.hpp"
 #include "../engine/glmUtils.hpp"
+#include "../solar_system_globals.hpp"
 
 #include <SDL2/SDL.h>
 #include <glm/gtc/matrix_transform.hpp>
@@ -11,7 +12,7 @@
 
 Sun::Sun(SolarSystem *sys) : Sphere(3),solar_system(sys)
 {
-	shader = new Shader("shaders/sun.vert", "shaders/sun.frag");
+	shader = new Shader(SUN_SHADER_VERT_FILENAME, SUN_SHADER_FRAG_FILENAME);
 
 	shader_vars.model_matrix = glGetUniformLocation(shader->program, "model_matrix");
 	shader_vars.texture      = glGetUniformLocation(shader->program, "texture0");
@@ -19,7 +20,7 @@ Sun::Sun(SolarSystem *sys) : Sphere(3),solar_system(sys)
 
 	initialiseVariables(shader->program);
 
-	texture = create1DTexture("textures/sun/sun_colors.png");
+	texture = create1DTexture(SUN_TEXTURES_FILENAME);
 }
 
 void Sun::draw(GLuint time) {
