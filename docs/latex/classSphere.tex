@@ -1,0 +1,121 @@
+\hypertarget{classSphere}{}\section{Sphere Class Reference}
+\label{classSphere}\index{Sphere@{Sphere}}
+
+
+\mbox{\hyperlink{classSphere}{Sphere}} class.  
+
+
+
+
+{\ttfamily \#include $<$sphere.\+hpp$>$}
+
+Inheritance diagram for Sphere\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSphere}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSphere_a1584cdd4253476e77d06f8e60b86da2e}{Sphere}} (G\+Luint depth)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classSphere}{Sphere}}\+:\+: \mbox{\hyperlink{classSphere}{Sphere}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSphere_a34a34167b7544c95155d3ff30638d045}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draw a new sphere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSphere_a8ecd1525d70024bb3580215c18d0eae9}{subdivide}} (float $\ast$v1, float $\ast$v2, float $\ast$v3, long depth)
+\begin{DoxyCompactList}\small\item\em Subdivide. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSphere_a8b5387063d440b1e08d1b2f8ed4358f2}{normalize}} (float v\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Normalization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSphere_a5808bbcad1a20c451692d31d07568312}\label{classSphere_a5808bbcad1a20c451692d31d07568312}} 
+G\+Luint $\ast$ {\bfseries vertex\+\_\+buffers}
+\item 
+\mbox{\Hypertarget{classSphere_a0938fd35dacfdcf91526b49e04567b5b}\label{classSphere_a0938fd35dacfdcf91526b49e04567b5b}} 
+G\+Luint {\bfseries vertex\+\_\+count}
+\item 
+\mbox{\Hypertarget{classSphere_a030cc5c77a3d8fa634321e024e19cb90}\label{classSphere_a030cc5c77a3d8fa634321e024e19cb90}} 
+boost\+::container\+::vector$<$ G\+Lfloat $>$ $\ast$ {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{classSphere_a91ac121ef6f95cfb51ed505d339f9b84}\label{classSphere_a91ac121ef6f95cfb51ed505d339f9b84}} 
+G\+Luint {\bfseries s\+\_\+\+Attribute} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classSphere}{Sphere}} class. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSphere_a1584cdd4253476e77d06f8e60b86da2e}\label{classSphere_a1584cdd4253476e77d06f8e60b86da2e}} 
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{Sphere()}{Sphere()}}
+{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{G\+Luint}]{depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{classSphere}{Sphere}}\+:\+: \mbox{\hyperlink{classSphere}{Sphere}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & \\
+\hline
+\end{DoxyParams}
+Vertix matrice 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSphere_a34a34167b7544c95155d3ff30638d045}\label{classSphere_a34a34167b7544c95155d3ff30638d045}} 
+\index{Sphere@{Sphere}!draw@{draw}}
+\index{draw@{draw}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Sphere\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Draw a new sphere. 
+
+\mbox{\Hypertarget{classSphere_a8b5387063d440b1e08d1b2f8ed4358f2}\label{classSphere_a8b5387063d440b1e08d1b2f8ed4358f2}} 
+\index{Sphere@{Sphere}!normalize@{normalize}}
+\index{normalize@{normalize}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily void Sphere\+::normalize (\begin{DoxyParamCaption}\item[{float}]{v\mbox{[}3\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Normalization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSphere_a8ecd1525d70024bb3580215c18d0eae9}\label{classSphere_a8ecd1525d70024bb3580215c18d0eae9}} 
+\index{Sphere@{Sphere}!subdivide@{subdivide}}
+\index{subdivide@{subdivide}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{subdivide()}{subdivide()}}
+{\footnotesize\ttfamily void Sphere\+::subdivide (\begin{DoxyParamCaption}\item[{float $\ast$}]{v1,  }\item[{float $\ast$}]{v2,  }\item[{float $\ast$}]{v3,  }\item[{long}]{depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Subdivide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & \\
+\hline
+{\em v2} & \\
+\hline
+{\em v3} & \\
+\hline
+{\em depth} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/geometry/sphere.\+hpp\item 
+src/geometry/sphere.\+cpp\end{DoxyCompactItemize}

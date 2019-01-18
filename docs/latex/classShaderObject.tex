@@ -1,0 +1,76 @@
+\hypertarget{classShaderObject}{}\section{Shader\+Object Class Reference}
+\label{classShaderObject}\index{ShaderObject@{ShaderObject}}
+
+
+\mbox{\hyperlink{classShader}{Shader}} object class.  
+
+
+
+
+{\ttfamily \#include $<$shader\+\_\+object.\+hpp$>$}
+
+Inheritance diagram for Shader\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classShaderObject}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classShaderObject_acf1fe66dee8d8163415ab9fe8088d574}{initialise\+Variables}} (G\+Luint program\+ID)
+\begin{DoxyCompactList}\small\item\em Initialize shader variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShaderObject_a8af6206a15f133307bf264aa7007e9bf}{assign\+Variables}} ()
+\begin{DoxyCompactList}\small\item\em Assign variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShaderObject_a34d8afac5087103276bc801d0fd1492f}\label{classShaderObject_a34d8afac5087103276bc801d0fd1492f}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>GLuint {\bfseries projection}\\
+\>GLuint {\bfseries view}\\
+\>GLuint {\bfseries cam\_pos}\\
+\} {\bfseries global\_shader\_vars}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classShader}{Shader}} object class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classShaderObject_a8af6206a15f133307bf264aa7007e9bf}\label{classShaderObject_a8af6206a15f133307bf264aa7007e9bf}} 
+\index{ShaderObject@{ShaderObject}!assignVariables@{assignVariables}}
+\index{assignVariables@{assignVariables}!ShaderObject@{ShaderObject}}
+\subsubsection{\texorpdfstring{assignVariables()}{assignVariables()}}
+{\footnotesize\ttfamily void Shader\+Object\+::assign\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Assign variables. 
+
+\mbox{\Hypertarget{classShaderObject_acf1fe66dee8d8163415ab9fe8088d574}\label{classShaderObject_acf1fe66dee8d8163415ab9fe8088d574}} 
+\index{ShaderObject@{ShaderObject}!initialiseVariables@{initialiseVariables}}
+\index{initialiseVariables@{initialiseVariables}!ShaderObject@{ShaderObject}}
+\subsubsection{\texorpdfstring{initialiseVariables()}{initialiseVariables()}}
+{\footnotesize\ttfamily void Shader\+Object\+::initialise\+Variables (\begin{DoxyParamCaption}\item[{G\+Luint}]{program\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initialize shader variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em program\+ID} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/shader\+\_\+object.\+hpp\item 
+src/engine/shader\+\_\+object.\+cpp\end{DoxyCompactItemize}

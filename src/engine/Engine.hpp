@@ -29,21 +29,29 @@ void ResizeWindow(GLsizei w, GLsizei h);
 
 typedef boost::function<void (GLuint, Engine)> render_func;
 
+/**
+ * @brief Engine class
+ * 
+ */
 class Engine {
 
 	private:
+		//! Screen weight
 		GLuint scrW      = 1280;
+		//! Screen height 
 		GLuint scrH      = 1024;
 		GLboolean running;
 		GLuint clrDepth  = 24;
 		int flags;
+		//! Init openGL
 		void initOpenGL();
 		void init(GLuint scrW, GLuint srcH);
 		void render();
 		void quit(SDL_Event &event);
-		// events
+		//! Init SDL
 		void initSDL(string name);
 		void videoResize(SDL_Event &event);
+		//! Init Events manager
 		void initEvents();
 		SDL_Window *window;
 		SDL_GLContext  context;

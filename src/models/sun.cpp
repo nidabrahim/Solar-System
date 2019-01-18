@@ -9,7 +9,11 @@
 
 #define BUFFER_OFFSET(bytes) ((GLubyte*) NULL + (bytes))
 
-
+/**
+ * @brief Construct a new Sun:: Sun object
+ * 
+ * @param sys 
+ */
 Sun::Sun(SolarSystem *sys) : Sphere(3),solar_system(sys)
 {
 	shader = new Shader(SUN_SHADER_VERT_FILENAME, SUN_SHADER_FRAG_FILENAME);
@@ -23,6 +27,11 @@ Sun::Sun(SolarSystem *sys) : Sphere(3),solar_system(sys)
 	texture = create1DTexture(SUN_TEXTURES_FILENAME);
 }
 
+/**
+ * @brief Draw a new Sun
+ * 
+ * @param time 
+ */
 void Sun::draw(GLuint time) {
 	glUseProgram(shader->program);
 
@@ -42,6 +51,10 @@ void Sun::draw(GLuint time) {
 	Sphere::draw();
 }
 
+/**
+ * @brief Destroy the Sun:: Sun object
+ * 
+ */
 Sun::~Sun() {
 	delete shader;
 }

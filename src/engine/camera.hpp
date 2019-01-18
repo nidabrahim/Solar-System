@@ -7,6 +7,10 @@
 
 using namespace glm;
 
+/**
+ * @brief Camera class
+ * 
+ */
 class Camera {
 
 	private:

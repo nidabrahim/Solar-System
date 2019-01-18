@@ -4,6 +4,11 @@
 #include <SDL/SDL_image.h>
 #include <unistd.h>
 
+/**
+ * @brief Create cube texture
+ * 
+ * @return GLuint 
+ */
 GLuint TextureObject::createGLCubeTexture() {
 	GLuint texture;
 
@@ -17,6 +22,11 @@ GLuint TextureObject::createGLCubeTexture() {
 	return texture;
 }
 
+/**
+ * @brief Create 1D texture
+ * 
+ * @return GLuint 
+ */
 GLuint TextureObject::createGL1DTexture() {
 	GLuint texture;
 
@@ -30,6 +40,10 @@ GLuint TextureObject::createGL1DTexture() {
 	return texture;
 }
 
+/**
+ * @brief Set texture parameters
+ * 
+ */
 void TextureObject::cubeTextureParameters() {
 	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
 	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);

@@ -16,7 +16,8 @@ EventHandler * EventHandler::inst() {
 using namespace std;
 
 /**
- * Handle the events
+ * @brief Handle the events
+ * 
  */
 void EventHandler::handle() {
 	SDL_Event event;
@@ -52,27 +53,45 @@ void EventHandler::handle() {
 	cycle();
 }
 
+/**
+ * @brief Register the function for the mouse motion
+ * 
+ * @param func 
+ */
 void EventHandler::registerMouseMotionCallback(callback func) {
 	this->mouseMotion = func;
 }
 
+/**
+ * @brief Unregister the function for the mouse motion
+ * 
+ */
 void EventHandler::unregisterMouseMotion() {
 	this->mouseMotion = NULL;
 }
 
 /**
- * Register the function for the video resize
+ * @brief Register the function for the video resize
+ * 
  */
 void EventHandler::registerVideoResizeCallback(callback func) {
 	videoResize = func;
 }
 
+/**
+ * @brief Register the function for the quit event
+ * 
+ * @param func 
+ */
 void EventHandler::registerQuitCallback(callback func) {
 	quit = func;
 }
 
 /**
- * Trigger the func on a key once
+ * @brief Trigger the function on a key once
+ * 
+ * @param key 
+ * @param event 
  */
 void EventHandler::keyDown(SDL_Scancode &key, SDL_Event &event) {
 	if (keysHeld.find(key) != keysHeld.end()) {
@@ -89,7 +108,10 @@ void EventHandler::keyDown(SDL_Scancode &key, SDL_Event &event) {
 }
 
 /**
- * When a key is released, call the release function
+ * @brief When a key is released, call the release function
+ * 
+ * @param key 
+ * @param event 
  */
 void EventHandler::keyUp(SDL_Scancode &key, SDL_Event &event) {
 	if (keyReleaseFunc[key]) {
@@ -98,59 +120,48 @@ void EventHandler::keyUp(SDL_Scancode &key, SDL_Event &event) {
 }
 
 /**
- * When a key is held, call the associated function (if set)
+ * @brief When a key is held, call the associated function if set
+ * 
  */
 void EventHandler::cycle() {
-	std::pair<SDL_Scancode, bool> i;
-
-	
-	// BOOST_FOREACH(i, keysHeld) {
-	// 	if (i.second) {
-	// 		cout << "Key press of " << i.first << endl;
-	// 		keyFunc[i.first](event);
-	// 	}
-	// }
-	
-
-	
-	// for (unsigned int i = 0; i < sdlKeyAmount; i++) {
-	// 	if (keysHeld[i]) {
-	// 		if (keyFunc[i]) {
-	// 			keyFunc[i](event);
-	// 		}
-	// 	}
-	// }
-	
+	std::pair<SDL_Scancode, bool> i;	
 }
 
 
-
 /**
- * Register a key to the list
+ * @brief Register a key to the list
+ * 
+ * @param key 
+ * @param func 
  */
 void EventHandler::registerKey(SDL_Scancode key, callback func) {
 	keyFunc[key] = func;
 }
 
 /**
- * Register function to a key when it's released
+ * @brief Register a function to a key when it's released
+ * 
+ * @param key 
+ * @param func 
  */
 void EventHandler::registerKeyRelease(SDL_Scancode key, callback func) {
 	keyReleaseFunc[key] = func;
 }
 
 /**
- * Register a function to be spawned only once when pressing the key
+ * @brief Register a function to be spawned only once when pressing the key
+ * 
+ * @param key 
+ * @param func 
  */
 void EventHandler::registerKeyOnce(SDL_Scancode key, callback func) {
 	keyFuncOnce[key] = func;
 }
 
 /**
- * Unregister the function on a key
- *
- * For now unregister all the possible variations
- * of the callbacks.
+ * @brief Unregister the function on a key
+ * 
+ * @param key 
  */
 void EventHandler::unregisterKey(SDL_Scancode key) {
 	keyFunc[key]        = NULL;

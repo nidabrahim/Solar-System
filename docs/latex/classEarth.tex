@@ -1,0 +1,162 @@
+\hypertarget{classEarth}{}\section{Earth Class Reference}
+\label{classEarth}\index{Earth@{Earth}}
+
+
+La classe Terre.  
+
+
+
+
+{\ttfamily \#include $<$earth.\+hpp$>$}
+
+Inheritance diagram for Earth\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEarth}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEarth_ac63bc8757dd60da6a19555690e3a1cd4}{Earth}} (\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Le constructeur de la classe Terre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEarth_aa71da3add5a747c3e85f70e5291effaf}{draw}} (G\+Luint time)
+\begin{DoxyCompactList}\small\item\em Dessiner la planète terre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEarth_a4f2e2881f1f05c3dea103425be8b16f1}{compute}} (G\+Luint time)
+\item 
+\mbox{\hyperlink{classEarth_ac215e2016eccb7a4764ad40048f78b74}{$\sim$\+Earth}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classEarth}{Earth}}\+:\+: \mbox{\hyperlink{classEarth}{Earth}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEarth_a05a0f1a429f32b6d91be8b6b0325e043}\label{classEarth_a05a0f1a429f32b6d91be8b6b0325e043}} 
+mat4 \mbox{\hyperlink{classEarth_a05a0f1a429f32b6d91be8b6b0325e043}{position}}
+\begin{DoxyCompactList}\small\item\em La matrice position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEarth_a23f243526b68042e166ece9c6fd2ac27}\label{classEarth_a23f243526b68042e166ece9c6fd2ac27}} 
+G\+Luint \mbox{\hyperlink{classEarth_a23f243526b68042e166ece9c6fd2ac27}{model\+\_\+matrix}}
+\begin{DoxyCompactList}\small\item\em La matrice modele. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEarth_a2837b51a68cae97630bf43c89a932fe6}\label{classEarth_a2837b51a68cae97630bf43c89a932fe6}} 
+G\+Luint \mbox{\hyperlink{classEarth_a2837b51a68cae97630bf43c89a932fe6}{earth\+\_\+rotation}}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}angle de rotation au tour de la terre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEarth_a13d70083ad4c9322eb28503927622ba4}\label{classEarth_a13d70083ad4c9322eb28503927622ba4}} 
+G\+Luint \mbox{\hyperlink{classEarth_a13d70083ad4c9322eb28503927622ba4}{texture\+\_\+day}}
+\begin{DoxyCompactList}\small\item\em Texture pour la matinée. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEarth_ad83d9351423dc37314ca3e7193964142}\label{classEarth_ad83d9351423dc37314ca3e7193964142}} 
+G\+Luint \mbox{\hyperlink{classEarth_ad83d9351423dc37314ca3e7193964142}{texture\+\_\+night}}
+\begin{DoxyCompactList}\small\item\em Texture pour la nuit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEarth_a6ea4717d6f25f585959f8c2a27b310b5}{load\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Charger la texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEarth_a70cd76e7ae13e01da5b336476f594804}\label{classEarth_a70cd76e7ae13e01da5b336476f594804}} 
+\mbox{\hyperlink{classShader}{Shader}} $\ast$ \mbox{\hyperlink{classEarth_a70cd76e7ae13e01da5b336476f594804}{shader}}
+\begin{DoxyCompactList}\small\item\em Le shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEarth_a95dbde38ff24a32afa2020532b96d04b}\label{classEarth_a95dbde38ff24a32afa2020532b96d04b}} 
+\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$ {\bfseries solar\+\_\+system}
+\item 
+\mbox{\Hypertarget{classEarth_ac030d9262aa545b8c4cb6efea8474321}\label{classEarth_ac030d9262aa545b8c4cb6efea8474321}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>GLuint \mbox{\hyperlink{classEarth_a23f243526b68042e166ece9c6fd2ac27}{model\_matrix}}\\
+\>\>{\em La matrice modele. }\\
+\>GLuint \mbox{\hyperlink{classEarth_a2837b51a68cae97630bf43c89a932fe6}{earth\_rotation}}\\
+\>\>{\em L\textquotesingle{}angle de rotation au tour de la terre. }\\
+\>GLuint \mbox{\hyperlink{classEarth_a13d70083ad4c9322eb28503927622ba4}{texture\_day}}\\
+\>\>{\em Texture pour la matinée. }\\
+\>GLuint \mbox{\hyperlink{classEarth_ad83d9351423dc37314ca3e7193964142}{texture\_night}}\\
+\>\>{\em Texture pour la nuit. }\\
+\} \mbox{\hyperlink{classEarth_ac030d9262aa545b8c4cb6efea8474321}{shader\_vars}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Les variables de shaders. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEarth_a42d113c06d114577906dc9d615e6fc7f}\label{classEarth_a42d113c06d114577906dc9d615e6fc7f}} 
+mat4 \mbox{\hyperlink{classEarth_a42d113c06d114577906dc9d615e6fc7f}{transformation}}
+\begin{DoxyCompactList}\small\item\em La matrice de transformation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe Terre. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEarth_ac63bc8757dd60da6a19555690e3a1cd4}\label{classEarth_ac63bc8757dd60da6a19555690e3a1cd4}} 
+\index{Earth@{Earth}!Earth@{Earth}}
+\index{Earth@{Earth}!Earth@{Earth}}
+\subsubsection{\texorpdfstring{Earth()}{Earth()}}
+{\footnotesize\ttfamily Earth\+::\+Earth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$}]{system }\end{DoxyParamCaption})}
+
+
+
+Le constructeur de la classe Terre. 
+
+Construct a new \mbox{\hyperlink{classEarth}{Earth}}\+:\+: \mbox{\hyperlink{classEarth}{Earth}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & \\
+\hline
+\end{DoxyParams}
+Construct a new load Texture object \mbox{\Hypertarget{classEarth_ac215e2016eccb7a4764ad40048f78b74}\label{classEarth_ac215e2016eccb7a4764ad40048f78b74}} 
+\index{Earth@{Earth}!````~Earth@{$\sim$Earth}}
+\index{````~Earth@{$\sim$Earth}!Earth@{Earth}}
+\subsubsection{\texorpdfstring{$\sim$Earth()}{~Earth()}}
+{\footnotesize\ttfamily Earth\+::$\sim$\+Earth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classEarth}{Earth}}\+:\+: \mbox{\hyperlink{classEarth}{Earth}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEarth_a4f2e2881f1f05c3dea103425be8b16f1}\label{classEarth_a4f2e2881f1f05c3dea103425be8b16f1}} 
+\index{Earth@{Earth}!compute@{compute}}
+\index{compute@{compute}!Earth@{Earth}}
+\subsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily void Earth\+::compute (\begin{DoxyParamCaption}\item[{G\+Luint}]{time }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEarth_aa71da3add5a747c3e85f70e5291effaf}\label{classEarth_aa71da3add5a747c3e85f70e5291effaf}} 
+\index{Earth@{Earth}!draw@{draw}}
+\index{draw@{draw}!Earth@{Earth}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Earth\+::draw (\begin{DoxyParamCaption}\item[{G\+Luint}]{time }\end{DoxyParamCaption})}
+
+
+
+Dessiner la planète terre. 
+
+Draw a new \mbox{\hyperlink{classEarth}{Earth}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+Construct a new \mbox{\hyperlink{classSphere_a34a34167b7544c95155d3ff30638d045}{Sphere\+::draw}} object \mbox{\Hypertarget{classEarth_a6ea4717d6f25f585959f8c2a27b310b5}\label{classEarth_a6ea4717d6f25f585959f8c2a27b310b5}} 
+\index{Earth@{Earth}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Earth@{Earth}}
+\subsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily void Earth\+::load\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Charger la texture. 
+
+Load texture.Load day textures
+
+Load night textures 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/models/earth.\+hpp\item 
+src/models/earth.\+cpp\end{DoxyCompactItemize}

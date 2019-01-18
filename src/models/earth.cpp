@@ -9,6 +9,11 @@
 
 using namespace glm;
 
+/**
+ * @brief Construct a new Earth:: Earth object
+ * 
+ * @param system 
+ */
 Earth::Earth(SolarSystem *system) :Sphere(4),solar_system(system)
 {
 	shader = new Shader(EARTH_SHADER_VERT_FILENAME, EARTH_SHADER_FRAG_FILENAME);
@@ -19,9 +24,16 @@ Earth::Earth(SolarSystem *system) :Sphere(4),solar_system(system)
 	shader_vars.earth_rotation = glGetUniformLocation(shader->program, "earth_rotation");
 
 	initialiseVariables(shader->program);
+	
+	//! Construct a new load Texture object
 	loadTexture();
 }
 
+/**
+ * @brief 
+ * 
+ * @param time 
+ */
 void Earth::compute(GLuint time) {
 	time *= 0.5;
 
@@ -49,6 +61,11 @@ void Earth::compute(GLuint time) {
 	transformation = position * earth_rotation * axis_tilt * scale;
 }
 
+/**
+ * @brief Draw a new Earth
+ * 
+ * @param time 
+ */
 void Earth::draw(GLuint time) {
 	glUseProgram(shader->program);
 
@@ -64,10 +81,16 @@ void Earth::draw(GLuint time) {
 
 	glUniformMatrix4fv(shader_vars.model_matrix, 1, GL_FALSE, &transformation[0][0]);
 
+	//! Construct a new Sphere::draw object
 	Sphere::draw();
 }
 
+/**
+ * @brief Load texture
+ * 
+ */
 void Earth::loadTexture() {
+	//! Load day textures
 	texture_day = createCubeTexture(
 		EARTH_TEXTURES_MORNING_XP_FILENAME,
 		EARTH_TEXTURES_MORNING_XN_FILENAME,
@@ -77,6 +100,7 @@ void Earth::loadTexture() {
 		EARTH_TEXTURES_MORNING_ZN_FILENAME
 	);
 
+	//! Load night textures
 	texture_night = createCubeTexture(
 		EARTH_TEXTURES_NIGHT_XP_FILENAME,
 		EARTH_TEXTURES_NIGHT_XN_FILENAME,
@@ -84,10 +108,13 @@ void Earth::loadTexture() {
 		EARTH_TEXTURES_NIGHT_YN_FILENAME,
 		EARTH_TEXTURES_NIGHT_ZP_FILENAME,
 		EARTH_TEXTURES_NIGHT_ZN_FILENAME
-
 	);
 }
 
+/**
+ * @brief Destroy the Earth:: Earth object
+ * 
+ */
 Earth::~Earth() {
 	delete shader;
 }

@@ -1,0 +1,133 @@
+\hypertarget{classMoon}{}\section{Moon Class Reference}
+\label{classMoon}\index{Moon@{Moon}}
+
+
+La classe de la lune.  
+
+
+
+
+{\ttfamily \#include $<$moon.\+hpp$>$}
+
+Inheritance diagram for Moon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMoon}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMoon_aabd6f46efd4751b9bcf8db3e93c92a44}{Moon}} (\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classMoon}{Moon}}\+:\+: \mbox{\hyperlink{classMoon}{Moon}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMoon_a3c2a0d46f278ee7ecf924c4a31da15f1}{$\sim$\+Moon}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classMoon}{Moon}}\+:\+: \mbox{\hyperlink{classMoon}{Moon}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMoon_af5b3e353fcb5f042f34dd7495f396b1d}{draw}} (G\+Luint time)
+\begin{DoxyCompactList}\small\item\em Dessiner la lune. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMoon_a7043b55afc82c6a304088589cae86797}\label{classMoon_a7043b55afc82c6a304088589cae86797}} 
+mat4 \mbox{\hyperlink{classMoon_a7043b55afc82c6a304088589cae86797}{position}}
+\begin{DoxyCompactList}\small\item\em La matrice position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoon_aad7e347135d0205c3a104447824525bf}\label{classMoon_aad7e347135d0205c3a104447824525bf}} 
+G\+Luint {\bfseries model\+\_\+matrix}
+\item 
+\mbox{\Hypertarget{classMoon_a58f1198c91451ce5753faee9ea555117}\label{classMoon_a58f1198c91451ce5753faee9ea555117}} 
+G\+Luint {\bfseries texture0}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMoon_afa96a9eb248c138bbb808e68a54b426c}{load\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Charger le texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMoon_abfe307cf8462e30b000d773cf7f94618}\label{classMoon_abfe307cf8462e30b000d773cf7f94618}} 
+\mbox{\hyperlink{classShader}{Shader}} $\ast$ {\bfseries shader}
+\item 
+\mbox{\Hypertarget{classMoon_a1a3b6d9e9747e1d76f0fcb17c3e948d0}\label{classMoon_a1a3b6d9e9747e1d76f0fcb17c3e948d0}} 
+G\+Luint \mbox{\hyperlink{classMoon_a1a3b6d9e9747e1d76f0fcb17c3e948d0}{texture}}
+\begin{DoxyCompactList}\small\item\em Le texture de la lune. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMoon_ad9449fa2c517f2641e2720d4b95c5be7}\label{classMoon_ad9449fa2c517f2641e2720d4b95c5be7}} 
+\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$ {\bfseries solar\+\_\+system}
+\item 
+\mbox{\Hypertarget{classMoon_a767c6d8f7d773730e54ed08929a4e037}\label{classMoon_a767c6d8f7d773730e54ed08929a4e037}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>GLuint {\bfseries model\_matrix}\\
+\>GLuint {\bfseries texture0}\\
+\} \mbox{\hyperlink{classMoon_a767c6d8f7d773730e54ed08929a4e037}{shader\_vars}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Les variables du shaders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe de la lune. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMoon_aabd6f46efd4751b9bcf8db3e93c92a44}\label{classMoon_aabd6f46efd4751b9bcf8db3e93c92a44}} 
+\index{Moon@{Moon}!Moon@{Moon}}
+\index{Moon@{Moon}!Moon@{Moon}}
+\subsubsection{\texorpdfstring{Moon()}{Moon()}}
+{\footnotesize\ttfamily Moon\+::\+Moon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$}]{sys }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classMoon}{Moon}}\+:\+: \mbox{\hyperlink{classMoon}{Moon}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sys} & \\
+\hline
+\end{DoxyParams}
+Construct a new load Texture object \mbox{\Hypertarget{classMoon_a3c2a0d46f278ee7ecf924c4a31da15f1}\label{classMoon_a3c2a0d46f278ee7ecf924c4a31da15f1}} 
+\index{Moon@{Moon}!````~Moon@{$\sim$Moon}}
+\index{````~Moon@{$\sim$Moon}!Moon@{Moon}}
+\subsubsection{\texorpdfstring{$\sim$Moon()}{~Moon()}}
+{\footnotesize\ttfamily Moon\+::$\sim$\+Moon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classMoon}{Moon}}\+:\+: \mbox{\hyperlink{classMoon}{Moon}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMoon_af5b3e353fcb5f042f34dd7495f396b1d}\label{classMoon_af5b3e353fcb5f042f34dd7495f396b1d}} 
+\index{Moon@{Moon}!draw@{draw}}
+\index{draw@{draw}!Moon@{Moon}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Moon\+::draw (\begin{DoxyParamCaption}\item[{G\+Luint}]{time }\end{DoxyParamCaption})}
+
+
+
+Dessiner la lune. 
+
+Draw a new \mbox{\hyperlink{classMoon}{Moon}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMoon_afa96a9eb248c138bbb808e68a54b426c}\label{classMoon_afa96a9eb248c138bbb808e68a54b426c}} 
+\index{Moon@{Moon}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Moon@{Moon}}
+\subsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily void Moon\+::load\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Charger le texture. 
+
+Load texture.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/models/moon.\+hpp\item 
+src/models/moon.\+cpp\end{DoxyCompactItemize}

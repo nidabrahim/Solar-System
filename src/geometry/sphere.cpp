@@ -2,12 +2,18 @@
 
 #define BUFFER_OFFSET(bytes) ((GLubyte*) NULL + (bytes))
 
+/**
+ * @brief Construct a new Sphere:: Sphere object
+ * 
+ * @param depth 
+ */
 Sphere::Sphere(GLuint depth) : vertices(new boost::container::vector<GLfloat>()){
 	vertex_buffers = new GLuint;
 
 	const float X = .525731112119133606;
 	const float Z = .850650808352039932;
 
+	//! Vertix matrice
 	GLfloat verts[12][3] = {
 		{-X, 0.0, Z}, {X, 0.0, Z}, {-X, 0.0, -Z}, {X, 0.0, -Z},
 		{0.0, Z, X}, {0.0, Z, -X}, {0.0, -Z, X}, {0.0, -Z, -X},
@@ -54,6 +60,14 @@ Sphere::Sphere(GLuint depth) : vertices(new boost::container::vector<GLfloat>())
 	);
 }
 
+/**
+ * @brief Subdivide
+ * 
+ * @param v1 
+ * @param v2 
+ * @param v3 
+ * @param depth 
+ */
 void Sphere::subdivide(float *v1, float *v2, float *v3, long depth) {
 	GLfloat v12[3], v23[3], v31[3];
 
@@ -86,6 +100,11 @@ void Sphere::subdivide(float *v1, float *v2, float *v3, long depth) {
 	subdivide(v12, v23, v31, depth - 1);
 }
 
+/**
+ * @brief Normalization
+ * 
+ * @param v 
+ */
 void Sphere::normalize(float v[3]) {
 	GLfloat d = sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
 	if (d == 0.0) {
@@ -97,6 +116,10 @@ void Sphere::normalize(float v[3]) {
 	v[2] /= d;
 }
 
+/**
+ * @brief Draw a new sphere
+ * 
+ */
 void Sphere::draw() {
 
 	glEnableVertexAttribArray(s_Attribute);

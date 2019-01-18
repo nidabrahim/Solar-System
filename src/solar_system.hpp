@@ -14,7 +14,10 @@ class SolarSystem;
 #include "models/moon.hpp"
 #include "models/skybox.hpp"
 
-
+/**
+ * @brief SolarSystem Class
+ * 
+ */
 class SolarSystem {
 	public:
 		SolarSystem();
@@ -22,6 +25,7 @@ class SolarSystem {
 
 		void toggleCam(SDL_Event&);
 
+		//! Models
 		struct {
 			Earth *earth;
 			Sun *sun;

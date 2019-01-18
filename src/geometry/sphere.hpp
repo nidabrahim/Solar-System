@@ -11,6 +11,10 @@
 
 using boost::container::vector;
 
+/**
+ * @brief Sphere class
+ * 
+ */
 class Sphere {
 	protected:
 		Sphere(GLuint depth);

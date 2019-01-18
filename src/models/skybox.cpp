@@ -8,6 +8,10 @@
 
 using namespace glm;
 
+/**
+ * @brief Construct a new Sky Box:: Sky Box object
+ * 
+ */
 SkyBox::SkyBox() {
 	
 	shader = new Shader(SKYBOX_SHADER_VERT_FILENAME, SKYBOX_SHADER_FRAG_FILENAME); 
@@ -16,6 +20,7 @@ SkyBox::SkyBox() {
 
 	initialiseVariables(shader->program);
 
+	//! Load textures
 	texture = createCubeTexture(
 		SKYBOX_TEXTURES_XP_FILENAME,
 		SKYBOX_TEXTURES_XN_FILENAME,
@@ -26,6 +31,11 @@ SkyBox::SkyBox() {
 	);
 }
 
+/**
+ * @brief Draw a new Skybox
+ * 
+ * @param time 
+ */
 void SkyBox::draw(GLuint time) {
 
 	glUseProgram(shader->program);
@@ -40,9 +50,14 @@ void SkyBox::draw(GLuint time) {
 	glBindTexture(GL_TEXTURE_CUBE_MAP, texture);
 	glUniform1i(shader_vars.texture0, 0);
 
+	//! Construct a new Cube::draw object
 	Cube::draw();
 }
 
+/**
+ * @brief Destroy the Sky Box:: Sky Box object
+ * 
+ */
 SkyBox::~SkyBox() {
 	delete shader;
 }

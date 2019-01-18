@@ -9,6 +9,10 @@
 using std::string;
 using std::logic_error;
 
+/**
+ * @brief Shader class
+ * 
+ */
 class Shader {
 
 	protected:

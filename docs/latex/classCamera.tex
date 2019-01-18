@@ -1,0 +1,165 @@
+\hypertarget{classCamera}{}\section{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+
+
+\mbox{\hyperlink{classCamera}{Camera}} class.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+mat4 \mbox{\hyperlink{classCamera_a59690505905b7a1446e4e8de09f00916}{projection}} ()
+\begin{DoxyCompactList}\small\item\em Set camera projection. \end{DoxyCompactList}\item 
+mat4 \mbox{\hyperlink{classCamera_a8e6842eed5a91392ffbbf05a5c086a36}{view}} ()
+\begin{DoxyCompactList}\small\item\em Look at. \end{DoxyCompactList}\item 
+vec3 \mbox{\hyperlink{classCamera_ac28fec027fd3779e273a5bbd9439bfb5}{pos}} ()
+\begin{DoxyCompactList}\small\item\em Get camera position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_aa14b536a20f27aff0b2041d9d5fbe56d}{set\+Res}} (G\+Luint w, G\+Luint h)
+\begin{DoxyCompactList}\small\item\em Set camera parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a447d8a9703b42a4a41b40f6e1a0e888a}{init}} (vec3, vec3, vec3)
+\begin{DoxyCompactList}\small\item\em Init camera parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a32764e00a0e9359a546e7b68cdaa6aa1}{mouse\+Motion}} (S\+D\+L\+\_\+\+Event \&ev)
+\begin{DoxyCompactList}\small\item\em Display camera direction by mouse motion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a82f4dae580a39549995aa1e91394c1b8}{stride}} (S\+D\+L\+\_\+\+Event \&ev)
+\begin{DoxyCompactList}\small\item\em Display camera position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classCamera}{Camera}} $\ast$ \mbox{\hyperlink{classCamera_ace248e9f44ba355c577173d5fc5fa84c}{inst}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classCamera}{Camera}} Singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classCamera}{Camera}} class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCamera_a447d8a9703b42a4a41b40f6e1a0e888a}\label{classCamera_a447d8a9703b42a4a41b40f6e1a0e888a}} 
+\index{Camera@{Camera}!init@{init}}
+\index{init@{init}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Camera\+::init (\begin{DoxyParamCaption}\item[{vec3}]{pos,  }\item[{vec3}]{dir,  }\item[{vec3}]{up }\end{DoxyParamCaption})}
+
+
+
+Init camera parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+{\em dir} & \\
+\hline
+{\em up} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_ace248e9f44ba355c577173d5fc5fa84c}\label{classCamera_ace248e9f44ba355c577173d5fc5fa84c}} 
+\index{Camera@{Camera}!inst@{inst}}
+\index{inst@{inst}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{inst()}{inst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCamera}{Camera}} $\ast$ Camera\+::inst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classCamera}{Camera}} Singleton. 
+
+\begin{DoxyReturn}{Returns}
+Camera$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a32764e00a0e9359a546e7b68cdaa6aa1}\label{classCamera_a32764e00a0e9359a546e7b68cdaa6aa1}} 
+\index{Camera@{Camera}!mouseMotion@{mouseMotion}}
+\index{mouseMotion@{mouseMotion}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{mouseMotion()}{mouseMotion()}}
+{\footnotesize\ttfamily void Camera\+::mouse\+Motion (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Display camera direction by mouse motion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_ac28fec027fd3779e273a5bbd9439bfb5}\label{classCamera_ac28fec027fd3779e273a5bbd9439bfb5}} 
+\index{Camera@{Camera}!pos@{pos}}
+\index{pos@{pos}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily vec3 Camera\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get camera position. 
+
+\begin{DoxyReturn}{Returns}
+vec3 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a59690505905b7a1446e4e8de09f00916}\label{classCamera_a59690505905b7a1446e4e8de09f00916}} 
+\index{Camera@{Camera}!projection@{projection}}
+\index{projection@{projection}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{projection()}{projection()}}
+{\footnotesize\ttfamily mat4 Camera\+::projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set camera projection. 
+
+\begin{DoxyReturn}{Returns}
+mat4 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_aa14b536a20f27aff0b2041d9d5fbe56d}\label{classCamera_aa14b536a20f27aff0b2041d9d5fbe56d}} 
+\index{Camera@{Camera}!setRes@{setRes}}
+\index{setRes@{setRes}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{setRes()}{setRes()}}
+{\footnotesize\ttfamily void Camera\+::set\+Res (\begin{DoxyParamCaption}\item[{G\+Luint}]{w,  }\item[{G\+Luint}]{h }\end{DoxyParamCaption})}
+
+
+
+Set camera parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a82f4dae580a39549995aa1e91394c1b8}\label{classCamera_a82f4dae580a39549995aa1e91394c1b8}} 
+\index{Camera@{Camera}!stride@{stride}}
+\index{stride@{stride}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{stride()}{stride()}}
+{\footnotesize\ttfamily void Camera\+::stride (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Display camera position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a8e6842eed5a91392ffbbf05a5c086a36}\label{classCamera_a8e6842eed5a91392ffbbf05a5c086a36}} 
+\index{Camera@{Camera}!view@{view}}
+\index{view@{view}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily mat4 Camera\+::view (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Look at. 
+
+\begin{DoxyReturn}{Returns}
+mat4 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/camera.\+hpp\item 
+src/engine/camera.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,178 @@
+\hypertarget{classEventHandler}{}\section{Event\+Handler Class Reference}
+\label{classEventHandler}\index{EventHandler@{EventHandler}}
+
+
+\mbox{\hyperlink{classEventHandler}{Event\+Handler}} class.  
+
+
+
+
+{\ttfamily \#include $<$Event\+Handler.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEventHandler_a7ac8e1a1cc6661b4738ea521b5d91706}{handle}} ()
+\begin{DoxyCompactList}\small\item\em Handle the events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventHandler_ad456a9c086ff1fe010a428026eddba9c}{register\+Video\+Resize\+Callback}} (callback)
+\begin{DoxyCompactList}\small\item\em Register the function for the video resize. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventHandler_a2418d37f4ced90f61e72e84338b069cb}{register\+Mouse\+Motion\+Callback}} (callback)
+\begin{DoxyCompactList}\small\item\em Register the function for the mouse motion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventHandler_abad5fb59e15a41ce6fcb1fed634d0f37}{register\+Quit\+Callback}} (callback)
+\begin{DoxyCompactList}\small\item\em Register the function for the quit event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventHandler_a088e94e8c71afe2165375074e0a27765}{register\+Key}} (S\+D\+L\+\_\+\+Scancode key, callback)
+\begin{DoxyCompactList}\small\item\em Register a key to the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventHandler_afd4a4e6d06efbc32e657a662af6bf4ef}{register\+Key\+Once}} (S\+D\+L\+\_\+\+Scancode key, callback)
+\begin{DoxyCompactList}\small\item\em Register a function to be spawned only once when pressing the key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventHandler_ae14254f56ab16e81bd4109afcabf9b9a}{register\+Key\+Release}} (S\+D\+L\+\_\+\+Scancode key, callback)
+\begin{DoxyCompactList}\small\item\em Register a function to a key when it\textquotesingle{}s released. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventHandler_a0fb543b17c41ef73df71b9498fd45359}{unregister\+Key}} (S\+D\+L\+\_\+\+Scancode key)
+\begin{DoxyCompactList}\small\item\em Unregister the function on a key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventHandler_a8907091f20fddc7a4a94ab994902aea7}{unregister\+Mouse\+Motion}} ()
+\begin{DoxyCompactList}\small\item\em Unregister the function for the mouse motion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEventHandler_aae0146e551996e37079f5cd29df050d1}\label{classEventHandler_aae0146e551996e37079f5cd29df050d1}} 
+static \mbox{\hyperlink{classEventHandler}{Event\+Handler}} $\ast$ {\bfseries inst} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classEventHandler}{Event\+Handler}} class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEventHandler_a7ac8e1a1cc6661b4738ea521b5d91706}\label{classEventHandler_a7ac8e1a1cc6661b4738ea521b5d91706}} 
+\index{EventHandler@{EventHandler}!handle@{handle}}
+\index{handle@{handle}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Event\+Handler\+::handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the events. 
+
+\mbox{\Hypertarget{classEventHandler_a088e94e8c71afe2165375074e0a27765}\label{classEventHandler_a088e94e8c71afe2165375074e0a27765}} 
+\index{EventHandler@{EventHandler}!registerKey@{registerKey}}
+\index{registerKey@{registerKey}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{registerKey()}{registerKey()}}
+{\footnotesize\ttfamily void Event\+Handler\+::register\+Key (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Scancode}]{key,  }\item[{callback}]{func }\end{DoxyParamCaption})}
+
+
+
+Register a key to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em func} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEventHandler_afd4a4e6d06efbc32e657a662af6bf4ef}\label{classEventHandler_afd4a4e6d06efbc32e657a662af6bf4ef}} 
+\index{EventHandler@{EventHandler}!registerKeyOnce@{registerKeyOnce}}
+\index{registerKeyOnce@{registerKeyOnce}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{registerKeyOnce()}{registerKeyOnce()}}
+{\footnotesize\ttfamily void Event\+Handler\+::register\+Key\+Once (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Scancode}]{key,  }\item[{callback}]{func }\end{DoxyParamCaption})}
+
+
+
+Register a function to be spawned only once when pressing the key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em func} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEventHandler_ae14254f56ab16e81bd4109afcabf9b9a}\label{classEventHandler_ae14254f56ab16e81bd4109afcabf9b9a}} 
+\index{EventHandler@{EventHandler}!registerKeyRelease@{registerKeyRelease}}
+\index{registerKeyRelease@{registerKeyRelease}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{registerKeyRelease()}{registerKeyRelease()}}
+{\footnotesize\ttfamily void Event\+Handler\+::register\+Key\+Release (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Scancode}]{key,  }\item[{callback}]{func }\end{DoxyParamCaption})}
+
+
+
+Register a function to a key when it\textquotesingle{}s released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em func} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEventHandler_a2418d37f4ced90f61e72e84338b069cb}\label{classEventHandler_a2418d37f4ced90f61e72e84338b069cb}} 
+\index{EventHandler@{EventHandler}!registerMouseMotionCallback@{registerMouseMotionCallback}}
+\index{registerMouseMotionCallback@{registerMouseMotionCallback}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{registerMouseMotionCallback()}{registerMouseMotionCallback()}}
+{\footnotesize\ttfamily void Event\+Handler\+::register\+Mouse\+Motion\+Callback (\begin{DoxyParamCaption}\item[{callback}]{func }\end{DoxyParamCaption})}
+
+
+
+Register the function for the mouse motion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEventHandler_abad5fb59e15a41ce6fcb1fed634d0f37}\label{classEventHandler_abad5fb59e15a41ce6fcb1fed634d0f37}} 
+\index{EventHandler@{EventHandler}!registerQuitCallback@{registerQuitCallback}}
+\index{registerQuitCallback@{registerQuitCallback}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{registerQuitCallback()}{registerQuitCallback()}}
+{\footnotesize\ttfamily void Event\+Handler\+::register\+Quit\+Callback (\begin{DoxyParamCaption}\item[{callback}]{func }\end{DoxyParamCaption})}
+
+
+
+Register the function for the quit event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEventHandler_ad456a9c086ff1fe010a428026eddba9c}\label{classEventHandler_ad456a9c086ff1fe010a428026eddba9c}} 
+\index{EventHandler@{EventHandler}!registerVideoResizeCallback@{registerVideoResizeCallback}}
+\index{registerVideoResizeCallback@{registerVideoResizeCallback}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{registerVideoResizeCallback()}{registerVideoResizeCallback()}}
+{\footnotesize\ttfamily void Event\+Handler\+::register\+Video\+Resize\+Callback (\begin{DoxyParamCaption}\item[{callback}]{func }\end{DoxyParamCaption})}
+
+
+
+Register the function for the video resize. 
+
+\mbox{\Hypertarget{classEventHandler_a0fb543b17c41ef73df71b9498fd45359}\label{classEventHandler_a0fb543b17c41ef73df71b9498fd45359}} 
+\index{EventHandler@{EventHandler}!unregisterKey@{unregisterKey}}
+\index{unregisterKey@{unregisterKey}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{unregisterKey()}{unregisterKey()}}
+{\footnotesize\ttfamily void Event\+Handler\+::unregister\+Key (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Scancode}]{key }\end{DoxyParamCaption})}
+
+
+
+Unregister the function on a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEventHandler_a8907091f20fddc7a4a94ab994902aea7}\label{classEventHandler_a8907091f20fddc7a4a94ab994902aea7}} 
+\index{EventHandler@{EventHandler}!unregisterMouseMotion@{unregisterMouseMotion}}
+\index{unregisterMouseMotion@{unregisterMouseMotion}!EventHandler@{EventHandler}}
+\subsubsection{\texorpdfstring{unregisterMouseMotion()}{unregisterMouseMotion()}}
+{\footnotesize\ttfamily void Event\+Handler\+::unregister\+Mouse\+Motion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unregister the function for the mouse motion. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/Event\+Handler.\+hpp\item 
+src/engine/Event\+Handler.\+cpp\end{DoxyCompactItemize}

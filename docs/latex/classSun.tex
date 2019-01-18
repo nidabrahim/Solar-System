@@ -1,0 +1,128 @@
+\hypertarget{classSun}{}\section{Sun Class Reference}
+\label{classSun}\index{Sun@{Sun}}
+
+
+La classe du soleil.  
+
+
+
+
+{\ttfamily \#include $<$sun.\+hpp$>$}
+
+Inheritance diagram for Sun\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSun}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSun_ab810283eec5c1921132cd8c2d10db9aa}{Sun}} (\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classSun}{Sun}}\+:\+: \mbox{\hyperlink{classSun}{Sun}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSun_a4e43fa67eca98adfb1fa900207af6120}{$\sim$\+Sun}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classSun}{Sun}}\+:\+: \mbox{\hyperlink{classSun}{Sun}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSun_a1338daf4028ea9b7526553488c0961e0}{draw}} (G\+Luint)
+\begin{DoxyCompactList}\small\item\em Dessiner le soleil. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSun_a35e64b0836ac476a5ee32ec14160e3d0}\label{classSun_a35e64b0836ac476a5ee32ec14160e3d0}} 
+mat4 \mbox{\hyperlink{classSun_a35e64b0836ac476a5ee32ec14160e3d0}{position}}
+\begin{DoxyCompactList}\small\item\em La matrice position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSun_a0b0ae08a61f9fe139ab9a9950d5a523e}\label{classSun_a0b0ae08a61f9fe139ab9a9950d5a523e}} 
+G\+Luint \mbox{\hyperlink{classSun_a0b0ae08a61f9fe139ab9a9950d5a523e}{model\+\_\+matrix}}
+\begin{DoxyCompactList}\small\item\em La matrice modele. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSun_aa7d24617197997c2d401cb555b3a3459}\label{classSun_aa7d24617197997c2d401cb555b3a3459}} 
+G\+Luint \mbox{\hyperlink{classSun_aa7d24617197997c2d401cb555b3a3459}{texture}}
+\begin{DoxyCompactList}\small\item\em Texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSun_a44f32c835ec25ddb79c69692fe816b58}\label{classSun_a44f32c835ec25ddb79c69692fe816b58}} 
+G\+Luint {\bfseries time}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSun_a08d88070ddf47ce128bf5733723fbe14}\label{classSun_a08d88070ddf47ce128bf5733723fbe14}} 
+\mbox{\hyperlink{classShader}{Shader}} $\ast$ \mbox{\hyperlink{classSun_a08d88070ddf47ce128bf5733723fbe14}{shader}}
+\begin{DoxyCompactList}\small\item\em Le shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSun_a896c371f6646046efe89f11df943b162}\label{classSun_a896c371f6646046efe89f11df943b162}} 
+\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$ {\bfseries solar\+\_\+system}
+\item 
+\mbox{\Hypertarget{classSun_aa7b65bdd6a5cb1961a1ba6fd5519f47a}\label{classSun_aa7b65bdd6a5cb1961a1ba6fd5519f47a}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>GLuint \mbox{\hyperlink{classSun_a0b0ae08a61f9fe139ab9a9950d5a523e}{model\_matrix}}\\
+\>\>{\em La matrice modele. }\\
+\>GLuint \mbox{\hyperlink{classSun_aa7d24617197997c2d401cb555b3a3459}{texture}}\\
+\>\>{\em Texture. }\\
+\>GLuint {\bfseries time}\\
+\} \mbox{\hyperlink{classSun_aa7b65bdd6a5cb1961a1ba6fd5519f47a}{shader\_vars}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Les variables de shaders. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSun_afda8a4c5b01f2fa18417afeef49f207e}\label{classSun_afda8a4c5b01f2fa18417afeef49f207e}} 
+boost\+::container\+::vector$<$ G\+Lfloat $>$ \mbox{\hyperlink{classSun_afda8a4c5b01f2fa18417afeef49f207e}{noised}}
+\begin{DoxyCompactList}\small\item\em Le vecteur bruit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSun_af510fc764453d8576fb77f200b8b68af}\label{classSun_af510fc764453d8576fb77f200b8b68af}} 
+G\+Luint \mbox{\hyperlink{classSun_af510fc764453d8576fb77f200b8b68af}{noise\+\_\+buffer}}
+\begin{DoxyCompactList}\small\item\em Le buffer de bruit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe du soleil. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSun_ab810283eec5c1921132cd8c2d10db9aa}\label{classSun_ab810283eec5c1921132cd8c2d10db9aa}} 
+\index{Sun@{Sun}!Sun@{Sun}}
+\index{Sun@{Sun}!Sun@{Sun}}
+\subsubsection{\texorpdfstring{Sun()}{Sun()}}
+{\footnotesize\ttfamily Sun\+::\+Sun (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSolarSystem}{Solar\+System}} $\ast$}]{sys }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classSun}{Sun}}\+:\+: \mbox{\hyperlink{classSun}{Sun}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sys} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSun_a4e43fa67eca98adfb1fa900207af6120}\label{classSun_a4e43fa67eca98adfb1fa900207af6120}} 
+\index{Sun@{Sun}!````~Sun@{$\sim$Sun}}
+\index{````~Sun@{$\sim$Sun}!Sun@{Sun}}
+\subsubsection{\texorpdfstring{$\sim$Sun()}{~Sun()}}
+{\footnotesize\ttfamily Sun\+::$\sim$\+Sun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classSun}{Sun}}\+:\+: \mbox{\hyperlink{classSun}{Sun}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSun_a1338daf4028ea9b7526553488c0961e0}\label{classSun_a1338daf4028ea9b7526553488c0961e0}} 
+\index{Sun@{Sun}!draw@{draw}}
+\index{draw@{draw}!Sun@{Sun}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Sun\+::draw (\begin{DoxyParamCaption}\item[{G\+Luint}]{time }\end{DoxyParamCaption})}
+
+
+
+Dessiner le soleil. 
+
+Draw a new \mbox{\hyperlink{classSun}{Sun}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/models/sun.\+hpp\item 
+src/models/sun.\+cpp\end{DoxyCompactItemize}

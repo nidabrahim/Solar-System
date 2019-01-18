@@ -4,6 +4,10 @@
 #define GL_GLEXT_PROTOTYPES
 #include <GL/gl.h>
 
+/**
+ * @brief Shader object class
+ * 
+ */
 class ShaderObject {
 	protected:
 		void initialiseVariables(GLuint programID);

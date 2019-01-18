@@ -8,7 +8,16 @@
 #include "camera.hpp"
 #include "EventHandler.hpp"
 
-
+/**
+ * @brief Construct a new Engine:: Engine object
+ * 
+ * @param name 
+ * @param scrW 
+ * @param scrH 
+ * @param flags 
+ * @param argc 
+ * @param argv 
+ */
 Engine::Engine(string name, GLuint scrW, GLuint scrH, int flags, int argc, char**argv) :
 	scrW(scrW),
 	scrH(scrH),
@@ -22,27 +31,35 @@ Engine::Engine(string name, GLuint scrW, GLuint scrH, int flags, int argc, char*
 	initSDL(name);
 	initOpenGL();
 
-    // Initialize GLEW
+    //! Initialize GLEW
     glewExperimental = GL_TRUE;
     if (glewInit() != GLEW_OK) {
         fprintf(stderr, "Failed to initialize GLEW\n");
     }
-    //Use Vsync
+    //! Use Vsync
     if( SDL_GL_SetSwapInterval( 1 ) < 0 )
     {
         printf( "Warning: Unable to set VSync! SDL Error: %s\n", SDL_GetError() );
     }
-    
+    //! Set screen weight and height
     Camera::inst()->setRes(scrW, scrH);
 
 	initEvents();
 }
 
-
+/**
+ * @brief 
+ * 
+ * @param renderFunc 
+ */
 void Engine::registerRenderFunc(render_func renderFunc) {
 	this->renderFunc = renderFunc;
 }
 
+/**
+ * @brief Render function
+ * 
+ */
 void Engine::render() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
@@ -74,6 +91,10 @@ void Engine::fps(GLuint time) {
 	lastDraw = time;
 }
 
+/**
+ * @brief Engine runner
+ * 
+ */
 void Engine::run() {
 	running = true;
 
@@ -86,8 +107,9 @@ void Engine::run() {
 }
 
 /**
- * Initialize SDL
- *
+ * @brief Initialize SDL
+ * 
+ * @param name 
  */
 void Engine::initSDL(string name) {
 
@@ -122,7 +144,8 @@ void Engine::initSDL(string name) {
 
 
 /**
- * Initialize OpenGL
+ * @brief Initialize OpenGL
+ * 
  */
 void Engine::initOpenGL() {
 	if (flags & PRINT_VERSION) {
@@ -144,6 +167,10 @@ void Engine::initOpenGL() {
 	glEnable(GL_DEPTH_TEST);
 }
 
+/**
+ * @brief Initialize Events
+ * 
+ */
 void Engine::initEvents() {
 	EventHandler::inst()->registerVideoResizeCallback (boost::bind(&Engine::videoResize, this, _1));
 	EventHandler::inst()->registerQuitCallback        (boost::bind(&Engine::quit, this, _1));
@@ -152,7 +179,9 @@ void Engine::initEvents() {
 }
 
 /**
- * Resize event
+ * @brief Resize event
+ * 
+ * @param event 
  */
 void Engine::videoResize(SDL_Event &event) {
 	scrW = event.window.data1;
@@ -161,10 +190,19 @@ void Engine::videoResize(SDL_Event &event) {
 	Camera::inst()->setRes(scrW, scrH);
 }
 
+/**
+ * @brief Quit event
+ * 
+ * @param event 
+ */
 void Engine::quit(SDL_Event &event) {
 	running = false;
 }
 
+/**
+ * @brief Handle errors
+ * 
+ */
 void Engine::handleErrors() {
 	GLenum errCode;
 	const GLubyte *errString;

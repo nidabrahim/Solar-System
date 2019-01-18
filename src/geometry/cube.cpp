@@ -2,68 +2,74 @@
 
 #define BUFFER_OFFSET(bytes) ((GLubyte*) NULL + (bytes))
 
+/**
+ * @brief Construct a new Cube:: Cube object
+ * 
+ */
 Cube::Cube() {
 	vertex_count = normal_count = 24;
+	//! Init the vertices vector
 	vertices = new GLfloat[vertex_count * 3] {
-		// front
+		//! front
 		1, 1, 1,
 		1, -1, 1,
 		-1, -1, 1,
 		-1, 1, 1,
-		// right
+		//! right
 		1, 1, -1,
 		1, -1, -1, 
 		1, -1, 1,
 		1, 1, 1,
-		// back
+		//! back
 		-1, 1, -1,
 		-1, -1, -1,
 		1, -1, -1,
 		1, 1, -1,
-		// left
+		//! left
 		-1, 1, 1,
 		-1, -1, 1,
 		-1, -1, -1,
 		-1, 1, -1,
-		// top
+		//! top
 		1, 1, 1,
 		-1, 1, 1,
 		-1, 1, -1,
 		1, 1, -1,
-		// bottom
+		//! bottom
 		1, -1, 1,
 		-1, -1, 1,
 		-1, -1, -1,
 		1, -1, -1
 	};
 
+	//! Init the normals vector
 	normals = new GLfloat[normal_count * 3] {
-		//front
+		//! front
 		0, 0, 1,
 		0, 0, 1,
 		0, 0, 1,
 		0, 0, 1,
-		// right
+		//! right
 		1, 0, 0,
 		1, 0, 0,
 		1, 0, 0,
 		1, 0, 0,
-		// back
+		//! back
 		0, 0, -1,
 		0, 0, -1,
 		0, 0, -1,
 		0, 0, -1,
-		// left
+		//! left
 		-1, 0, 0,
 		-1, 0, 0,
 		-1, 0, 0,
 		-1, 0, 0,
-		// top
+		//! top
 		0, 1, 0,
 		0, 1, 0,
 		0, 1, 0,
 		0, 1, 0,
-		// bottom
+		//! bottom
 		0, -1, 0,
 		0, -1, 0,
 		0, -1, 0,
@@ -95,6 +101,10 @@ Cube::Cube() {
 	delete vertices;
 }
 
+/**
+ * @brief Draw a new cube
+ * 
+ */
 void Cube::draw() {
 	glEnableVertexAttribArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, buffers[0]);
@@ -127,6 +137,10 @@ void Cube::draw() {
 
 }
 
+/**
+ * @brief Destroy the Cube:: Cube object
+ * 
+ */
 Cube::~Cube() {
 	delete buffers;
 }

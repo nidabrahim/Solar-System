@@ -1,0 +1,152 @@
+\hypertarget{classShader}{}\section{Shader Class Reference}
+\label{classShader}\index{Shader@{Shader}}
+
+
+\mbox{\hyperlink{classShader}{Shader}} class.  
+
+
+
+
+{\ttfamily \#include $<$shader.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classShader_acfcee4e7b4f223f83d7bd5bce5cf36c0}{Shader}} (string vert\+\_\+shader\+\_\+file, string frag\+\_\+shader\+\_\+file)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classShader}{Shader}}\+:\+: \mbox{\hyperlink{classShader}{Shader}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShader_af036f983d35fe0f8f31dedc009b3645e}\label{classShader_af036f983d35fe0f8f31dedc009b3645e}} 
+G\+Luint {\bfseries program}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classShader_a080150b058525de4f338edb6c6bdd450}{load\+Shader\+File}} (string file)
+\begin{DoxyCompactList}\small\item\em Load a shader file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShader_a69ca69aecbaa3dc7a84a00e80af786fe}{compile\+Shader}} (G\+Luint shader\+ID, string shader\+\_\+code)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classShader}{Shader}} compiler. \end{DoxyCompactList}\item 
+G\+Lboolean \mbox{\hyperlink{classShader_abde0c096ccae8bd72639e6203239d0a5}{check\+Shader}} (G\+Luint, string shader\+\_\+file)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classShader}{Shader}} checker. \end{DoxyCompactList}\item 
+G\+Lboolean \mbox{\hyperlink{classShader_a279452402be44a4e97f0be5838fe7e79}{check\+Program}} (G\+Luint)
+\begin{DoxyCompactList}\small\item\em Check the shader program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classShader}{Shader}} class. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classShader_acfcee4e7b4f223f83d7bd5bce5cf36c0}\label{classShader_acfcee4e7b4f223f83d7bd5bce5cf36c0}} 
+\index{Shader@{Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{Shader()}{Shader()}}
+{\footnotesize\ttfamily Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{string}]{vert\+\_\+shader\+\_\+file,  }\item[{string}]{frag\+\_\+shader\+\_\+file }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classShader}{Shader}}\+:\+: \mbox{\hyperlink{classShader}{Shader}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vert\+\_\+shader\+\_\+file} & \\
+\hline
+{\em frag\+\_\+shader\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+Create the shaders
+
+Read the \mbox{\hyperlink{classShader}{Shader}} code from the file
+
+Compile Vertex \mbox{\hyperlink{classShader}{Shader}}
+
+Compile Fragment \mbox{\hyperlink{classShader}{Shader}}
+
+Create the program
+
+Setup Vertex Attributes
+
+Link the program 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classShader_a279452402be44a4e97f0be5838fe7e79}\label{classShader_a279452402be44a4e97f0be5838fe7e79}} 
+\index{Shader@{Shader}!checkProgram@{checkProgram}}
+\index{checkProgram@{checkProgram}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{checkProgram()}{checkProgram()}}
+{\footnotesize\ttfamily G\+Lboolean Shader\+::check\+Program (\begin{DoxyParamCaption}\item[{G\+Luint}]{program }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Check the shader program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em program} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G\+Lboolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShader_abde0c096ccae8bd72639e6203239d0a5}\label{classShader_abde0c096ccae8bd72639e6203239d0a5}} 
+\index{Shader@{Shader}!checkShader@{checkShader}}
+\index{checkShader@{checkShader}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{checkShader()}{checkShader()}}
+{\footnotesize\ttfamily G\+Lboolean Shader\+::check\+Shader (\begin{DoxyParamCaption}\item[{G\+Luint}]{shader\+ID,  }\item[{string}]{shader\+\_\+file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{classShader}{Shader}} checker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+ID} & \\
+\hline
+{\em shader\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G\+Lboolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShader_a69ca69aecbaa3dc7a84a00e80af786fe}\label{classShader_a69ca69aecbaa3dc7a84a00e80af786fe}} 
+\index{Shader@{Shader}!compileShader@{compileShader}}
+\index{compileShader@{compileShader}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{compileShader()}{compileShader()}}
+{\footnotesize\ttfamily void Shader\+::compile\+Shader (\begin{DoxyParamCaption}\item[{G\+Luint}]{shader\+ID,  }\item[{string}]{shader\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{classShader}{Shader}} compiler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+ID} & \\
+\hline
+{\em shader\+Code} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShader_a080150b058525de4f338edb6c6bdd450}\label{classShader_a080150b058525de4f338edb6c6bdd450}} 
+\index{Shader@{Shader}!loadShaderFile@{loadShaderFile}}
+\index{loadShaderFile@{loadShaderFile}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{loadShaderFile()}{loadShaderFile()}}
+{\footnotesize\ttfamily string Shader\+::load\+Shader\+File (\begin{DoxyParamCaption}\item[{string}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Load a shader file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/shader.\+hpp\item 
+src/engine/shader.\+cpp\end{DoxyCompactItemize}

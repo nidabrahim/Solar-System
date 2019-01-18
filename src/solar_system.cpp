@@ -12,11 +12,14 @@
 
 using namespace glm;
 
+/**
+ * @brief Construct a new Solar System:: Solar System object
+ * 
+ */
 SolarSystem::SolarSystem() {
 	Camera::inst()->init(vec3(0, 20, 0),
 						 vec3(0, 0, 0),
 						 vec3(0, 0, -1));
-
 
 	EventHandler::inst()->registerKeyOnce(SDL_SCANCODE_SPACE,
 			boost::bind(&SolarSystem::toggleCam, this, _1) 
@@ -28,6 +31,10 @@ SolarSystem::SolarSystem() {
 	objects.skybox = new SkyBox();
 }
 
+/**
+ * @brief Change the view to follow the Moon
+ * 
+ */
 void SolarSystem::followMoon() {
 	vec3 moon_position  = vec3(objects.moon->position * vec4(0, 0, 0, 1));
 	vec3 cam_position = moon_position + vec3(1.5, 0, 0);
@@ -35,6 +42,10 @@ void SolarSystem::followMoon() {
 	Camera::inst()->init(cam_position, moon_position, normalize(vec3(0, 1, 0)));
 }
 
+/**
+ * @brief Change the view to follow the Earth
+ * 
+ */
 void SolarSystem::followEarth() {
 	vec3 earth_position = vec3(objects.earth->position * vec4(0, 0, 0, 1));
 	vec3 cam_position = earth_position + vec3(2, 0, 0);
@@ -42,24 +53,41 @@ void SolarSystem::followEarth() {
 	Camera::inst()->init(cam_position, earth_position, normalize(vec3(0, 1, 0)));
 }
 
+/**
+ * @brief Change the view to follow the Earth far
+ * 
+ */
 void SolarSystem::followEarthFar() {
 	vec3 earth_position = vec3(objects.earth->position * vec4(0, 0, 0, 1));
 	vec3 cam_position = earth_position + vec3(3, 1, 0);
 
-
 	Camera::inst()->init(cam_position, earth_position, normalize(vec3(0, 1, 0)));
 }
 
+/**
+ * @brief Change the view to follow the sun
+ * 
+ */
 void SolarSystem::checkoutSun() {
 	Camera::inst()->init(vec3(0, 0, 5), vec3(0, 0, 0), vec3(0, 1, 0));
 }
 
+/**
+ * @brief Change the view
+ * 
+ */
 void SolarSystem::overview()  {
 	Camera::inst()->init(vec3(0, 20, 20),
 						 vec3(0, 0, 0),
 						 vec3(0, 1, -1)); 
 }
 
+/**
+ * @brief Render function that draws all planets
+ * 
+ * @param time 
+ * @param engine 
+ */
 void SolarSystem::renderFunc(GLuint time, Engine engine) {
 
 	objects.earth->compute(time);
@@ -86,6 +114,11 @@ void SolarSystem::renderFunc(GLuint time, Engine engine) {
 	objects.skybox->draw(time);
 }
 
+/**
+ * @brief 
+ * 
+ * @param ev 
+ */
 void SolarSystem::toggleCam(SDL_Event &ev) {
 	camera = (camera + 1) % 5;
 }

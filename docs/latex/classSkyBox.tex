@@ -1,0 +1,100 @@
+\hypertarget{classSkyBox}{}\section{Sky\+Box Class Reference}
+\label{classSkyBox}\index{SkyBox@{SkyBox}}
+
+
+La classe de skybox.  
+
+
+
+
+{\ttfamily \#include $<$skybox.\+hpp$>$}
+
+Inheritance diagram for Sky\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSkyBox}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSkyBox_a548db645757da94296cb80402206dd3b}{Sky\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Sky Box\+:\+: Sky Box object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSkyBox_aef6a9b7d384358fd2095d1e171d8a997}{$\sim$\+Sky\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Sky Box\+:\+: Sky Box object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSkyBox_ab4690616f1ceefd833d3ce68be01e50c}{draw}} (G\+Luint)
+\begin{DoxyCompactList}\small\item\em Dessiner le skybox. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSkyBox_afd602ee6db177094b5a5db8e4682fcd1}\label{classSkyBox_afd602ee6db177094b5a5db8e4682fcd1}} 
+\mbox{\hyperlink{classShader}{Shader}} $\ast$ \mbox{\hyperlink{classSkyBox_afd602ee6db177094b5a5db8e4682fcd1}{shader}}
+\begin{DoxyCompactList}\small\item\em Le shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSkyBox_aaddd2913b22cacddfffa4d5c9487b10f}\label{classSkyBox_aaddd2913b22cacddfffa4d5c9487b10f}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>GLuint \mbox{\hyperlink{classSkyBox_aa169023b140d4b1fb328899bfa5ad83b}{model\_matrix}}\\
+\>\>{\em La matrice modele. }\\
+\>GLuint {\bfseries texture0}\\
+\} \mbox{\hyperlink{classSkyBox_aaddd2913b22cacddfffa4d5c9487b10f}{shader\_vars}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Les variables de shaders. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSkyBox_aba3fcdb5f5ff7d825d6a42aff3875d61}\label{classSkyBox_aba3fcdb5f5ff7d825d6a42aff3875d61}} 
+G\+Luint {\bfseries texture}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+La classe de skybox. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSkyBox_a548db645757da94296cb80402206dd3b}\label{classSkyBox_a548db645757da94296cb80402206dd3b}} 
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\subsubsection{\texorpdfstring{SkyBox()}{SkyBox()}}
+{\footnotesize\ttfamily Sky\+Box\+::\+Sky\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Sky Box\+:\+: Sky Box object. 
+
+Load textures \mbox{\Hypertarget{classSkyBox_aef6a9b7d384358fd2095d1e171d8a997}\label{classSkyBox_aef6a9b7d384358fd2095d1e171d8a997}} 
+\index{SkyBox@{SkyBox}!````~SkyBox@{$\sim$SkyBox}}
+\index{````~SkyBox@{$\sim$SkyBox}!SkyBox@{SkyBox}}
+\subsubsection{\texorpdfstring{$\sim$SkyBox()}{~SkyBox()}}
+{\footnotesize\ttfamily Sky\+Box\+::$\sim$\+Sky\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the Sky Box\+:\+: Sky Box object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSkyBox_ab4690616f1ceefd833d3ce68be01e50c}\label{classSkyBox_ab4690616f1ceefd833d3ce68be01e50c}} 
+\index{SkyBox@{SkyBox}!draw@{draw}}
+\index{draw@{draw}!SkyBox@{SkyBox}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Sky\+Box\+::draw (\begin{DoxyParamCaption}\item[{G\+Luint}]{time }\end{DoxyParamCaption})}
+
+
+
+Dessiner le skybox. 
+
+Draw a new Skybox.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+Construct a new \mbox{\hyperlink{classCube_ab26b72a81376fd5dc4fcc7f0b715b087}{Cube\+::draw}} object 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/models/skybox.\+hpp\item 
+src/models/skybox.\+cpp\end{DoxyCompactItemize}

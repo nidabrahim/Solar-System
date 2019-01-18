@@ -1,0 +1,99 @@
+\hypertarget{classTextureObject}{}\section{Texture\+Object Class Reference}
+\label{classTextureObject}\index{TextureObject@{TextureObject}}
+
+
+Texture class.  
+
+
+
+
+{\ttfamily \#include $<$texture\+\_\+object.\+hpp$>$}
+
+Inheritance diagram for Texture\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTextureObject}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structTextureObject_1_1tex__info}{tex\+\_\+info}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTextureObject_ab46bc236276e9a56a833b97ffb23b7fe}\label{classTextureObject_ab46bc236276e9a56a833b97ffb23b7fe}} 
+G\+Luint {\bfseries create\+Cube\+Texture} (string x\+\_\+pos, string x\+\_\+neg, string y\+\_\+pos, string y\+\_\+neg, string z\+\_\+pos, string z\+\_\+neg)
+\item 
+\mbox{\Hypertarget{classTextureObject_abd93a83630d6bff52b1d800ab20a2c7e}\label{classTextureObject_abd93a83630d6bff52b1d800ab20a2c7e}} 
+G\+Luint {\bfseries create1\+D\+Texture} (string path)
+\item 
+G\+Luint \mbox{\hyperlink{classTextureObject_a22837722fc58c8edd46c5758f79d6169}{create\+G\+L1\+D\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Create 1D texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextureObject_ac1d61d281176de66939e8b61b2b970f0}\label{classTextureObject_ac1d61d281176de66939e8b61b2b970f0}} 
+S\+D\+L\+\_\+\+Surface $\ast$ {\bfseries load\+Texture\+Image} (string path)
+\item 
+G\+Luint \mbox{\hyperlink{classTextureObject_a2bef2a384dd36aa96dc0bb198040d056}{create\+G\+L\+Cube\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Create cube texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTextureObject_ac7df07bf344a2bd1c7a350ebbaa2388b}{cube\+Texture\+Parameters}} ()
+\begin{DoxyCompactList}\small\item\em Set texture parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTextureObject_a1cb651c2026db3888ee9c23eeccddeb0}\label{classTextureObject_a1cb651c2026db3888ee9c23eeccddeb0}} 
+void {\bfseries assign\+Cube\+Texture\+Images} (S\+D\+L\+\_\+\+Surface $\ast$, S\+D\+L\+\_\+\+Surface $\ast$, S\+D\+L\+\_\+\+Surface $\ast$, S\+D\+L\+\_\+\+Surface $\ast$, S\+D\+L\+\_\+\+Surface $\ast$, S\+D\+L\+\_\+\+Surface $\ast$)
+\item 
+\mbox{\Hypertarget{classTextureObject_ac1159d39193efb4148ea40467f8bddac}\label{classTextureObject_ac1159d39193efb4148ea40467f8bddac}} 
+\mbox{\hyperlink{structTextureObject_1_1tex__info}{tex\+\_\+info}} {\bfseries get\+Texture\+Params} (S\+D\+L\+\_\+\+Surface $\ast$)
+\item 
+\mbox{\Hypertarget{classTextureObject_a28a0bea05676bb5774ac9eb09f1d6d2f}\label{classTextureObject_a28a0bea05676bb5774ac9eb09f1d6d2f}} 
+void {\bfseries assign2\+D\+Image} (S\+D\+L\+\_\+\+Surface $\ast$, G\+Lenum target)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Texture class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTextureObject_a22837722fc58c8edd46c5758f79d6169}\label{classTextureObject_a22837722fc58c8edd46c5758f79d6169}} 
+\index{TextureObject@{TextureObject}!createGL1DTexture@{createGL1DTexture}}
+\index{createGL1DTexture@{createGL1DTexture}!TextureObject@{TextureObject}}
+\subsubsection{\texorpdfstring{createGL1DTexture()}{createGL1DTexture()}}
+{\footnotesize\ttfamily G\+Luint Texture\+Object\+::create\+G\+L1\+D\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Create 1D texture. 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTextureObject_a2bef2a384dd36aa96dc0bb198040d056}\label{classTextureObject_a2bef2a384dd36aa96dc0bb198040d056}} 
+\index{TextureObject@{TextureObject}!createGLCubeTexture@{createGLCubeTexture}}
+\index{createGLCubeTexture@{createGLCubeTexture}!TextureObject@{TextureObject}}
+\subsubsection{\texorpdfstring{createGLCubeTexture()}{createGLCubeTexture()}}
+{\footnotesize\ttfamily G\+Luint Texture\+Object\+::create\+G\+L\+Cube\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Create cube texture. 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTextureObject_ac7df07bf344a2bd1c7a350ebbaa2388b}\label{classTextureObject_ac7df07bf344a2bd1c7a350ebbaa2388b}} 
+\index{TextureObject@{TextureObject}!cubeTextureParameters@{cubeTextureParameters}}
+\index{cubeTextureParameters@{cubeTextureParameters}!TextureObject@{TextureObject}}
+\subsubsection{\texorpdfstring{cubeTextureParameters()}{cubeTextureParameters()}}
+{\footnotesize\ttfamily void Texture\+Object\+::cube\+Texture\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Set texture parameters. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/texture\+\_\+object.\+hpp\item 
+src/engine/texture\+\_\+object.\+cpp\end{DoxyCompactItemize}

@@ -7,6 +7,10 @@
 
 using std::string;
 
+/**
+ * @brief Texture class
+ * 
+ */
 class TextureObject {
 	protected:
 		GLuint createCubeTexture(string x_pos,string x_neg,string y_pos,string y_neg,string z_pos,string z_neg);

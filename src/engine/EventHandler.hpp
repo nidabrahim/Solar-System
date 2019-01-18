@@ -8,6 +8,10 @@
 
 typedef boost::function<void (SDL_Event&)> callback;
 
+/**
+ * @brief EventHandler class
+ * 
+ */
 class EventHandler {
 
 	private:

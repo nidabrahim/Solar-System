@@ -1,0 +1,136 @@
+Création d’un rendu graphique Open\+GL
+
+\subsection*{Table des matières}
+
+
+\begin{DoxyItemize}
+\item \href{\#dépendances}{\texttt{ Dépendances}}
+\item \href{\#prérequis}{\texttt{ Prérequis}}
+\item \href{\#installation}{\texttt{ Installation}}
+\item \href{\#architecture-de-code}{\texttt{ Architecture de code}}
+\item \href{\#réalisations}{\texttt{ Réalisations}}
+\end{DoxyItemize}
+
+\subsection*{Dépendances}
+
+
+\begin{DoxyItemize}
+\item boost
+\item Open\+GL $>$= 3.\+3
+\item S\+D\+L2
+\item G\+LU
+\item G\+L\+EW
+\item S\+D\+L2\+\_\+image (included)
+\item \href{http://glm.g-truc.net/0.9.4/index.html}{\texttt{ G\+LM}}
+\item Scons (for building)
+\end{DoxyItemize}
+
+\subsection*{Prérequis}
+
+\subsection*{Installation}
+
+Pour lancer le projet, exécuter sur votre console ces deux commandes \+: \begin{DoxyVerb}scons
+./solarsystem
+\end{DoxyVerb}
+
+
+\subsection*{Architecture de code}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{├── includes}
+\DoxyCodeLine{│   ├── shaders}
+\DoxyCodeLine{│   │   ├── earth.frag}
+\DoxyCodeLine{│   │   ├── earth.vert}
+\DoxyCodeLine{│   │   ├── moon.frag}
+\DoxyCodeLine{│   │   ├── moon.vert}
+\DoxyCodeLine{│   │   ├── skybox.frag}
+\DoxyCodeLine{│   │   ├── skybox.vert}
+\DoxyCodeLine{│   │   ├── sun.frag}
+\DoxyCodeLine{│   │   └── sun.vert}
+\DoxyCodeLine{│   └── textures}
+\DoxyCodeLine{│       ├── earth}
+\DoxyCodeLine{│       │   ├── morning}
+\DoxyCodeLine{│       │   │   ├── earth\_xn.png}
+\DoxyCodeLine{│       │   │   ├── earth\_xp.png}
+\DoxyCodeLine{│       │   │   ├── earth\_yn.png}
+\DoxyCodeLine{│       │   │   ├── earth\_yp.png}
+\DoxyCodeLine{│       │   │   ├── earth\_zn.png}
+\DoxyCodeLine{│       │   │   └── earth\_zp.png}
+\DoxyCodeLine{│       │   └── night}
+\DoxyCodeLine{│       │       ├── earth\_xn.png}
+\DoxyCodeLine{│       │       ├── earth\_xp.png}
+\DoxyCodeLine{│       │       ├── earth\_yn.png}
+\DoxyCodeLine{│       │       ├── earth\_yp.png}
+\DoxyCodeLine{│       │       ├── earth\_zn.png}
+\DoxyCodeLine{│       │       └── earth\_zp.png}
+\DoxyCodeLine{│       ├── moon}
+\DoxyCodeLine{│       │   ├── moon\_xn.png}
+\DoxyCodeLine{│       │   ├── moon\_xp.png}
+\DoxyCodeLine{│       │   ├── moon\_yn.png}
+\DoxyCodeLine{│       │   ├── moon\_yp.png}
+\DoxyCodeLine{│       │   ├── moon\_zn.png}
+\DoxyCodeLine{│       │   └── moon\_zp.png}
+\DoxyCodeLine{│       ├── skybox}
+\DoxyCodeLine{│       │   ├── skybox\_xn.png}
+\DoxyCodeLine{│       │   ├── skybox\_xp.png}
+\DoxyCodeLine{│       │   ├── skybox\_yn.png}
+\DoxyCodeLine{│       │   ├── skybox\_yp.png}
+\DoxyCodeLine{│       │   ├── skybox\_zn.png}
+\DoxyCodeLine{│       │   └── skybox\_zp.png}
+\DoxyCodeLine{│       └── sun}
+\DoxyCodeLine{│           └── sun\_colors.png}
+\DoxyCodeLine{├── SConstruct}
+\DoxyCodeLine{├── src}
+\DoxyCodeLine{│   ├── engine}
+\DoxyCodeLine{│   │   ├── camera.cpp}
+\DoxyCodeLine{│   │   ├── camera.hpp}
+\DoxyCodeLine{│   │   ├── Engine.cpp}
+\DoxyCodeLine{│   │   ├── Engine.hpp}
+\DoxyCodeLine{│   │   ├── EventHandler.cpp}
+\DoxyCodeLine{│   │   ├── EventHandler.hpp}
+\DoxyCodeLine{│   │   ├── glmUtils.cpp}
+\DoxyCodeLine{│   │   ├── glmUtils.hpp}
+\DoxyCodeLine{│   │   ├── shader.cpp}
+\DoxyCodeLine{│   │   ├── shader.hpp}
+\DoxyCodeLine{│   │   ├── shader\_object.cpp}
+\DoxyCodeLine{│   │   ├── shader\_object.hpp}
+\DoxyCodeLine{│   │   ├── texture\_object.cpp}
+\DoxyCodeLine{│   │   └── texture\_object.hpp}
+\DoxyCodeLine{│   ├── geometry}
+\DoxyCodeLine{│   │   ├── cube.cpp}
+\DoxyCodeLine{│   │   ├── cube.hpp}
+\DoxyCodeLine{│   │   ├── sphere.cpp}
+\DoxyCodeLine{│   │   └── sphere.hpp}
+\DoxyCodeLine{│   ├── main.cpp}
+\DoxyCodeLine{│   ├── models}
+\DoxyCodeLine{│   │   ├── earth.cpp}
+\DoxyCodeLine{│   │   ├── earth.hpp}
+\DoxyCodeLine{│   │   ├── moon.cpp}
+\DoxyCodeLine{│   │   ├── moon.hpp}
+\DoxyCodeLine{│   │   ├── skybox.cpp}
+\DoxyCodeLine{│   │   ├── skybox.hpp}
+\DoxyCodeLine{│   │   ├── sun.cpp}
+\DoxyCodeLine{│   │   └── sun.hpp}
+\DoxyCodeLine{│   ├── SConstruct}
+\DoxyCodeLine{│   ├── solar\_system.cpp}
+\DoxyCodeLine{│   ├── solar\_system\_globals.hpp}
+\DoxyCodeLine{│   └── solar\_system.hpp}
+\DoxyCodeLine{└── UML}
+\DoxyCodeLine{    └── ClassDiagram.pdf}
+\end{DoxyCode}
+
+
+\subsection*{Réalisations}
+
+
+\begin{DoxyItemize}
+\item Programmation par Shaders et V\+BO
+\item Shadow Mapping
+\item Application de textures sur les Objets 3d
+\item Affichage d’une scène 3D contenant plusieurs objets
+\item Déplacement de la caméra dans la scène
+\item Eclairage Ambiant
+\item Eclairage spéculaire sur certains objets
+\item Skyboxes 
+\end{DoxyItemize}

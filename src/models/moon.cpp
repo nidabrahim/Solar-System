@@ -5,6 +5,11 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 
+/**
+ * @brief Construct a new Moon:: Moon object
+ * 
+ * @param sys 
+ */
 Moon::Moon(SolarSystem *sys) : Sphere(3),solar_system(sys)
 {
 	shader = new Shader(MOON_SHADER_VERT_FILENAME, MOON_SHADER_FRAG_FILENAME);
@@ -13,9 +18,15 @@ Moon::Moon(SolarSystem *sys) : Sphere(3),solar_system(sys)
 	shader_vars.texture0     = glGetUniformLocation(shader->program, "texture0");
 
 	initialiseVariables(shader->program);
+	//! Construct a new load Texture object
 	loadTexture();
 }
 
+/**
+ * @brief Draw a new Moon
+ * 
+ * @param time 
+ */
 void Moon::draw(GLuint time) {
 	glUseProgram(shader->program);
 
@@ -38,6 +49,10 @@ void Moon::draw(GLuint time) {
 	Sphere::draw();
 }
 
+/**
+ * @brief Load texture
+ * 
+ */
 void Moon::loadTexture() {
 	texture = createCubeTexture(
 		MOON_TEXTURES_XP_FILENAME,
@@ -49,6 +64,10 @@ void Moon::loadTexture() {
 	);
 }
 
+/**
+ * @brief Destroy the Moon:: Moon object
+ * 
+ */
 Moon::~Moon() {
 	delete shader;
 }
