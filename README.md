@@ -86,7 +86,44 @@ Pour lancer le projet, exécuter sur votre console ces deux commandes :
 │       │   └── skybox_zp.png
 │       └── sun
 │           └── sun_colors.png
-
+├── SConstruct
+├── src
+│   ├── engine
+│   │   ├── camera.cpp
+│   │   ├── camera.hpp
+│   │   ├── Engine.cpp
+│   │   ├── Engine.hpp
+│   │   ├── EventHandler.cpp
+│   │   ├── EventHandler.hpp
+│   │   ├── glmUtils.cpp
+│   │   ├── glmUtils.hpp
+│   │   ├── shader.cpp
+│   │   ├── shader.hpp
+│   │   ├── shader_object.cpp
+│   │   ├── shader_object.hpp
+│   │   ├── texture_object.cpp
+│   │   └── texture_object.hpp
+│   ├── geometry
+│   │   ├── cube.cpp
+│   │   ├── cube.hpp
+│   │   ├── sphere.cpp
+│   │   └── sphere.hpp
+│   ├── main.cpp
+│   ├── models
+│   │   ├── earth.cpp
+│   │   ├── earth.hpp
+│   │   ├── moon.cpp
+│   │   ├── moon.hpp
+│   │   ├── skybox.cpp
+│   │   ├── skybox.hpp
+│   │   ├── sun.cpp
+│   │   └── sun.hpp
+│   ├── SConstruct
+│   ├── solar_system.cpp
+│   ├── solar_system_globals.hpp
+│   └── solar_system.hpp
+└── UML
+    └── ClassDiagram.pdf
 
 ```
 
