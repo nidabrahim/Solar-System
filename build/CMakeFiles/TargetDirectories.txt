@@ -1,0 +1,3 @@
+/home/youssef/ISIMA/Infographie/tp1/opengl-labs/build/CMakeFiles/edit_cache.dir
+/home/youssef/ISIMA/Infographie/tp1/opengl-labs/build/CMakeFiles/rebuild_cache.dir
+/home/youssef/ISIMA/Infographie/tp1/opengl-labs/build/CMakeFiles/solar_system.dir
