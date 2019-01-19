@@ -34,10 +34,16 @@ Création d’un rendu graphique OpenGL
 
 ## Installation
 
-Pour lancer le projet, exécuter sur votre console ces deux commandes :
+Pour lancer le projet, exécuter ces deux commandes :
 
-    scons
-	./solarsystem
+```bash
+mkdir build
+cd build
+cmake ..
+make
+./solar_system
+
+```
 
 
 
