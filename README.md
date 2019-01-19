@@ -92,7 +92,7 @@ make
 │       │   └── skybox_zp.png
 │       └── sun
 │           └── sun_colors.png
-├── SConstruct
+├── CMakeLists.txt
 ├── src
 │   ├── engine
 │   │   ├── camera.cpp
