@@ -6,7 +6,6 @@ Création d’un rendu graphique OpenGL
 
 ## Table des matières
 * [Dépendances](#dépendances)
-* [Prérequis](#prérequis)
 * [Installation](#installation)
 * [Architecture de code](#architecture-de-code)
 * [Réalisations](#réalisations)
@@ -15,20 +14,14 @@ Création d’un rendu graphique OpenGL
 
 ## Dépendances
 
-* boost
-* OpenGL >= 3.3
-* SDL2
-* GLU
-* GLEW
+* [OpenGL](https://www.opengl.org/)
+* [SDL2](https://www.libsdl.org/download-2.0.php)
 * SDL2\_image (included)
+* [GLU](https://www.opengl.org/resources/libraries/)
+* [GLEW](http://glew.sourceforge.net/)
 * [GLM](http://glm.g-truc.net/0.9.4/index.html)
-* Scons (for building)
-
-
-
-## Prérequis
-
-
+* [boost](https://www.boost.org/)
+* [CMake](https://cmake.org/)
 
 
 
@@ -146,5 +139,8 @@ make
 * Eclairage spéculaire sur certains objets
 * Skyboxes
 
+
+
+![](screenshot/Screenshot.png)
 
 
