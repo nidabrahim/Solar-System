@@ -13,7 +13,6 @@ uniform samplerCube texture0;
 out vec4 out_color;
 
 void main() {
-	//vec4 surf_color = vec4(0.54188, 0.37255, 0.011765, 1);
 
 	vec4 tex_color = texture(texture0, raw_vertex.xyz);
 	vec4 surf_color = tex_color;

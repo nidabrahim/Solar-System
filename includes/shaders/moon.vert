@@ -1,5 +1,4 @@
 #version 130
-//#version 450 core
 
 uniform mat4 he_projection;
 uniform mat4 he_view;

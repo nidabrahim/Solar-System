@@ -13,12 +13,6 @@ out vec4 world_ball_center;
 out vec4 raw_vert;
 
 
-/**/
-
-
-// got the following functions from
-// https://github.com/ashima/webgl-noise/blob/master/src/noise3D.glsl
-
 vec3 mod289(vec3 x) {
 	return x - floor(x * (1.0 / 289.0)) * 289.0;
 }
@@ -121,7 +115,6 @@ void main() {
 
 	gl_Position = world_vertex;
 
-	/**/
 	vec4 new_pos = gl_Position;
 	new_pos += snoise(float(time) * 0.0001 * new_pos.xyz) * normalize(new_pos);
 
