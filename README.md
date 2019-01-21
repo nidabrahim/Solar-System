@@ -27,7 +27,7 @@ Création d’un rendu graphique OpenGL
 
 ## Installation
 
-Pour lancer le projet, exécuter ces deux commandes :
+Pour lancer le projet, exécuter ces commandes :
 
 ```bash
 mkdir build
@@ -144,3 +144,8 @@ make
 ![](screenshot/Screenshot.png)
 
 
+
+Il s'agit de faire une visualisation du système solaire (Soleil, Terre et la Lune) grâce à un programme OpenGL.
+La bibliothèque OpenGL est une interface de programmation regroupant un ensemble de fonctions permettant de générer des images 2D et 3D. 
+L’objectif de ce mini projet est d’introduire et de pratiquer les notions principales du pipeline OpenGL à travers la mise en place d’un mini système solaire. Ce dernier inclut la terre, qui tourne sur son axe et est en révolution autour du soleil. Il y a également la lune qui est en révolution autour de la terre.
+Vue l'architecture de l'application réalisée, vous pouvez continuer à rajoutant d’autres planètes et leurs lunes pour former un système solaire complet.
