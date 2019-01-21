@@ -13,6 +13,7 @@ Vue l'architecture de l'application réalisée, vous pouvez continuer à rajouta
 * [Dépendances](#dépendances)
 * [Installation](#installation)
 * [Architecture de code](#architecture-de-code)
+* [Diagramme de classe](#diagramme-de-classe)
 * [Réalisations](#réalisations)
 
 
@@ -42,6 +43,12 @@ make
 ./solar_system
 
 ```
+
+
+
+## Diagramme de classe
+
+![](screenshot/uml.jpg)
 
 
 
